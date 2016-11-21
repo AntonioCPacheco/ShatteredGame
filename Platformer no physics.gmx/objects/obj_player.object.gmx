@@ -47,6 +47,9 @@ talking = false;
 first_xscale = image_xscale;
 
 image_speed = image_number / room_speed;
+
+//number of collectibles you picked
+keys = 0;
 </string>
           </argument>
         </arguments>
@@ -383,8 +386,7 @@ if(key_interact &amp;&amp; grounded){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-    draw_text(5,5, string(round(image_index)));
+            <string>    draw_text(5, 15, keys);
 </string>
           </argument>
         </arguments>

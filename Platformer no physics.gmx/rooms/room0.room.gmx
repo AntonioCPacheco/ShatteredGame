@@ -101,6 +101,7 @@
     <instance objName="obj_enemy" x="192" y="1408" name="inst_616B75F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_npc_test" x="1408" y="1536" name="inst_4BF2CFF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chest" x="1088" y="1600" name="inst_9D707C7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collectible" x="2432" y="640" name="inst_D3C59CA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="floor_tiles" x="0" y="1024" w="128" h="128" xo="0" yo="0" id="10000050" name="inst_EE9DA6AD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

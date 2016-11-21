@@ -22,6 +22,7 @@
     <sprite>sprites\ladder_hitbox</sprite>
     <sprite>sprites\chest_closed</sprite>
     <sprite>sprites\chest_open</sprite>
+    <sprite>sprites\collectible</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\floor_tiles</background>
@@ -41,6 +42,7 @@
     <object>objects\obj_npc_test</object>
     <object>objects\obj_chest</object>
     <object>objects\obj_dialog_choice</object>
+    <object>objects\obj_collectible</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
