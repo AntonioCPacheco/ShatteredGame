@@ -23,6 +23,7 @@
     <sprite>sprites\chest_closed</sprite>
     <sprite>sprites\chest_open</sprite>
     <sprite>sprites\collectible</sprite>
+    <sprite>sprites\arrow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\floor_tiles</background>
@@ -43,6 +44,7 @@
     <object>objects\obj_chest</object>
     <object>objects\obj_dialog_choice</object>
     <object>objects\obj_collectible</object>
+    <object>objects\obj_arrow</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

@@ -81,6 +81,8 @@ key_down = keyboard_check(ord("S"));
 key_jump = keyboard_check_pressed(vk_space);
 key_attack = keyboard_check(ord("F"));
 key_interact = keyboard_check_pressed(ord("E"));
+mouse_left = mouse_check_button_pressed(mb_left);
+
 </string>
           </argument>
         </arguments>
@@ -215,6 +217,14 @@ else if (!talking)
         attacking = true;
         sprite_state = 4;
     }
+    
+    if(mouse_left)
+    {
+        with  instance_create(x+1, y, obj_arrow)
+        {
+            orientation = sign(obj_player.image_xscale);
+        }
+    }
 }
 </string>
           </argument>
@@ -238,7 +248,7 @@ else if (!talking)
             <kind>1</kind>
             <string>///Changing sprites
 depth = -1;
-// sprite_state: 0 - idle | 1 - running | 2 - jumping | 3 - falling | 4 - attacking
+// sprite_state: 0 - idle | 1 - running | 2 - jumping | 3 - falling | 4 - attacking 
 if(last_state != sprite_state){
     switch(sprite_state){
         case 0:
