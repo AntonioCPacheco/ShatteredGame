@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize the speaker
+
 dialog = noone;
 dialog_page = -1; //-1 because it is incremented at the beggining
                   //of every interaction, even the first one.
@@ -50,6 +51,9 @@ text[1] = "State your business.";
 text[2] = "I just need to cross the bridge, that's all.";
 text[3] = "To get through the bridge you have to pay the toll.";
 text[4] = "Here's 5 gold pieces.#I'd rather not.";
+
+my_path=npc_movement;
+path_start(my_path,1,0,1);
 </string>
           </argument>
         </arguments>
