@@ -154,6 +154,7 @@ else if (!talking)
             var block = instance_place(x+5,y,obj_movable);
             if(block == noone) block = instance_place(x-5, y, obj_movable);
             with(block){
+            if(!place_meeting(x+obj_player.sprite_width-(18*sign(obj_player.hsp)),y,obj_terrain)){
                     if(place_meeting(x+obj_player.hsp,y,obj_terrain)){
                         while (!place_meeting(x+sign(obj_player.hsp), y, obj_terrain)){
                             x+=sign(obj_player.hsp);
@@ -168,8 +169,9 @@ else if (!talking)
                     }
                     x+=obj_player.hsp/2;
             }
-    
-            obj_player.hsp/=2;       
+            }
+            obj_player.hsp/=2; 
+          
     }
 
     //Ladders
