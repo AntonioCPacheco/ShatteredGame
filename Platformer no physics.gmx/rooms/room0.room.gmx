@@ -64,8 +64,6 @@
     <instance objName="obj_terrain" x="1344" y="1728" name="inst_C408DCD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="1472" y="1728" name="inst_613466EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="1600" y="1728" name="inst_54D1A5C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_terrain" x="2112" y="1600" name="inst_5A0EB12E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_terrain" x="2240" y="1600" name="inst_E304D038" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="2368" y="1600" name="inst_FCFB026F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="2496" y="1600" name="inst_0346AB8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="2496" y="1472" name="inst_4ECC4771" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -94,7 +92,6 @@
     <instance objName="obj_chest" x="1088" y="1600" name="inst_9D707C7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_choice_manager" x="0" y="0" name="inst_4F9EDE5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="2368" y="1728" name="inst_1130DFD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_terrain" x="2304" y="1856" name="inst_293539A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="2368" y="1856" name="inst_4AC845FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="2368" y="1984" name="inst_5D31AE35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="2368" y="2112" name="inst_4D404D26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -184,19 +181,12 @@
     <tile bgName="floor_tiles" x="2304" y="1920" w="128" h="128" xo="0" yo="0" id="10000151" name="inst_2B22030C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="floor_tiles" x="2304" y="1792" w="128" h="128" xo="0" yo="0" id="10000152" name="inst_659FF3AF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="floor_tiles" x="0" y="896" w="128" h="128" xo="128" yo="0" id="10000160" name="inst_A23EEB30" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="floor_tiles" x="2176" y="1792" w="128" h="128" xo="0" yo="0" id="10000153" name="inst_697448BA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="floor_tiles" x="2048" y="1792" w="128" h="128" xo="0" yo="0" id="10000154" name="inst_0CD12041" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="floor_tiles" x="1920" y="1792" w="128" h="128" xo="0" yo="0" id="10000155" name="inst_48DCB3B9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="floor_tiles" x="1920" y="1408" w="128" h="128" xo="0" yo="0" id="10000161" name="inst_AB124C27" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ladder" x="2304" y="768" w="128" h="128" xo="0" yo="0" id="10000165" name="inst_667EF24E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ladder" x="2304" y="896" w="128" h="128" xo="128" yo="0" id="10000168" name="inst_4772CA7F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ladder" x="2304" y="1024" w="128" h="128" xo="128" yo="0" id="10000169" name="inst_0C42832D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ladder" x="2304" y="1152" w="128" h="128" xo="128" yo="0" id="10000170" name="inst_CD2060FD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ladder" x="2304" y="1280" w="128" h="128" xo="128" yo="0" id="10000171" name="inst_DE56E7DC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ladder" x="2304" y="1408" w="128" h="128" xo="0" yo="128" id="10000172" name="inst_E5455628" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="floor_tiles" x="1536" y="1408" w="128" h="128" xo="0" yo="0" id="10000175" name="inst_28B7A86A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="floor_tiles" x="1792" y="1280" w="128" h="128" xo="0" yo="0" id="10000177" name="inst_50D6D696" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="floor_tiles" x="1920" y="1280" w="128" h="128" xo="0" yo="0" id="10000178" name="inst_727A84A1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="floor_tiles" x="0" y="896" w="128" h="128" xo="0" yo="0" id="10000180" name="inst_F2602A7B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="floor_tiles" x="2432" y="768" w="128" h="128" xo="0" yo="0" id="10000181" name="inst_11AFF36D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
