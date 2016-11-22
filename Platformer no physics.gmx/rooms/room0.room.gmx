@@ -104,6 +104,7 @@
     <instance objName="obj_terrain" x="2112" y="1728" name="inst_ED1A46C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="2240" y="1728" name="inst_7BE73CC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collectible" x="2432" y="640" name="inst_D3C59CA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_movable" x="768" y="1600" name="inst_5BE7FA2F" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="floor_tiles" x="0" y="1024" w="128" h="128" xo="0" yo="0" id="10000050" name="inst_EE9DA6AD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

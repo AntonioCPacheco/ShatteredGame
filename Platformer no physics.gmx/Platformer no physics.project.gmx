@@ -24,12 +24,14 @@
     <sprite>sprites\chest_open</sprite>
     <sprite>sprites\collectible</sprite>
     <sprite>sprites\arrow</sprite>
+    <sprite>sprites\movable</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\floor_tiles</background>
     <background>background\ladder</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_terrain</object>
@@ -46,6 +48,7 @@
     <object>objects\obj_choice_manager</object>
     <object>objects\obj_collectible</object>
     <object>objects\obj_arrow</object>
+    <object>objects\obj_movable</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
