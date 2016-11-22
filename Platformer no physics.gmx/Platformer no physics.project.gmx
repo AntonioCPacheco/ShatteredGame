@@ -41,6 +41,7 @@
     <object>objects\obj_npc_test</object>
     <object>objects\obj_chest</object>
     <object>objects\obj_dialog_choice</object>
+    <object>objects\obj_choice_manager</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

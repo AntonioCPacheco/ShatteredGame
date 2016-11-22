@@ -73,6 +73,8 @@ image_speed = image_number / room_speed;
 
 key_right = keyboard_check(ord("D"));
 key_left = -keyboard_check(ord("A"));
+key_up_pressed = keyboard_check_pressed(ord("W"));
+key_down_pressed = keyboard_check_pressed(ord("S"));
 key_up = keyboard_check(ord("W"));
 key_down = keyboard_check(ord("S"));
 key_jump = keyboard_check_pressed(vk_space);
@@ -114,7 +116,7 @@ if(attacking)
 } 
 else if (!talking)
 {
-    //Ground Check
+    //Ground Check &amp; top-ladder check
     grounded = place_meeting(x, y+1, obj_terrain) || (!climbing_ladder &amp;&amp; !place_meeting(x, y, obj_ladder_top) &amp;&amp; place_meeting(x, y+1, obj_ladder_top));
     
     //Horizontal Input
@@ -144,7 +146,7 @@ else if (!talking)
     if (key_up || key_down) &amp;&amp; place_meeting(x, y, par_ladder){
         climbing_ladder = true;
         x = par_ladder.x;
-    } else if  (key_down &amp;&amp; (place_meeting(x, y+1, obj_ladder_top))){
+    } else if (key_down &amp;&amp; (place_meeting(x, y+1, obj_ladder_top))){
         climbing_ladder = true;
         x = obj_ladder_top.x;
     }
@@ -301,10 +303,16 @@ if(key_interact &amp;&amp; grounded){
                     dialog_page = -1;
                     change = false;
                     with (dialog){ 
+                        if(instance_exists(obj_dialog_choice)){
+                            instPlayer.choosing = false;
+                        }
                         instance_destroy();
                     }
                 } else if(order[dialog_page] != order[dialog_page-1]){
-                    with (dialog){ 
+                    with (dialog){  
+                        if(instance_exists(obj_dialog_choice)){
+                            instPlayer.choosing = false;
+                        }
                         instance_destroy();
                     }
                 }
@@ -349,17 +357,16 @@ if(key_interact &amp;&amp; grounded){
             }
         }
     }
-} else if (choosing &amp;&amp; (key_up || key_down)){
+} else if (choosing &amp;&amp; (key_up_pressed || key_down_pressed)){
     var inst;
     instSpeaker = instance_place(x, y, obj_speaker);
     if (instSpeaker != noone){  //NPC dialog
-        if(key_up){
+        if(key_up_pressed){
             instSpeaker.dialog.choice--;
-        } else if(key_down){
+        } else if(key_down_pressed){
             instSpeaker.dialog.choice++;
         }
     }
-    draw_text(5, 15, string(instSpeaker.dialog.choice));
 }
 </string>
           </argument>

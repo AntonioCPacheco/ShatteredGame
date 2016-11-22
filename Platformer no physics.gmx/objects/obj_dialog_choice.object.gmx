@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 choice = 0;
-lastchoice = choice;
+lastchoice = -1;
 </string>
           </argument>
         </arguments>
@@ -52,15 +52,23 @@ lastchoice = choice;
             <kind>1</kind>
             <string>event_inherited();
 
+
+choice = sign(choice) * (choice % 2);
 if(lastchoice != choice){
-    string_delete(text, string_pos("&gt;", text), 1);
-    var i;
-    var n = 0;
-    for(i = 0; i &lt; string_length(text); i++){
-        if(string_char_at(text, i) == "#"){
-            n++;
-            if(n == choice){
-                string_insert("&gt;", text, i);
+    with(obj_dialog){
+        text = string_delete(text, string_pos("&gt;", text), 1);
+        if(obj_dialog_choice.choice == 0){
+            text = string_insert("&gt;", text, 0);
+        } else {
+            var i;
+            var n = 0;
+            for(i = 1; i &lt;= string_length(text); i++){
+                if(string_char_at(text, i) == "#"){
+                    n++;
+                    if(n == obj_dialog_choice.choice){
+                        text = string_insert("&gt;", text, i+1);
+                    }
+                }
             }
         }
     }

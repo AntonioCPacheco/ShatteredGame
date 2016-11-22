@@ -44,13 +44,12 @@ order[1] = 0;
 order[2] = 1;
 order[3] = 0;
 order[4] = 2;
-order[5] = 2;
 
-text[0] = "Line 0.";
-text[1] = "Line 1.";
-text[2] = "Hmm... Interesting...";
-text[3] = "This is Line 2, it's longer to test multiple lines. And paragraphs, or#\n's.";
-text[4] = "Yes#No";
+text[0] = "Who goes there?";
+text[1] = "State your business.";
+text[2] = "I just need to cross the bridge, that's all.";
+text[3] = "To get through the bridge you have to pay the toll.";
+text[4] = "Here's 5 gold pieces.#I'd rather not.";
 </string>
           </argument>
         </arguments>
