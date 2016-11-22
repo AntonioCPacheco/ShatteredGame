@@ -64,13 +64,15 @@ if(!still)
     { 
         while(!place_meeting(x-(12*orientation), y, obj_terrain))
         {
-            x += sign(hsp);       
+            x += sign(hsp);  
+            y += sign(hsp);     
         }
         still = true;
     }
     else
     {
         x += hsp;
+        y += 2
     }
 }
 </string>

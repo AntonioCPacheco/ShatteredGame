@@ -49,8 +49,6 @@ image_speed = image_number / room_speed;
 
 //number of collectibles you picked
 keys = 0;
-
-depth = -1;
 </string>
           </argument>
         </arguments>

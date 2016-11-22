@@ -31,7 +31,6 @@
     <background>background\ladder</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_terrain</object>
@@ -46,7 +45,6 @@
     <object>objects\obj_chest</object>
     <object>objects\obj_dialog_choice</object>
     <object>objects\obj_choice_manager</object>
-    <object>objects\obj_collectible</object>
     <object>objects\obj_arrow</object>
     <object>objects\obj_movable</object>
   </objects>
