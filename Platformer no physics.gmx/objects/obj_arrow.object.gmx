@@ -29,7 +29,7 @@
 orientation = 1;
 still = false;
 
-object_set_depth(obj_arrow, 10000);
+depth = 0;
 
 </string>
           </argument>
