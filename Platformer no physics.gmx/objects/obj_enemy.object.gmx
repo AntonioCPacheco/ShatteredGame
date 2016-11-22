@@ -80,8 +80,6 @@ y += vsp;
         </arguments>
       </action>
     </event>
-<<<<<<< HEAD
-=======
     <event eventtype="4" ename="obj_arrow">
       <action>
         <libid>1</libid>
@@ -110,7 +108,6 @@ with(other)
         </arguments>
       </action>
     </event>
->>>>>>> origin/master
     <event eventtype="4" ename="obj_attack_hit">
       <action>
         <libid>1</libid>
