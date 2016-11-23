@@ -101,7 +101,7 @@
     <instance objName="obj_terrain" x="2112" y="1728" name="inst_ED1A46C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="2240" y="1728" name="inst_7BE73CC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable" x="768" y="1600" name="inst_5BE7FA2F" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="192" y="1536" name="inst_3B6E435C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy" x="256" y="1536" name="inst_3B6E435C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy" x="1792" y="1536" name="inst_E69485AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy" x="2048" y="1536" name="inst_9DF8670E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
