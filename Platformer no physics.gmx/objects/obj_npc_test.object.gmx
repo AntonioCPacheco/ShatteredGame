@@ -48,8 +48,8 @@ order[4] = 2;
 
 text[0] = "Who goes there?";
 text[1] = "State your business.";
-text[2] = "I just need to cross the bridge, that's all.";
-text[3] = "To get through the bridge you have to pay the toll.";
+text[2] = "I just need to pass through, that's all.";
+text[3] = "To get through our territory you have to pay a toll.";
 text[4] = "Here's 5 gold pieces.#I'd rather not.";
 
 my_path=npc_movement;

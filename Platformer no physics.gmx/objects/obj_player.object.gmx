@@ -343,6 +343,11 @@ if(key_interact &amp;&amp; grounded){
                 if(dialog_page &gt;= array_length_1d(text)) {
                     dialog_page = -1;
                     change = false;
+                    if(instance_exists(obj_npc_test)){
+                        with (obj_npc_test){
+                            path_speed = 1;
+                        }
+                    }
                     with (dialog){ 
                         if(instance_exists(obj_dialog_choice)){
                             instPlayer.choosing = false;
@@ -357,8 +362,15 @@ if(key_interact &amp;&amp; grounded){
                         instance_destroy();
                     }
                 }
+            } else {
+                if(instance_exists(obj_npc_test)){
+                    with (obj_npc_test){
+                        path_speed = 0;
+                    }
+                }
             }
             if(!instance_exists(dialog) &amp;&amp; change){
+                
                 change = false;
                 AUXxoffset = 0;
                 AUXyoffset = 0;

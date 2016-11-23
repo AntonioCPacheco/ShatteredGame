@@ -29,7 +29,7 @@
 text = noone;
 text_visible = "";
 text_count = 0;
-spd = 0.2;
+spd = 0.75;
 display_scale = display_get_gui_width()/ view_wview[0];
 width = sprite_width*display_scale;
 margin = 8;
