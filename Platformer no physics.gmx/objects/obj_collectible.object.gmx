@@ -25,11 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(other)
+            <string>instance_destroy();
+
+with(other)
 {
     keys++;
 }
-instance_destroy();
 </string>
           </argument>
         </arguments>

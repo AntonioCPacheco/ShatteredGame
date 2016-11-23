@@ -49,6 +49,7 @@
     <object>objects\obj_choice_manager</object>
     <object>objects\obj_arrow</object>
     <object>objects\obj_movable</object>
+    <object>objects\obj_collectible</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
