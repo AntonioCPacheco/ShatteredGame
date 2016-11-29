@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>C:\Users\acort\Documents\WwiseProjects\Shattered\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\acort\Documents\WwiseProjects\Shattered\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\acort\Documents\WwiseProjects\Shattered\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\acort\Documents\WwiseProjects\Shattered\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="991305627" Name="Play_Background_Loop"/>
+				<Event Id="1158114989" Name="Stop_Background_Loop"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="691219668" Language="SFX">
+					<ShortName>dhnd2_syn122_heartonfire_C.wav</ShortName>
+					<Path>SFX\dhnd2_syn122_heartonfire_C_EE79F7FB.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

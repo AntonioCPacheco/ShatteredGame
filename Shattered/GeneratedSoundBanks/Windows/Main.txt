@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	991305627	Play_Background_Loop			\Default Work Unit\Play_Background_Loop	
+	1158114989	Stop_Background_Loop			\Default Work Unit\Stop_Background_Loop	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	691219668	background_loop	C:\Users\acort\Documents\WwiseProjects\Shattered\.cache\Windows\SFX\dhnd2_syn122_heartonfire_C_EE79F7FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\background_loop		72148
+

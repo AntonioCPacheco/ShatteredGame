@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B0C28054-411B-4D5A-A559-34EA3E8E12A3}" SchemaVersion="70">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{B0C28054-411B-4D5A-A559-34EA3E8E12A3}" PersistMode="Standalone">
+			<ExcludedPlatformList>
+				<Platform>Windows</Platform>
+			</ExcludedPlatformList>
+			<ChildrenList>
+				<Folder Name="Character" ID="{30FFC1B0-8990-4660-8B57-DFBC1CD41403}" ShortID="791048560">
+					<ChildrenList>
+						<Folder Name="Movement" ID="{63CB7AFB-577D-49E5-91D0-C0FEB4D71E97}" ShortID="244203057">
+							<ChildrenList>
+								<SwitchContainer Name="Footsteps" ID="{B3886CB1-7332-4BA9-8006-06D3FDF93825}" ShortID="285694906">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+										</Reference>
+									</ReferenceList>
+									<GroupingInfo>
+										<GroupRef Name="Floor" ID="{25F30CB3-486C-427D-92F0-0C8186A9980F}"/>
+										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="Jump" ID="{782004DF-FC41-40B2-BD02-DBBE51B95EDF}" ShortID="899839981">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+										</Reference>
+									</ReferenceList>
+									<GroupingInfo>
+										<GroupRef Name="Floor" ID="{25F30CB3-486C-427D-92F0-0C8186A9980F}"/>
+										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</Folder>
+						<SwitchContainer Name="Attack" ID="{40712BA6-7872-471A-9DF0-6F645B8A545A}" ShortID="142883711">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+								</Reference>
+							</ReferenceList>
+							<GroupingInfo>
+								<GroupRef Name="Player_Weapon" ID="{666F5D36-A5A4-41C2-98BE-9280F4F100BC}"/>
+								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Block" ID="{C38B1BA5-B719-41E5-B413-B0F454005AA2}" ShortID="864605039">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+								</Reference>
+							</ReferenceList>
+							<GroupingInfo>
+								<GroupRef Name="Player_Shield" ID="{C16E3702-52D0-4348-928F-DF73B3D33244}"/>
+								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+							</GroupingInfo>
+						</SwitchContainer>
+						<RandomSequenceContainer Name="Death" ID="{F87F71B4-5D4B-4880-BBDA-32AA9E175A6B}" ShortID="1060947680">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<Folder Name="Items" ID="{074A1EC4-5339-48FF-8C0A-1D38F2654DAB}" ShortID="457352872"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="NPC" ID="{F6B5E630-DCA4-44AA-B74A-4AA5D205155B}" ShortID="16450620">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Death" ID="{CDA82D44-9D32-441E-AC22-209959E5EA0A}" ShortID="945346200">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<SwitchContainer Name="Attack" ID="{F3E12E94-0B9D-4A3E-BCD4-E5BEB6071BC0}" ShortID="729793268">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+								</Reference>
+							</ReferenceList>
+							<GroupingInfo>
+								<GroupRef Name="Enemy_Weapon" ID="{4ABDF2A0-E79F-4BFF-9C50-40B9E23D6798}"/>
+								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Block" ID="{CE64315E-023F-4272-A043-4B7C0A22C213}" ShortID="739030666">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+								</Reference>
+							</ReferenceList>
+							<GroupingInfo>
+								<GroupRef Name="Enemy_Shield" ID="{77ED874F-B2F9-42E7-8377-F695DA184AE1}"/>
+								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+							</GroupingInfo>
+						</SwitchContainer>
+						<Folder Name="Movement" ID="{116D4F5A-10C7-4ED5-8CBB-DE3B8EB2E4B6}" ShortID="963505765">
+							<ChildrenList>
+								<SwitchContainer Name="Footsteps" ID="{0EFA5ACA-55FF-48C6-A56D-95F4522AFD81}" ShortID="640016847">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+										</Reference>
+									</ReferenceList>
+									<GroupingInfo>
+										<GroupRef Name="Floor" ID="{25F30CB3-486C-427D-92F0-0C8186A9980F}"/>
+										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="Jump" ID="{4E87512F-A232-4677-8D82-AC3B91B3BF4A}" ShortID="480624765">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+										</Reference>
+									</ReferenceList>
+									<GroupingInfo>
+										<GroupRef Name="Floor" ID="{25F30CB3-486C-427D-92F0-0C8186A9980F}"/>
+										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Enemy" ID="{73202E12-A15B-417D-A773-21F4521D0084}" ShortID="933079360">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Death" ID="{D5DBE9EB-6998-429A-8915-30481A707E7F}" ShortID="365441026">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<SwitchContainer Name="Attack" ID="{6FFD6E57-7F39-4DA8-A534-CD8419386787}" ShortID="785659790">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+								</Reference>
+							</ReferenceList>
+							<GroupingInfo>
+								<GroupRef Name="Enemy_Weapon" ID="{4ABDF2A0-E79F-4BFF-9C50-40B9E23D6798}"/>
+								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Block" ID="{5B32A8AB-B4DF-42FF-AC52-1004B16A4BF9}" ShortID="412360481">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+								</Reference>
+							</ReferenceList>
+							<GroupingInfo>
+								<GroupRef Name="Enemy_Shield" ID="{77ED874F-B2F9-42E7-8377-F695DA184AE1}"/>
+								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+							</GroupingInfo>
+						</SwitchContainer>
+						<Folder Name="Movement" ID="{76AF1DD9-6835-4CA8-835F-367CB9E074A5}" ShortID="327057393">
+							<ChildrenList>
+								<SwitchContainer Name="Footsteps" ID="{FEEB5E85-48B7-47B4-B89C-2338998BEE29}" ShortID="351603027">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+										</Reference>
+									</ReferenceList>
+									<GroupingInfo>
+										<GroupRef Name="Floor" ID="{25F30CB3-486C-427D-92F0-0C8186A9980F}"/>
+										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="Jump" ID="{832CFC06-C0E7-4618-8FD4-E707862D851C}" ShortID="868693508">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+										</Reference>
+									</ReferenceList>
+									<GroupingInfo>
+										<GroupRef Name="Floor" ID="{25F30CB3-486C-427D-92F0-0C8186A9980F}"/>
+										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Objects" ID="{4774447E-4F38-48A1-B391-717E3BACAF18}" ShortID="755726724"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
