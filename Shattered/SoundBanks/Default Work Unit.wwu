@@ -5,8 +5,8 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{90FF92A4-36D8-4309-84D9-0E88D8CB2C0A}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Stop_Background_Loop" ID="{B18B8B5D-B666-4CA7-A336-0B46754FB53E}" WorkUnitID="{0F1719CF-8B04-4F8E-A47C-8F7A52E257AE}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Background_Loop" ID="{CE82C8AB-DC71-4D53-B05C-ACF86287F2ED}" WorkUnitID="{0F1719CF-8B04-4F8E-A47C-8F7A52E257AE}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Combat" ID="{90B43306-15A2-4618-8BF2-CB80E199590B}" WorkUnitID="{90B43306-15A2-4618-8BF2-CB80E199590B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Character" ID="{76CEB5F4-EDF1-4328-959C-69BF2571DE76}" WorkUnitID="{76CEB5F4-EDF1-4328-959C-69BF2571DE76}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

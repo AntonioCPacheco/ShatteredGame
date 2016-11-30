@@ -2,9 +2,6 @@
 <WwiseDocument Type="WorkUnit" ID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}" SchemaVersion="70">
 	<Effects>
 		<WorkUnit Name="Factory Effects" ID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}" PersistMode="Standalone">
-			<ExcludedPlatformList>
-				<Platform>Windows</Platform>
-			</ExcludedPlatformList>
 			<ChildrenList>
 				<Folder Name="Wwise Compressor" ID="{6D4F6371-ED53-4C90-98DA-0AEB0484548B}" ShortID="64022668">
 					<ChildrenList>

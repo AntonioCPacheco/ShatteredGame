@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{94218C65-898B-45A1-9504-93B4AFF5A4FB}" SchemaVersion="70">
+	<Switches>
+		<WorkUnit Name="Combat_Switches" ID="{94218C65-898B-45A1-9504-93B4AFF5A4FB}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Player_Weapon" ID="{666F5D36-A5A4-41C2-98BE-9280F4F100BC}">
+					<ChildrenList>
+						<Switch Name="Sword" ID="{714D366C-6410-4000-9B15-0BCB17D5FC80}"/>
+						<Switch Name="Crossbow" ID="{958DE3A0-8D03-4060-876E-B759CA372909}"/>
+						<Switch Name="Fist" ID="{DFE279C2-6A39-4A39-937A-02564B8F6C24}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Surface_Type" ID="{4E0577D1-6D8B-43BF-B266-18FAC818465E}">
+					<ChildrenList>
+						<Switch Name="Stone" ID="{89949F2B-8BC3-4478-96FB-0C4117755D5A}"/>
+						<Switch Name="Wood" ID="{1045FF7A-E9B5-4CBC-9B64-E377F80619D0}"/>
+						<Switch Name="Flesh" ID="{E4331331-AC5F-4793-80B3-FE0177FACF5D}"/>
+						<Switch Name="Dirt" ID="{61EADC76-2B9B-4519-9FC2-EEC063DCFE0D}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{90B43306-15A2-4618-8BF2-CB80E199590B}" SchemaVersion="70">
+	<Events>
+		<WorkUnit Name="Combat" ID="{90B43306-15A2-4618-8BF2-CB80E199590B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Weapon_Swing" ID="{05388FF3-00F5-423A-82F5-38945069BC81}">
+					<ChildrenList>
+						<Action Name="Play" ID="{5A7D48BC-F294-4BDB-9D30-F9A801C6FC50}" ShortID="638980156" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{66C56219-131A-40F4-B55F-55E325ABCB6D}" Global="false">
+									<ObjectRef Name="swing_weapon_type" ID="{DBA0A618-CE99-41F3-93E2-2FD3FD00D8C7}" WorkUnitID="{130175B5-2788-42EB-8B17-54657304B2C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Weapon_Impact" ID="{08586C20-0AD5-4493-B7BB-0CE6BDF4E792}">
+					<ChildrenList>
+						<Action Name="Play" ID="{94B2AB51-BC41-4EBA-8B70-B19389550CD1}" ShortID="564315048" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{075D9DFA-D9EC-4A7C-ACC1-F5FBFC6DC159}" Global="false">
+									<ObjectRef Name="impact_weapon_type" ID="{F5E41513-D978-4775-9A3B-0165C07AD781}" WorkUnitID="{130175B5-2788-42EB-8B17-54657304B2C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

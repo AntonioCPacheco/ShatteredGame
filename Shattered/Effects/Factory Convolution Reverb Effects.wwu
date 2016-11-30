@@ -2,9 +2,6 @@
 <WwiseDocument Type="WorkUnit" ID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" SchemaVersion="70">
 	<Effects>
 		<WorkUnit Name="Factory Convolution Reverb Effects" ID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" PersistMode="Standalone">
-			<ExcludedPlatformList>
-				<Platform>Windows</Platform>
-			</ExcludedPlatformList>
 			<ChildrenList>
 				<Folder Name="Audiokinetic" ID="{7A9E51BA-E1F8-4A88-881B-E1C89FC210F0}" ShortID="88491660">
 					<ChildrenList>
@@ -4559,6 +4556,32 @@ IR Pre-delay: 7ms
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Effect Name="New_Wwise_Convolution_Reverb" ID="{F68E1246-F177-49C6-88C5-3EA8A65483D0}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">					<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{157CD051-9A11-43CC-BBDF-FF83B34F1F81}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

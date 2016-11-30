@@ -64,7 +64,7 @@
 								</Reference>
 							</ReferenceList>
 							<GroupingInfo>
-								<GroupRef Name="Player_Shield" ID="{C16E3702-52D0-4348-928F-DF73B3D33244}"/>
+								<GroupRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
 								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
 							</GroupingInfo>
 						</SwitchContainer>

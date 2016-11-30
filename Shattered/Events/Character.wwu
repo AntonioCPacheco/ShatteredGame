@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{76CEB5F4-EDF1-4328-959C-69BF2571DE76}" SchemaVersion="70">
+	<Events>
+		<WorkUnit Name="Character" ID="{76CEB5F4-EDF1-4328-959C-69BF2571DE76}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Footstep" ID="{BC318306-9426-4B84-9BD0-97708BFB959D}">
+					<ChildrenList>
+						<Action Name="Play" ID="{6BFF11DA-60EA-44FF-A6BA-E28A30D72979}" ShortID="825659245" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C548B25E-72DF-4EE8-9060-90940D52A965}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.1"/>
+													<Property Name="Min" Type="Real64" Value="-0.1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{65CADA37-3C63-4A25-923A-38F0A9505084}" Global="false">
+									<ObjectRef Name="movement_armor_type" ID="{A0C9B820-C272-4959-9B7E-35C6540EC4C4}" WorkUnitID="{9078A036-B040-45E5-B6E6-6911FC590376}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{FD022B14-335A-49F4-99DD-3B28629CB16B}" ShortID="624594881" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{E5AD6995-5DFD-4946-A171-4F347303ACC9}" Global="false">
+									<ObjectRef Name="footstep_surface_type" ID="{DC515715-DD3E-4A80-8643-7851FF03A9AC}" WorkUnitID="{9078A036-B040-45E5-B6E6-6911FC590376}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

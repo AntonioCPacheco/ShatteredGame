@@ -3,10 +3,7 @@
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{AC148415-D0D1-4577-A6A8-9A10DA56AB8E}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="Floor" ID="{25F30CB3-486C-427D-92F0-0C8186A9980F}"/>
-				<SwitchGroup Name="Player_Weapon" ID="{666F5D36-A5A4-41C2-98BE-9280F4F100BC}"/>
 				<SwitchGroup Name="Enemy_Weapon" ID="{4ABDF2A0-E79F-4BFF-9C50-40B9E23D6798}"/>
-				<SwitchGroup Name="Player_Shield" ID="{C16E3702-52D0-4348-928F-DF73B3D33244}"/>
 				<SwitchGroup Name="Enemy_Shield" ID="{77ED874F-B2F9-42E7-8377-F695DA184AE1}"/>
 			</ChildrenList>
 		</WorkUnit>

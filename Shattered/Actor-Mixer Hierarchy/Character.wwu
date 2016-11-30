@@ -4,15 +4,215 @@
 		<WorkUnit Name="Character" ID="{9078A036-B040-45E5-B6E6-6911FC590376}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchContainer Name="footstep_surface_type" ID="{DC515715-DD3E-4A80-8643-7851FF03A9AC}" ShortID="513533827">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+							<ObjectRef Name="Character" ID="{5924D45D-2CF0-44AA-899E-DA3065551DB3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
+						<RandomSequenceContainer Name="fs_dirt" ID="{2CB1CAC2-6347-4EF2-BA03-FCB389A74313}" ShortID="176193787">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="fs_grass" ID="{F14ED3A5-ADB2-4691-BEFF-16B0EA20657C}" ShortID="203232292">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{DACF3437-1AD0-49A4-9FAC-0698DFEB71D1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0259CF9B-3BE9-4443-8925-25FE10C66CC0}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Grassy_Steps_1" ID="{55FAC631-E6DA-42FA-9E56-1CC0BE9E5367}" ShortID="379164191" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grassy_Steps_1" ID="{001905E8-A469-4F22-B7D2-E1A6C9E701FF}" ShortID="7752225">
+											<PropertyList>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>7.5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Grassy_Steps_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grassy_Steps_1" ID="{001905E8-A469-4F22-B7D2-E1A6C9E701FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grassy_Steps_2" ID="{EC500AEE-F8E4-4FBE-9D62-1561297DF39E}" ShortID="241588853" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>42</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grassy_Steps_2" ID="{6D620135-C5B3-4182-A626-48CB7E103B33}" ShortID="436167839">
+											<Language>SFX</Language>
+											<AudioFile>Grassy_Steps_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grassy_Steps_2" ID="{6D620135-C5B3-4182-A626-48CB7E103B33}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grassy_Steps_3" ID="{33D5E23D-8AC6-4C64-8B81-EF527FA203F0}" ShortID="960848332" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grassy_Steps_3" ID="{B5CF368C-7FAD-4D55-9C11-D7A7B0F7265D}" ShortID="439958929">
+											<PropertyList>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Grassy_Steps_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grassy_Steps_3" ID="{B5CF368C-7FAD-4D55-9C11-D7A7B0F7265D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grassy_Steps_4" ID="{034499A6-3D1C-4650-83A3-B5E644682301}" ShortID="991068507" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-190</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grassy_Steps_4" ID="{C680A4D8-AF2D-4491-BBB2-318E993D4BF3}" ShortID="243705276">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.155715892656275"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Grassy_Steps_4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grassy_Steps_4" ID="{C680A4D8-AF2D-4491-BBB2-318E993D4BF3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grassy_Steps_5" ID="{13F39A32-CED8-4B87-804A-DBE37BC4DE47}" ShortID="395166738" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grassy_Steps_5" ID="{E64EA83D-727E-480B-A663-109B4888A572}" ShortID="937178450">
+											<Language>SFX</Language>
+											<AudioFile>Grassy_Steps_5.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grassy_Steps_5" ID="{E64EA83D-727E-480B-A663-109B4888A572}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grassy_Steps_6" ID="{6790AD8C-1423-4CDD-A64B-BB178D802C28}" ShortID="253468792" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grassy_Steps_6" ID="{A3B6073F-B671-465D-AB67-170E462D7475}" ShortID="941630177">
+											<Language>SFX</Language>
+											<AudioFile>Grassy_Steps_6.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grassy_Steps_6" ID="{A3B6073F-B671-465D-AB67-170E462D7475}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="fs_stone" ID="{5125D6F0-8F71-439A-8726-0ABBED539216}" ShortID="518120764">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
@@ -135,17 +335,7 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="fs_dirt" ID="{2CB1CAC2-6347-4EF2-BA03-FCB389A74313}" ShortID="176193787">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
-								</Reference>
-							</ReferenceList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="fs_grass" ID="{F14ED3A5-ADB2-4691-BEFF-16B0EA20657C}" ShortID="203232292">
+						<RandomSequenceContainer Name="fs_wood" ID="{2F35AB42-67D2-44CF-8ADE-68532176AB35}" ShortID="933406184">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
@@ -161,6 +351,9 @@
 						<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
+								<ItemRef Name="fs_wood" ID="{2F35AB42-67D2-44CF-8ADE-68532176AB35}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
 								<ItemRef Name="fs_grass" ID="{F14ED3A5-ADB2-4691-BEFF-16B0EA20657C}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
@@ -170,15 +363,43 @@
 								<ItemRef Name="fs_stone" ID="{5125D6F0-8F71-439A-8726-0ABBED539216}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Dirt" ID="{0B29B79B-94EA-4296-89C7-744E61D7E013}"/>
+								<ItemList>
+									<ItemRef Name="fs_dirt" ID="{2CB1CAC2-6347-4EF2-BA03-FCB389A74313}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Stone" ID="{4BAF3D9E-86E9-49D1-B20D-F6FD9EA8236C}"/>
+								<ItemList>
+									<ItemRef Name="fs_stone" ID="{5125D6F0-8F71-439A-8726-0ABBED539216}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Grass" ID="{0DD724BA-3607-45BF-B6BA-0BBFD0B8CCEA}"/>
+								<ItemList>
+									<ItemRef Name="fs_grass" ID="{F14ED3A5-ADB2-4691-BEFF-16B0EA20657C}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
 				<SwitchContainer Name="movement_armor_type" ID="{A0C9B820-C272-4959-9B7E-35C6540EC4C4}" ShortID="884320846">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+							<ObjectRef Name="Character" ID="{5924D45D-2CF0-44AA-899E-DA3065551DB3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -199,7 +420,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-25</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -222,7 +443,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Chain Metal Drop On Floor_VS 02" ID="{9C34150C-C818-4DB8-A004-E3FEDC95534D}" ShortID="346891395" Type="SoundFX">
+								<Sound Name="chainmail1" ID="{6DA89B38-45DD-4735-8E6B-D039DEF7DD3C}" ShortID="969360281" Type="SoundFX">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
@@ -232,18 +453,68 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Chain Metal Drop On Floor_VS 02" ID="{D8DFA1BD-0F0B-47A2-9B90-E50F2804B60F}" ShortID="93016215">
+										<AudioFileSource Name="chainmail1" ID="{126E1777-C679-43DB-BF3B-9C72820080C8}" ShortID="613985335">
 											<Language>SFX</Language>
-											<AudioFile>Chain Metal Drop On Floor_VS 02.wav</AudioFile>
+											<AudioFile>chainmail1.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Chain Metal Drop On Floor_VS 02" ID="{D8DFA1BD-0F0B-47A2-9B90-E50F2804B60F}" Platform="Linked"/>
+										<ActiveSource Name="chainmail1" ID="{126E1777-C679-43DB-BF3B-9C72820080C8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="chainmail2" ID="{517B9AD1-74F9-45AB-AC4C-1EDFFDA8E868}" ShortID="712880709" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="chainmail2" ID="{6A8CD245-4551-4164-A06B-4D982599F07D}" ShortID="202672985">
+											<Language>SFX</Language>
+											<AudioFile>chainmail2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="chainmail2" ID="{6A8CD245-4551-4164-A06B-4D982599F07D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="mov_leather" ID="{9383BF03-B301-4094-997C-70886CFFF1AC}" ShortID="702627085">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5B53804D-3DEE-4495-AB3A-31B7A1BA7B54}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B3E24125-C3AC-47BE-AF3F-CFD342E581EF}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
@@ -254,6 +525,34 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="209396__samulis__leather-rustle-5" ID="{925DE597-AC13-42A7-988E-5B42A266D2EF}" ShortID="312037545" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E164CD92-C26E-41E5-86ED-F74FCC033231}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C0CCF52D-28D6-4A3D-94AE-02C3EC73B7D6}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="2"/>
+															<Property Name="Min" Type="Real64" Value="-6"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
@@ -264,6 +563,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="209396__samulis__leather-rustle-5" ID="{94AE5847-5B4D-405E-877C-571F485AD250}" ShortID="863457260">
+											<PropertyList>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>209396__samulis__leather-rustle-5.wav</AudioFile>
 										</AudioFileSource>
@@ -290,6 +596,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="209397__samulis__leather-rustle-3" ID="{C3E6B62F-0CDD-4677-894D-4496E7B98C5E}" ShortID="472921331">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.393560116209964"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.556290591227117"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>209397__samulis__leather-rustle-3.wav</AudioFile>
 										</AudioFileSource>
@@ -320,6 +630,34 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="mov_metalplate" ID="{B922D898-948A-4144-8CCF-7F1D5EA94E97}" ShortID="603636863">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{41EC5B96-0832-498E-B820-5B90300B4D9B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{6E0DEEAE-EE85-4075-9EAC-527D3825427E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2"/>
+													<Property Name="Min" Type="Real64" Value="-6"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
@@ -340,6 +678,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="209400__samulis__plate-armor-rustle-3" ID="{7AAEE9A9-3E5C-42B9-BB7D-27CA898DB5D1}" ShortID="638163781">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.304189527329492"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.523128486490209"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>209400__samulis__plate-armor-rustle-3.wav</AudioFile>
 										</AudioFileSource>
@@ -349,6 +691,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="209404__samulis__plate-armor-rustle-5" ID="{A80FC00D-EFAF-43DD-85C1-53DA0FC8491F}" ShortID="421691298" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
@@ -359,6 +708,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="209404__samulis__plate-armor-rustle-5" ID="{0B46480F-DBCC-4963-ACDC-673CC984317A}" ShortID="842099656">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.467085491864537"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.608473532645154"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>209404__samulis__plate-armor-rustle-5.wav</AudioFile>
 										</AudioFileSource>
@@ -378,6 +731,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="209405__samulis__plate-armor-rustle-4" ID="{766FB899-6E8E-48E1-82C8-6C1FD7F26B48}" ShortID="447824877">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.304369096720053"/>
+												<Property Name="TrimBegin" Type="Real64" Value="9.26838226854296E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.593863012021456"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>209405__samulis__plate-armor-rustle-4.wav</AudioFile>
 										</AudioFileSource>
@@ -390,7 +748,7 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 					<GroupingInfo>
-						<GroupRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+						<GroupRef Name="Player_Armor" ID="{11C43163-43A9-45D1-AA35-465BE75ADD58}"/>
 						<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
@@ -403,6 +761,26 @@
 								<ItemRef Name="mov_metalplate" ID="{B922D898-948A-4144-8CCF-7F1D5EA94E97}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Leather" ID="{89C22EDA-DB16-41EE-BB35-067CA9345EB5}"/>
+								<ItemList>
+									<ItemRef Name="mov_leather" ID="{9383BF03-B301-4094-997C-70886CFFF1AC}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="MetalPlate" ID="{D042FBEB-6BC5-42CA-88B9-EC20E244268B}"/>
+								<ItemList>
+									<ItemRef Name="mov_metalplate" ID="{B922D898-948A-4144-8CCF-7F1D5EA94E97}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Chainmail" ID="{740F56FA-6DC2-4CD0-A023-7472B547EA2B}"/>
+								<ItemList>
+									<ItemRef Name="mov_chainmail" ID="{48C16F78-4D98-42BD-A093-13305ECD75A3}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
 			</ChildrenList>

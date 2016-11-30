@@ -3,7 +3,24 @@
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}" PersistMode="Standalone">
 			<ChildrenList>
-				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ChildrenList>
+						<Bus Name="Non-World_Sound" ID="{BF4557EC-657B-4826-BCF8-D61DF8DD94E0}"/>
+						<Bus Name="World_Sound" ID="{2A01C43A-550D-4F88-AE11-27065E3C5505}">
+							<ChildrenList>
+								<AuxBus Name="Reverb_Sewers" ID="{A547104F-C80B-459B-AA93-B7E7C6E30970}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Plate_Medium" ID="{33384D0C-6ACB-4E3D-AC82-73AAB3AE1CA5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<Bus Name="Character" ID="{5924D45D-2CF0-44AA-899E-DA3065551DB3}"/>
+								<Bus Name="Combat" ID="{B12E7CD5-4D6A-478A-A637-77E145736925}"/>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>
 				<MotionBus Name="Master Motion Bus" ID="{20A630BA-3398-4676-B927-1004DFE41FD8}"/>
 			</ChildrenList>

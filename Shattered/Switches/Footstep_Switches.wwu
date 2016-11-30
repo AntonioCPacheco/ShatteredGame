@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3565ACC4-275B-41BD-B3B6-4F5309DE631F}" SchemaVersion="70">
+	<Switches>
+		<WorkUnit Name="Footstep_Switches" ID="{3565ACC4-275B-41BD-B3B6-4F5309DE631F}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Player_Armor" ID="{11C43163-43A9-45D1-AA35-465BE75ADD58}">
+					<ChildrenList>
+						<Switch Name="Chainmail" ID="{740F56FA-6DC2-4CD0-A023-7472B547EA2B}"/>
+						<Switch Name="Leather" ID="{89C22EDA-DB16-41EE-BB35-067CA9345EB5}"/>
+						<Switch Name="MetalPlate" ID="{D042FBEB-6BC5-42CA-88B9-EC20E244268B}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Floor" ID="{25F30CB3-486C-427D-92F0-0C8186A9980F}">
+					<ChildrenList>
+						<Switch Name="Stone" ID="{4BAF3D9E-86E9-49D1-B20D-F6FD9EA8236C}"/>
+						<Switch Name="Dirt" ID="{0B29B79B-94EA-4296-89C7-744E61D7E013}"/>
+						<Switch Name="Grass" ID="{0DD724BA-3607-45BF-B6BA-0BBFD0B8CCEA}"/>
+						<Switch Name="Wood" ID="{C1AF57C1-AF11-44E3-91CD-4F2AFD691CC3}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
