@@ -176,12 +176,16 @@ else if (!talking)
 
     //Ladders
     //Ladder Input
-    if (key_up || key_down) &amp;&amp; place_meeting(x, y, par_ladder){
+    var inst_ladder;
+    inst_ladder = instance_place(x, y, par_ladder);
+    var inst_ladder_top;
+    inst_ladder_top = instance_place(x, y+1, obj_ladder_top);
+    if (key_up || key_down) &amp;&amp; (inst_ladder != noone) {
         climbing_ladder = true;
-        x = par_ladder.x;
-    } else if (key_down &amp;&amp; (place_meeting(x, y+1, obj_ladder_top))){
+        x = inst_ladder.x;
+    } else if (key_down &amp;&amp; inst_ladder_top != noone){
         climbing_ladder = true;
-        x = obj_ladder_top.x;
+        x = inst_ladder_top.x;
     }
     //  Ladder Movement
     if(climbing_ladder){
