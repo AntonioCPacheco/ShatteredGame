@@ -8,7 +8,7 @@
   </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\arrow</sprite>
+    <sprite>sprites\arrow_horizontal</sprite>
     <sprite>sprites\chest_closed</sprite>
     <sprite>sprites\chest_open</sprite>
     <sprite>sprites\collectible</sprite>
@@ -24,6 +24,7 @@
     <sprite>sprites\player_running</sprite>
     <sprite>sprites\speech_bubble</sprite>
     <sprite>sprites\terrain</sprite>
+    <sprite>sprites\arrow_vertical</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\floor_tiles</background>
@@ -54,6 +55,7 @@
     <object>objects\par_ladder</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Test</room>
     <room>rooms\Knights_Village</room>
     <room>rooms\Knights_House</room>
   </rooms>

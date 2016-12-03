@@ -49,6 +49,9 @@ image_speed = image_number / room_speed;
 
 //number of collectibles you picked
 keys = 0;
+
+//this global variable will be used to destroy the arrows that have been thrown if the is more than a certain treshold
+number_of_arrows = 0;
 </string>
           </argument>
         </arguments>
@@ -247,12 +250,18 @@ else if (!talking)
         attacking = true;
         sprite_state = 4;
     }
-    
+    //Arrow
     if(mouse_left)
     {
-        with  instance_create(x+1, y, obj_arrow)
+        with  instance_create(x+80*sign(mouse_x-obj_player.x), y, obj_arrow)
         {
-            orientation = sign(obj_player.image_xscale);
+            objective_x = mouse_x - obj_player.x;
+            objective_y = mouse_y - obj_player.y;
+            
+            norm = sqrt(objective_x*objective_x + objective_y*objective_y);
+            objective_x = objective_x / norm;
+            objective_y = objective_y / norm;
+            image_xscale = sign(objective_x);
         }
     }
 }
