@@ -168,21 +168,23 @@
     <object>objects\obj_player</object>
     <object>objects\obj_speaker</object>
     <object>objects\obj_speech_bubble</object>
-    <object>objects\obj_terrain</object>
     <object>objects\object0</object>
     <object>objects\object8</object>
     <object>objects\par_ladder</object>
-    <object>objects\obj_ground</object>
-    <object>objects\obj_ground_grass</object>
-    <object>objects\obj_ground_stone</object>
-    <object>objects\obj_ground_wood</object>
     <object>objects\obj_transparency_off</object>
     <object>objects\obj_transparency_on</object>
-    <object>objects\obj_terrain_invisible</object>
     <object>objects\obj_door</object>
     <object>objects\obj_village_gate</object>
     <object>objects\obj_door_knights_house</object>
     <object>objects\obj_door_village</object>
+    <objects name="Ground Objects">
+      <object>objects\obj_terrain</object>
+      <object>objects\obj_terrain_invisible</object>
+      <object>objects\obj_ground</object>
+      <object>objects\obj_ground_wood</object>
+      <object>objects\obj_ground_grass</object>
+      <object>objects\obj_ground_stone</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Knights_Village</room>
