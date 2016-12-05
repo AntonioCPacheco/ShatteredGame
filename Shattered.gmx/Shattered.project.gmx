@@ -121,7 +121,6 @@
     <sprite>sprites\chest_open</sprite>
     <sprite>sprites\collectible</sprite>
     <sprite>sprites\ladder_hitbox</sprite>
-    <sprite>sprites\movable</sprite>
     <sprite>sprites\npc</sprite>
     <sprite>sprites\player</sprite>
     <sprite>sprites\player_attack</sprite>
@@ -133,6 +132,7 @@
     <sprite>sprites\speech_bubble</sprite>
     <sprite>sprites\terrain</sprite>
     <sprite>sprites\arrow_vertical</sprite>
+    <sprite>sprites\sprt_crate</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\floor_tiles</background>
@@ -149,6 +149,8 @@
     <background>background\Dirt_1</background>
     <background>background\House</background>
     <background>background\Wood_tiles</background>
+    <background>background\Lock</background>
+    <background>background\Crate</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -162,15 +164,15 @@
     <object>objects\obj_dialog</object>
     <object>objects\obj_dialog_choice</object>
     <object>objects\obj_enemy</object>
-    <object>objects\obj_ladder_top</object>
     <object>objects\obj_movable</object>
     <object>objects\obj_npc</object>
     <object>objects\obj_npc_test</object>
     <object>objects\obj_player</object>
     <object>objects\obj_speaker</object>
     <object>objects\obj_speech_bubble</object>
-    <object>objects\obj_terrain</object>
     <object>objects\par_ladder</object>
+    <object>objects\obj_ladder_top</object>
+    <object>objects\obj_terrain</object>
     <object>objects\obj_ground</object>
     <object>objects\obj_ground_grass</object>
     <object>objects\obj_ground_stone</object>

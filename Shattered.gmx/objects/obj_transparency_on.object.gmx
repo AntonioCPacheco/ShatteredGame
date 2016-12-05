@@ -32,11 +32,11 @@ var tiles_one = tile_get_ids_at_depth(-1);
 var tiles_two = tile_get_ids_at_depth(-2);
 for (var i = 0; i &lt; array_length_1d(tiles_one); i++;)
 {
-    tile_set_alpha(tiles_one[i], 0.5);
+    tile_set_alpha(tiles_one[i], 0.3);
 }
 for (var j = 0; j &lt; array_length_1d(tiles_two); j++;)
 {
-    tile_set_alpha(tiles_two[j], 0.5);
+    tile_set_alpha(tiles_two[j], 0.3);
 }
 </string>
           </argument>

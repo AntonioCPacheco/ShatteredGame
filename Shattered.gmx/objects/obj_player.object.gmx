@@ -59,6 +59,9 @@ var target_room;
 var target_x;
 var target_y;
 
+//Village Gate
+entered = false;
+
 gmwRegisterObject(id, "foot", global.DEFAULT_GROUP);
 
 </string>
@@ -89,8 +92,8 @@ key_right = keyboard_check(ord("D"));
 key_left = -keyboard_check(ord("A"));
 key_up_pressed = keyboard_check_pressed(ord("W"));
 key_down_pressed = keyboard_check_pressed(ord("S"));
-key_up = keyboard_check_pressed(ord("W"));
-key_down = keyboard_check_pressed(ord("S"));
+key_up = keyboard_check(ord("W"));
+key_down = keyboard_check(ord("S"));
 key_jump = keyboard_check_pressed(vk_space);
 key_attack = keyboard_check(ord("F"));
 key_interact = keyboard_check_pressed(ord("E"));
@@ -225,9 +228,6 @@ else if (!talking)
         hsp = 0;
     }
     x += hsp;
-
-    gmwSet2DPosition(id, x, y, 0, 0);
-
     
     //vertical collision
     if(place_meeting(x, y+vsp, obj_terrain)){
@@ -283,7 +283,7 @@ else if (!talking)
         }
     }
     
-    if(key_up &amp;&amp; place_meeting(x, y, obj_village_gate))
+    if(key_up_pressed &amp;&amp; place_meeting(x, y, obj_village_gate) &amp;&amp; !entered)
     {
         //tile_layer_hide(-1);
         //tile_layer_hide(-2);
@@ -291,27 +291,34 @@ else if (!talking)
         var tiles_two = tile_get_ids_at_depth(-2);
         for (var i = 0; i &lt; array_length_1d(tiles_one); i++;)
         {
-            tile_set_alpha(tiles_one[i], 0.5);
+            tile_set_alpha(tiles_one[i], 0.3);
         }
          for (var j = 0; j &lt; array_length_1d(tiles_two); j++;)
         {
-            tile_set_alpha(tiles_two[j], 0.5);
+            tile_set_alpha(tiles_two[j], 0.3);
         }
         tiles_one = 0;
         tiles_two = 0;
+        
+        x = obj_village_gate.x;
+        
         //the values below are specific for the objects that are to be deactivated and activated
         //this is specific fo th entrance of the village REFACTOR THIS TO BE GENERIC
         instance_deactivate_region(2208,384,1,384,true,true);
         instance_activate_region(1696,256,128,512,true);
+        
+        entered = true;
     }
     
-    if(key_up &amp;&amp; place_meeting(x, y, obj_door))
+    if(key_up_pressed &amp;&amp; place_meeting(x, y, obj_door))
     {   
         room_goto(target_room);
         obj_player.x = target_x;
         obj_player.y = target_y;
     }
-  
+ 
+    //needed for the sound to follow the character
+    gmwSet2DPosition(id, x, y, 0, 0); 
 }
 </string>
           </argument>
