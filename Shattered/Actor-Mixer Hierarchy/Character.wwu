@@ -4,13 +4,6 @@
 		<WorkUnit Name="Character" ID="{9078A036-B040-45E5-B6E6-6911FC590376}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchContainer Name="footstep_surface_type" ID="{DC515715-DD3E-4A80-8643-7851FF03A9AC}" ShortID="513533827">
-					<PropertyList>
-						<Property Name="UserAuxSendVolume0" Type="Real64">
-							<RTPCList>
-								<RTPC Name="" ID="{D4EF9431-1296-48C5-A4FF-CAAA73F51D73}" ShortID="7085613"/>
-							</RTPCList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
@@ -937,9 +930,6 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="mov_metalplate" ID="{B922D898-948A-4144-8CCF-7F1D5EA94E97}" ShortID="603636863">
-							<ExcludedPlatformList>
-								<Platform>Windows</Platform>
-							</ExcludedPlatformList>
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>

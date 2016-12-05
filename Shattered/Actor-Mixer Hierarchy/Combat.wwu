@@ -4,15 +4,15 @@
 		<WorkUnit Name="Combat" ID="{130175B5-2788-42EB-8B17-54657304B2C9}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchContainer Name="impact_weapon_type" ID="{F5E41513-D978-4775-9A3B-0165C07AD781}" ShortID="384181535">
-					<PropertyList>
-						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Combat" ID="{B12E7CD5-4D6A-478A-A637-77E145736925}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Sewers" ID="{A547104F-C80B-459B-AA93-B7E7C6E30970}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -525,6 +525,9 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Combat" ID="{B12E7CD5-4D6A-478A-A637-77E145736925}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Sewers" ID="{A547104F-C80B-459B-AA93-B7E7C6E30970}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
