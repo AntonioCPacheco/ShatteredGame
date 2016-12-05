@@ -2,7 +2,7 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -33,9 +33,9 @@ gmwInit();
 var path = "";
 
 if (os_type == os_macosx)
-    path = working_directory + "sound/banks/";
+    path = working_directory + "Sound/Banks/";
 else
-    path = working_directory + "sound/banks/";
+    path = working_directory + "Sound/Banks/";
     
 gmwSetBasePath(path);
     
@@ -53,13 +53,15 @@ gmwRegisterObject(id, "SoundController", global.DEFAULT_GROUP);
 
 
 // Initialize links to IDs
-global.Play_Background_Loop = 991305627;
-global.Stop_Background_Loop = 1158114989;
+global.Play_Footstep = 1602358412;
+global.Floor = 1088209313;
+global.Stone = 1216965916;
 
 // Set the music volume to max and start playing it
 global.VOLUME = 100;
 
-gmwPostEvent(global.Play_Background_Loop, id);
+gmwPostEvent(global.Play_Footstep, id);
+gmwSetSwitch(global.Floor,global.Stone, global.Play_Footstep);
 
 </string>
           </argument>

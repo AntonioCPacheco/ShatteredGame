@@ -3,12 +3,120 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="6" name="datafiles">
+    <datafiles number="6" name="Sound">
+      <datafiles number="6" name="Banks">
+        <datafile>
+          <name>Main.bnk</name>
+          <exists>-1</exists>
+          <size>2010713</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>Main.bnk</filename>
+        </datafile>
+        <datafile>
+          <name>Main.txt</name>
+          <exists>-1</exists>
+          <size>6423</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>Main.txt</filename>
+        </datafile>
+        <datafile>
+          <name>PluginInfo.xml</name>
+          <exists>-1</exists>
+          <size>196</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>PluginInfo.xml</filename>
+        </datafile>
+        <datafile>
+          <name>SoundbanksInfo.xml</name>
+          <exists>-1</exists>
+          <size>4980</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>SoundbanksInfo.xml</filename>
+        </datafile>
+        <datafile>
+          <name>Init.bnk</name>
+          <exists>-1</exists>
+          <size>1155</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>Init.bnk</filename>
+        </datafile>
+        <datafile>
+          <name>Init.txt</name>
+          <exists>-1</exists>
+          <size>740</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>Init.txt</filename>
+        </datafile>
+      </datafiles>
+    </datafiles>
+  </datafiles>
   <NewExtensions>
     <extension index="0">extensions\GMWwise</extension>
   </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\arrow</sprite>
+    <sprite>sprites\arrow_horizontal</sprite>
     <sprite>sprites\chest_closed</sprite>
     <sprite>sprites\chest_open</sprite>
     <sprite>sprites\collectible</sprite>
@@ -24,10 +132,22 @@
     <sprite>sprites\player_running</sprite>
     <sprite>sprites\speech_bubble</sprite>
     <sprite>sprites\terrain</sprite>
+    <sprite>sprites\arrow_vertical</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\floor_tiles</background>
     <background>background\ladder</background>
+    <background>background\Grass_1</background>
+    <background>background\Grass_2</background>
+    <background>background\Stone_1</background>
+    <background>background\Wall_1</background>
+    <background>background\upper_door</background>
+    <background>background\middle_door</background>
+    <background>background\down_door</background>
+    <background>background\Cloud</background>
+    <background>background\Tree_1</background>
+    <background>background\Dirt_1</background>
+    <background>background\House</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -52,6 +172,17 @@
     <object>objects\object0</object>
     <object>objects\object8</object>
     <object>objects\par_ladder</object>
+    <object>objects\obj_ground</object>
+    <object>objects\obj_ground_grass</object>
+    <object>objects\obj_ground_stone</object>
+    <object>objects\obj_ground_wood</object>
+    <object>objects\obj_transparency_off</object>
+    <object>objects\obj_transparency_on</object>
+    <object>objects\obj_terrain_invisible</object>
+    <object>objects\obj_door</object>
+    <object>objects\obj_village_gate</object>
+    <object>objects\obj_door_knights_house</object>
+    <object>objects\obj_door_village</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Knights_Village</room>
