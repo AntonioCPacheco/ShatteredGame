@@ -74,6 +74,46 @@
 							</PropertyList>
 							<ChildrenList>
 								<AuxBus Name="Reverb_Sewers" ID="{A547104F-C80B-459B-AA93-B7E7C6E30970}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{8435499E-708F-4E2D-B6CD-62A6408213EC}" ShortID="686939252">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Reverb_OnOff" ID="{59A2F0E9-5DF7-43BF-AC0F-7C1BD3C26913}" WorkUnitID="{C1C7AF16-0471-468E-842D-9EA7E4E5ECEE}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{76C11914-DA2E-4626-AC8B-638E733074C2}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>49.999</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>0.02434</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 											<ObjectRef Name="Plate_Medium" ID="{33384D0C-6ACB-4E3D-AC82-73AAB3AE1CA5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>

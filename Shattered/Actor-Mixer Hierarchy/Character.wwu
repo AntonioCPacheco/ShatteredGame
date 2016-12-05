@@ -5,7 +5,11 @@
 			<ChildrenList>
 				<SwitchContainer Name="footstep_surface_type" ID="{DC515715-DD3E-4A80-8643-7851FF03A9AC}" ShortID="513533827">
 					<PropertyList>
-						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{D4EF9431-1296-48C5-A4FF-CAAA73F51D73}" ShortID="7085613"/>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -13,6 +17,9 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Character" ID="{5924D45D-2CF0-44AA-899E-DA3065551DB3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Sewers" ID="{A547104F-C80B-459B-AA93-B7E7C6E30970}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -31,6 +38,7 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ModifierList>
 										<ModifierInfo>
@@ -697,6 +705,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Character" ID="{5924D45D-2CF0-44AA-899E-DA3065551DB3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Sewers" ID="{A547104F-C80B-459B-AA93-B7E7C6E30970}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="mov_chainmail" ID="{48C16F78-4D98-42BD-A093-13305ECD75A3}" ShortID="480353894">
@@ -926,6 +937,9 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="mov_metalplate" ID="{B922D898-948A-4144-8CCF-7F1D5EA94E97}" ShortID="603636863">
+							<ExcludedPlatformList>
+								<Platform>Windows</Platform>
+							</ExcludedPlatformList>
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
