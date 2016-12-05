@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1602358412" Name="Play_Footstep"/>
+				<Event Id="3739832523" Name="Play_Weapon_Impact"/>
+				<Event Id="703352881" Name="Play_Weapon_Swing"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="7752225" Language="SFX">
+					<ShortName>Grassy_Steps_1.wav</ShortName>
+					<Path>SFX\Grassy_Steps_1_9E69E797.wem</Path>
+				</File>
+				<File Id="23408836" Language="SFX">
+					<ShortName>197780__samulis__footstep-on-stone-3.wav</ShortName>
+					<Path>SFX\197780__samulis__footstep-on-stone-3_9E69E797.wem</Path>
+				</File>
+				<File Id="202672985" Language="SFX">
+					<ShortName>chainmail2.wav</ShortName>
+					<Path>SFX\chainmail2_9E69E797.wem</Path>
+				</File>
+				<File Id="243705276" Language="SFX">
+					<ShortName>Grassy_Steps_4.wav</ShortName>
+					<Path>SFX\Grassy_Steps_4_8BF80143.wem</Path>
+				</File>
+				<File Id="287656003" Language="SFX">
+					<ShortName>Stab_Punch_Hit_136.wav</ShortName>
+					<Path>SFX\Stab_Punch_Hit_136_9E69E797.wem</Path>
+				</File>
+				<File Id="307241607" Language="SFX">
+					<ShortName>209403__samulis__leather-rustle-6.wav</ShortName>
+					<Path>SFX\209403__samulis__leather-rustle-6_9E69E797.wem</Path>
+				</File>
+				<File Id="428452357" Language="SFX">
+					<ShortName>Sword Stab Through Flesh 02.wav</ShortName>
+					<Path>SFX\Sword Stab Through Flesh 02_9E69E797.wem</Path>
+				</File>
+				<File Id="436167839" Language="SFX">
+					<ShortName>Grassy_Steps_2.wav</ShortName>
+					<Path>SFX\Grassy_Steps_2_9E69E797.wem</Path>
+				</File>
+				<File Id="439958929" Language="SFX">
+					<ShortName>Grassy_Steps_3.wav</ShortName>
+					<Path>SFX\Grassy_Steps_3_9E69E797.wem</Path>
+				</File>
+				<File Id="447824877" Language="SFX">
+					<ShortName>209405__samulis__plate-armor-rustle-4.wav</ShortName>
+					<Path>SFX\209405__samulis__plate-armor-rustle-4_095CE2EE.wem</Path>
+				</File>
+				<File Id="472921331" Language="SFX">
+					<ShortName>209397__samulis__leather-rustle-3.wav</ShortName>
+					<Path>SFX\209397__samulis__leather-rustle-3_EA5F75BB.wem</Path>
+				</File>
+				<File Id="613985335" Language="SFX">
+					<ShortName>chainmail1.wav</ShortName>
+					<Path>SFX\chainmail1_9E69E797.wem</Path>
+				</File>
+				<File Id="638163781" Language="SFX">
+					<ShortName>209400__samulis__plate-armor-rustle-3.wav</ShortName>
+					<Path>SFX\209400__samulis__plate-armor-rustle-3_485D613F.wem</Path>
+				</File>
+				<File Id="646444598" Language="SFX">
+					<ShortName>197778__samulis__footstep-on-stone.wav</ShortName>
+					<Path>SFX\197778__samulis__footstep-on-stone_9E69E797.wem</Path>
+				</File>
+				<File Id="790847928" Language="SFX">
+					<ShortName>Sword Stab Quick.wav</ShortName>
+					<Path>SFX\Sword Stab Quick_9E69E797.wem</Path>
+				</File>
+				<File Id="842099656" Language="SFX">
+					<ShortName>209404__samulis__plate-armor-rustle-5.wav</ShortName>
+					<Path>SFX\209404__samulis__plate-armor-rustle-5_8D7FE39C.wem</Path>
+				</File>
+				<File Id="863457260" Language="SFX">
+					<ShortName>209396__samulis__leather-rustle-5.wav</ShortName>
+					<Path>SFX\209396__samulis__leather-rustle-5_9E69E797.wem</Path>
+				</File>
+				<File Id="911977677" Language="SFX">
+					<ShortName>197779__samulis__footstep-on-stone-2.wav</ShortName>
+					<Path>SFX\197779__samulis__footstep-on-stone-2_9E69E797.wem</Path>
+				</File>
+				<File Id="937178450" Language="SFX">
+					<ShortName>Grassy_Steps_5.wav</ShortName>
+					<Path>SFX\Grassy_Steps_5_9E69E797.wem</Path>
+				</File>
+				<File Id="941630177" Language="SFX">
+					<ShortName>Grassy_Steps_6.wav</ShortName>
+					<Path>SFX\Grassy_Steps_6_9E69E797.wem</Path>
+				</File>
+				<File Id="942657143" Language="SFX">
+					<ShortName>197781__samulis__footstep-on-stone-4.wav</ShortName>
+					<Path>SFX\197781__samulis__footstep-on-stone-4_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

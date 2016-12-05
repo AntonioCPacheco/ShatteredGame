@@ -216,7 +216,6 @@
     <instance objName="obj_terrain" x="16480" y="704" name="inst_409D92FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="16480" y="544" name="inst_35674EAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="16480" y="384" name="inst_4ABBE15C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="160" y="832" name="inst_D34981E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_village_gate" x="1920" y="832" name="inst_E0432C9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_village_gate" x="2048" y="832" name="inst_14C4EFDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_village_gate" x="1920" y="704" name="inst_BBDB4262" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -235,6 +234,9 @@
     <instance objName="obj_door_knights_house" x="16160" y="800" name="inst_728D1DA3" locked="0" code="target_room = &quot;Knights_House&quot;&#xA;" scaleX="0.8515625" scaleY="1.484375" colour="4294967295" rotation="0"/>
     <instance objName="obj_door_knights_house" x="2368" y="864" name="inst_EB632184" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door_knights_house" x="1280" y="2368" name="inst_5B4BB480" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sound_controller" x="256" y="768" name="inst_AFB7427E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="160" y="800" name="inst_E346511A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground_stone" x="2400" y="960" name="inst_91D04944" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Grass_1" x="0" y="896" w="128" h="128" xo="0" yo="0" id="10000239" name="inst_0ED47660" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

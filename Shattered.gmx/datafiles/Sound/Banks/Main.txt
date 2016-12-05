@@ -1,0 +1,50 @@
+Event	ID	Name			Wwise Object Path	Notes
+	703352881	Play_Weapon_Swing			\Combat\Play_Weapon_Swing	
+	1602358412	Play_Footstep			\Character\Play_Footstep	
+	3739832523	Play_Weapon_Impact			\Combat\Play_Weapon_Impact	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1088209313	Floor			\Footstep_Switches\Floor	
+	1625387345	Player_Weapon			\Combat_Switches\Player_Weapon	
+	1772252326	Player_Armor			\Footstep_Switches\Player_Armor	
+	4064446173	Surface_Type			\Combat_Switches\Surface_Type	
+
+Switch	ID	Name	Switch Group			Notes
+	1216965916	Stone	Floor			
+	2058049674	Wood	Floor			
+	2195636714	Dirt	Floor			
+	4248645337	Grass	Floor			
+	2454616260	Sword	Player_Weapon			
+	2523406417	Crossbow	Player_Weapon			
+	2695658315	Fist	Player_Weapon			
+	564569494	MetalPlate	Player_Armor			
+	1842129769	Chainmail	Player_Armor			
+	3624926856	Leather	Player_Armor			
+	1153642577	Flesh	Surface_Type			
+	1216965916	Stone	Surface_Type			
+	2058049674	Wood	Surface_Type			
+	2195636714	Dirt	Surface_Type			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	7752225	Grassy_Steps_1	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Grassy_Steps_1_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_grass\Grassy_Steps_1		128772
+	23408836	197780__samulis__footstep-on-stone-3	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\197780__samulis__footstep-on-stone-3_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_stone\197780__samulis__footstep-on-stone-3		78780
+	202672985	chainmail2	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\chainmail2_9E69E797.wem		\Actor-Mixer Hierarchy\Character\movement_armor_type\mov_chainmail\chainmail2		132444
+	243705276	Grassy_Steps_4	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Grassy_Steps_4_8BF80143.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_grass\Grassy_Steps_4		104420
+	287656003	Stab_Punch_Hit_136	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Stab_Punch_Hit_136_9E69E797.wem		\Actor-Mixer Hierarchy\Combat\impact_weapon_type\impact_sword_surface_type\imp_sword_flesh\Stab_Punch_Hit_136		52468
+	307241607	209403__samulis__leather-rustle-6	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\209403__samulis__leather-rustle-6_9E69E797.wem		\Actor-Mixer Hierarchy\Character\movement_armor_type\mov_leather\209403__samulis__leather-rustle-6		82840
+	428452357	Sword Stab Through Flesh 02	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Sword Stab Through Flesh 02_9E69E797.wem		\Actor-Mixer Hierarchy\Combat\impact_weapon_type\impact_sword_surface_type\imp_sword_flesh\Sword Stab Through Flesh 02		99342
+	436167839	Grassy_Steps_2	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Grassy_Steps_2_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_grass\Grassy_Steps_2		130512
+	439958929	Grassy_Steps_3	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Grassy_Steps_3_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_grass\Grassy_Steps_3		118336
+	447824877	209405__samulis__plate-armor-rustle-4	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\209405__samulis__plate-armor-rustle-4_095CE2EE.wem		\Actor-Mixer Hierarchy\Character\movement_armor_type\mov_metalplate\209405__samulis__plate-armor-rustle-4		88472
+	472921331	209397__samulis__leather-rustle-3	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\209397__samulis__leather-rustle-3_EA5F75BB.wem		\Actor-Mixer Hierarchy\Character\movement_armor_type\mov_leather\209397__samulis__leather-rustle-3		98192
+	613985335	chainmail1	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\chainmail1_9E69E797.wem		\Actor-Mixer Hierarchy\Character\movement_armor_type\mov_chainmail\chainmail1		103044
+	638163781	209400__samulis__plate-armor-rustle-3	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\209400__samulis__plate-armor-rustle-3_485D613F.wem		\Actor-Mixer Hierarchy\Character\movement_armor_type\mov_metalplate\209400__samulis__plate-armor-rustle-3		92344
+	646444598	197778__samulis__footstep-on-stone	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\197778__samulis__footstep-on-stone_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_stone\197778__samulis__footstep-on-stone		82356
+	790847928	Sword Stab Quick	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Sword Stab Quick_9E69E797.wem		\Actor-Mixer Hierarchy\Combat\impact_weapon_type\impact_sword_surface_type\imp_sword_flesh\Sword Stab Quick		16530
+	842099656	209404__samulis__plate-armor-rustle-5	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\209404__samulis__plate-armor-rustle-5_8D7FE39C.wem		\Actor-Mixer Hierarchy\Character\movement_armor_type\mov_metalplate\209404__samulis__plate-armor-rustle-5		107400
+	863457260	209396__samulis__leather-rustle-5	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\209396__samulis__leather-rustle-5_9E69E797.wem		\Actor-Mixer Hierarchy\Character\movement_armor_type\mov_leather\209396__samulis__leather-rustle-5		106476
+	911977677	197779__samulis__footstep-on-stone-2	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\197779__samulis__footstep-on-stone-2_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_stone\197779__samulis__footstep-on-stone-2		68044
+	937178450	Grassy_Steps_5	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Grassy_Steps_5_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_grass\Grassy_Steps_5		90508
+	941630177	Grassy_Steps_6	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Grassy_Steps_6_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_grass\Grassy_Steps_6		142684
+	942657143	197781__samulis__footstep-on-stone-4	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\197781__samulis__footstep-on-stone-4_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_stone\197781__samulis__footstep-on-stone-4		82356
+

@@ -53,6 +53,9 @@ keys = 0;
 
 //this global variable will be used to destroy the arrows that have been thrown if the is more than a certain treshold
 number_of_arrows = 0;
+
+gmwRegisterObject(id, "foot", global.DEFAULT_GROUP);
+
 </string>
           </argument>
         </arguments>
@@ -214,6 +217,9 @@ else if (!talking)
     }
     x += hsp;
 
+    gmwSet2DPosition(id, x, y, 0, 0);
+
+    
     //vertical collision
     if(place_meeting(x, y+vsp, obj_terrain)){
         while(!place_meeting(x, y+sign(vsp), obj_terrain)){
@@ -350,6 +356,13 @@ if(last_state != sprite_state){
     image_speed = image_number / room_speed;
 }
 last_state = sprite_state;
+
+if(sprite_state == 1 &amp;&amp; (image_index==1 || image_index==3))
+{
+    gmwPostEvent(global.Play_Footstep, id);
+    gmwSetSwitch(global.Floor,global.Stone, id);
+}
+
 </string>
           </argument>
         </arguments>
