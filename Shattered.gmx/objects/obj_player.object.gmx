@@ -123,6 +123,7 @@ if(attacking)
         attacking = false;
         sprite_state = 0;
     } else if(round(image_index) == 1){
+        gmwPostEvent(global.Play_Footstep, id);
         with instance_create(x, y, obj_attack_hit){
             image_xscale = obj_player.image_xscale;
         }
@@ -220,9 +221,6 @@ else if (!talking)
         hsp = 0;
     }
     x += hsp;
-
-    gmwSet2DPosition(id, x, y, 0, 0);
-
     
     //vertical collision
     if(place_meeting(x, y+vsp, obj_terrain)){
@@ -300,6 +298,7 @@ else if (!talking)
         instance_activate_region(1696,256,128,512,true);
     }
     
+    //doors
     if(key_up &amp; place_meeting(x, y, obj_door_knights_house))
     {
         room_goto(Knights_House);
@@ -310,6 +309,19 @@ else if (!talking)
     if(key_up &amp; place_meeting(x, y, obj_door_village))
     {
         room_goto_previous();
+    }
+    
+    //sound
+    gmwSet2DPosition(id, x, y, 0, 0);
+    if(grounded){
+        if(instance_place(x, y+1, obj_ground_stone))
+            gmwSetSwitch(global.Floor, global.Stone, id);
+        else if(instance_place(x, y+1, obj_ground_grass))
+            gmwSetSwitch(global.Floor, global.Grass, id);
+        else if(instance_place(x, y+1, obj_ground_wood))
+            gmwSetSwitch(global.Floor, global.Wood, id);
+        else
+            gmwSetSwitch(global.Floor, global.Dirt, id);
     }
 }
 </string>
@@ -363,8 +375,8 @@ last_state = sprite_state;
 
 if(sprite_state == 1 &amp;&amp; (image_index==1 || image_index==3))
 {
+    //gmwSetSwitch(global.Floor, global.Stone, id);
     gmwPostEvent(global.Play_Footstep, id);
-    gmwSetSwitch(global.Floor,global.Stone, id);
 }
 
 </string>

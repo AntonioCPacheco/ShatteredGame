@@ -56,12 +56,15 @@ gmwRegisterObject(id, "SoundController", global.DEFAULT_GROUP);
 global.Play_Footstep = 1602358412;
 global.Floor = 1088209313;
 global.Stone = 1216965916;
+global.Grass = 4248645337;
+global.Wood = 2058049674;
+global.Dirt = 2195636714;
 
 // Set the music volume to max and start playing it
 global.VOLUME = 100;
 
 gmwPostEvent(global.Play_Footstep, id);
-gmwSetSwitch(global.Floor,global.Stone, global.Play_Footstep);
+gmwSetSwitch(global.Floor, global.Grass, global.Play_Footstep);
 
 </string>
           </argument>
