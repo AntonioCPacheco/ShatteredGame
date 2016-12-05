@@ -175,6 +175,7 @@
     <object>objects\obj_ground_grass</object>
     <object>objects\obj_ground_stone</object>
     <object>objects\obj_ground_wood</object>
+    <object>objects\obj_ground_sewers</object>
     <object>objects\obj_transparency_off</object>
     <object>objects\obj_transparency_on</object>
     <object>objects\obj_terrain_invisible</object>
