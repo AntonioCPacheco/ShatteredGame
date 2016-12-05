@@ -148,6 +148,7 @@
     <background>background\Tree_1</background>
     <background>background\Dirt_1</background>
     <background>background\House</background>
+    <background>background\Wood_tiles</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -169,8 +170,6 @@
     <object>objects\obj_speaker</object>
     <object>objects\obj_speech_bubble</object>
     <object>objects\obj_terrain</object>
-    <object>objects\object0</object>
-    <object>objects\object8</object>
     <object>objects\par_ladder</object>
     <object>objects\obj_ground</object>
     <object>objects\obj_ground_grass</object>
@@ -181,12 +180,13 @@
     <object>objects\obj_terrain_invisible</object>
     <object>objects\obj_door</object>
     <object>objects\obj_village_gate</object>
-    <object>objects\obj_door_knights_house</object>
-    <object>objects\obj_door_village</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Knights_Village</room>
     <room>rooms\Knights_House</room>
+    <room>rooms\House_1</room>
+    <room>rooms\House_2</room>
+    <room>rooms\House_3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

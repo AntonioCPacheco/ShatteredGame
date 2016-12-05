@@ -78,7 +78,7 @@
     <instance objName="obj_terrain" x="-64" y="128" name="inst_1148D12E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="-64" y="32" name="inst_AA7EC4A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="2016" y="1184" name="inst_7F258789" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="1536" y="768" name="inst_5959D154" locked="0" code="target_room = Knights_Village;&#xA;target_x = 16128;&#xA;target_y = 780;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="1536" y="768" name="inst_CE9EDCEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Wood_tiles" x="0" y="832" w="128" h="128" xo="0" yo="0" id="10000927" name="inst_7917AC09" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -54,6 +54,11 @@ keys = 0;
 //this global variable will be used to destroy the arrows that have been thrown if the is more than a certain treshold
 number_of_arrows = 0;
 
+//Variables for changing room
+var target_room;
+var target_x;
+var target_y;
+
 gmwRegisterObject(id, "foot", global.DEFAULT_GROUP);
 
 </string>
@@ -84,8 +89,8 @@ key_right = keyboard_check(ord("D"));
 key_left = -keyboard_check(ord("A"));
 key_up_pressed = keyboard_check_pressed(ord("W"));
 key_down_pressed = keyboard_check_pressed(ord("S"));
-key_up = keyboard_check(ord("W"));
-key_down = keyboard_check(ord("S"));
+key_up = keyboard_check_pressed(ord("W"));
+key_down = keyboard_check_pressed(ord("S"));
 key_jump = keyboard_check_pressed(vk_space);
 key_attack = keyboard_check(ord("F"));
 key_interact = keyboard_check_pressed(ord("E"));
@@ -278,7 +283,7 @@ else if (!talking)
         }
     }
     
-    if(key_up &amp; place_meeting(x, y, obj_village_gate))
+    if(key_up &amp;&amp; place_meeting(x, y, obj_village_gate))
     {
         //tile_layer_hide(-1);
         //tile_layer_hide(-2);
@@ -300,17 +305,13 @@ else if (!talking)
         instance_activate_region(1696,256,128,512,true);
     }
     
-    if(key_up &amp; place_meeting(x, y, obj_door_knights_house))
-    {
-        room_goto(Knights_House);
-        obj_player.x = 96;
-        obj_player.y = 768;
+    if(key_up &amp;&amp; place_meeting(x, y, obj_door))
+    {   
+        room_goto(target_room);
+        obj_player.x = target_x;
+        obj_player.y = target_y;
     }
-    
-    if(key_up &amp; place_meeting(x, y, obj_door_village))
-    {
-        room_goto_previous();
-    }
+  
 }
 </string>
           </argument>

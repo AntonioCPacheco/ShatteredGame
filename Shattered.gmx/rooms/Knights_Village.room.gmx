@@ -216,9 +216,7 @@
     <instance objName="obj_terrain" x="16480" y="704" name="inst_409D92FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="16480" y="544" name="inst_35674EAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="16480" y="384" name="inst_4ABBE15C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_village_gate" x="1920" y="832" name="inst_E0432C9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_village_gate" x="2048" y="832" name="inst_14C4EFDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_village_gate" x="1920" y="704" name="inst_BBDB4262" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_village_gate" x="1904" y="768" name="inst_E0432C9E" locked="0" code="" scaleX="1.3515625" scaleY="2.04999995231628" colour="4294967295" rotation="0"/>
     <instance objName="obj_transparency_off" x="2656" y="832" name="inst_F76DD3DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_transparency_on" x="2496" y="800" name="inst_A8B43DFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_transparency_on" x="2528" y="832" name="inst_8B1DF3DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -226,17 +224,16 @@
     <instance objName="obj_terrain" x="2272" y="704" name="inst_1C8B1D76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="2272" y="576" name="inst_A2D0D6BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="2272" y="448" name="inst_81B4598D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_terrain_invisible" x="1760" y="832" name="inst_692B4A0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain_invisible" x="1760" y="704" name="inst_6AD1C2D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain_invisible" x="1760" y="576" name="inst_D1E0D7B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain_invisible" x="1760" y="448" name="inst_CB20F0DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain_invisible" x="1760" y="320" name="inst_DDBEBFA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door_knights_house" x="16160" y="800" name="inst_728D1DA3" locked="0" code="target_room = &quot;Knights_House&quot;&#xA;" scaleX="0.8515625" scaleY="1.484375" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door_knights_house" x="2368" y="864" name="inst_EB632184" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door_knights_house" x="1280" y="2368" name="inst_5B4BB480" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sound_controller" x="256" y="768" name="inst_AFB7427E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="160" y="800" name="inst_E346511A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="3840" y="800" name="inst_E346511A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_stone" x="2400" y="960" name="inst_91D04944" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="4160" y="800" name="inst_E1282366" locked="0" code="rm = House_1;&#xA;spawn_x = 96;&#xA;spawn_y = 780;" scaleX="0.703125" scaleY="1.359375" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="4832" y="800" name="inst_7327591A" locked="0" code="rm = House_2;&#xA;spawn_x = 96;&#xA;spawn_y = 780;&#xA;&#xA;" scaleX="0.6875" scaleY="1.37795281410217" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="16160" y="800" name="inst_0D77CDEF" locked="0" code="rm = Knights_House;&#xA;spawn_x = 96;&#xA;spawn_y = 780;&#xA;" scaleX="0.75" scaleY="1.25" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Grass_1" x="0" y="896" w="128" h="128" xo="0" yo="0" id="10000239" name="inst_0ED47660" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
