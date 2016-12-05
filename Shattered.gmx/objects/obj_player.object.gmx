@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize Variables
+depth = -1000;
 
 grav = 1;
 hsp = 0;
@@ -87,6 +88,8 @@ key_attack = keyboard_check(ord("F"));
 key_interact = keyboard_check_pressed(ord("E"));
 key_grab = keyboard_check_pressed(ord("G"));
 mouse_left = mouse_check_button_pressed(mb_left);
+
+
 
 </string>
           </argument>
@@ -264,6 +267,40 @@ else if (!talking)
             image_xscale = sign(objective_x);
         }
     }
+    
+    if(key_up &amp; place_meeting(x, y, obj_village_gate))
+    {
+        //tile_layer_hide(-1);
+        //tile_layer_hide(-2);
+        var tiles_one = tile_get_ids_at_depth(-1);
+        var tiles_two = tile_get_ids_at_depth(-2);
+        for (var i = 0; i &lt; array_length_1d(tiles_one); i++;)
+        {
+            tile_set_alpha(tiles_one[i], 0.5);
+        }
+         for (var j = 0; j &lt; array_length_1d(tiles_two); j++;)
+        {
+            tile_set_alpha(tiles_two[j], 0.5);
+        }
+        tiles_one = 0;
+        tiles_two = 0;
+        //the values below are specific for the objects that are to be deactivated and activated
+        //this is specific fo th entrance of the village REFACTOR THIS TO BE GENERIC
+        instance_deactivate_region(2208,384,1,384,true,true);
+        instance_activate_region(1696,256,128,512,true);
+    }
+    
+    if(key_up &amp; place_meeting(x, y, obj_door_knights_house))
+    {
+        room_goto(Knights_House);
+        obj_player.x = 96;
+        obj_player.y = 768;
+    }
+    
+    if(key_up &amp; place_meeting(x, y, obj_door_village))
+    {
+        room_goto_previous();
+    }
 }
 </string>
           </argument>
@@ -286,7 +323,7 @@ else if (!talking)
           <argument>
             <kind>1</kind>
             <string>///Changing sprites
-depth = -1;
+//depth = -1;
 // sprite_state: 0 - idle | 1 - running | 2 - jumping | 3 - falling | 4 - attacking 
 if(last_state != sprite_state){
     switch(sprite_state){
@@ -452,7 +489,7 @@ if(key_interact &amp;&amp; grounded){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>    draw_text(5, 15, keys);
+            <string>draw_text(5, 15, room_persistent);
 </string>
           </argument>
         </arguments>

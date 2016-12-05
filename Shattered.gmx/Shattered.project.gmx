@@ -29,6 +29,17 @@
   <backgrounds name="background">
     <background>background\floor_tiles</background>
     <background>background\ladder</background>
+    <background>background\Grass_1</background>
+    <background>background\Grass_2</background>
+    <background>background\Stone_1</background>
+    <background>background\Wall_1</background>
+    <background>background\upper_door</background>
+    <background>background\middle_door</background>
+    <background>background\down_door</background>
+    <background>background\Cloud</background>
+    <background>background\Tree_1</background>
+    <background>background\Dirt_1</background>
+    <background>background\House</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -53,9 +64,19 @@
     <object>objects\object0</object>
     <object>objects\object8</object>
     <object>objects\par_ladder</object>
+    <object>objects\obj_ground</object>
+    <object>objects\obj_ground_grass</object>
+    <object>objects\obj_ground_stone</object>
+    <object>objects\obj_ground_wood</object>
+    <object>objects\obj_transparency_off</object>
+    <object>objects\obj_transparency_on</object>
+    <object>objects\obj_terrain_invisible</object>
+    <object>objects\obj_door</object>
+    <object>objects\obj_village_gate</object>
+    <object>objects\obj_door_knights_house</object>
+    <object>objects\obj_door_village</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Test</room>
     <room>rooms\Knights_Village</room>
     <room>rooms\Knights_House</room>
   </rooms>
