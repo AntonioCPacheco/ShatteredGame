@@ -38,9 +38,9 @@
 	<ValidationCacheItem File="C:\Users\acort\Desktop\teste\Shattered\Switches\Default Work Unit.wwu" DateLow="3182296868" DateHigh="30557456"/>
 	<ValidationCacheItem File="C:\Users\acort\Desktop\teste\Shattered\Triggers\Default Work Unit.wwu" DateLow="3182151738" DateHigh="30557456"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Actor-Mixer Hierarchy\Ambient.wwu" DateLow="988707320" DateHigh="30558638"/>
-	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Actor-Mixer Hierarchy\Character.wwu" DateLow="3920158224" DateHigh="30558896"/>
-	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Actor-Mixer Hierarchy\Combat.wwu" DateLow="1098883663" DateHigh="30558896"/>
-	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2593011634" DateHigh="30558879"/>
+	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Actor-Mixer Hierarchy\Character.wwu" DateLow="2108946447" DateHigh="30558901"/>
+	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Actor-Mixer Hierarchy\Combat.wwu" DateLow="3072283129" DateHigh="30558901"/>
+	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3943873841" DateHigh="30558899"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="2730606921" DateHigh="30557458"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="2730014450" DateHigh="30557458"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Actor-Mixer Hierarchy\Magic.wwu" DateLow="658289150" DateHigh="30558592"/>
@@ -63,23 +63,26 @@
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="276929735" DateHigh="30557472"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="277045239" DateHigh="30557472"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Effects\Factory McDSP Effects.wwu" DateLow="277412220" DateHigh="30557472"/>
-	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Events\Character.wwu" DateLow="1099590904" DateHigh="30558896"/>
+	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Events\Character.wwu" DateLow="12527479" DateHigh="30558902"/>
+	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Events\Combat.wwu" DateLow="12627770" DateHigh="30558902"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Events\Default Work Unit.wwu" DateLow="3696064403" DateHigh="30558877"/>
+	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Events\Menu.wwu" DateLow="794689818" DateHigh="30559013"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Game Parameters\Default Work Unit.wwu" DateLow="3182196597" DateHigh="30557456"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="514230528" DateHigh="30449157"/>
+	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Game Parameters\Options.wwu" DateLow="199842082" DateHigh="30558991"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="3182171534" DateHigh="30557456"/>
-	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1099054133" DateHigh="30558896"/>
+	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2013867641" DateHigh="30559005"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Mixing Sessions\Default Work Unit.wwu" DateLow="3181829818" DateHigh="30557456"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Modulators\Default Work Unit.wwu" DateLow="3181849871" DateHigh="30557456"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Presets\Default Work Unit.wwu" DateLow="3182236700" DateHigh="30557456"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Queries\Default Work Unit.wwu" DateLow="3182256765" DateHigh="30557456"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Queries\Factory Queries.wwu" DateLow="514230528" DateHigh="30449157"/>
-	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Shattered.acort.wsettings" DateLow="4260792090" DateHigh="30558896"/>
+	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Shattered.acort.wsettings" DateLow="2056445047" DateHigh="30559023"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Shattered.wproj" DateLow="3181744871" DateHigh="30557456"/>
-	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\SoundBanks\Default Work Unit.wwu" DateLow="1513853230" DateHigh="30557822"/>
+	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\SoundBanks\Default Work Unit.wwu" DateLow="1525358243" DateHigh="30559012"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3181809772" DateHigh="30557456"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\States\Default Work Unit.wwu" DateLow="3182316913" DateHigh="30557456"/>
-	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Switches\Combat_Switches.wwu" DateLow="2593282334" DateHigh="30558879"/>
+	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Switches\Combat_Switches.wwu" DateLow="3577814182" DateHigh="30558900"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Switches\Default Work Unit.wwu" DateLow="2593131998" DateHigh="30558879"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Switches\Footstep_Switches.wwu" DateLow="3085896823" DateHigh="30558879"/>
 	<ValidationCacheItem File="C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\Triggers\Default Work Unit.wwu" DateLow="3182151738" DateHigh="30557456"/>

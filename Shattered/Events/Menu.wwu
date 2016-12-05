@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9EFC0CEC-FFB5-4ABA-BD3A-30FDF1B4BBCB}" SchemaVersion="70">
+	<Events>
+		<WorkUnit Name="Menu" ID="{9EFC0CEC-FFB5-4ABA-BD3A-30FDF1B4BBCB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Pause_Menu" ID="{949FB295-9406-4DF7-A78E-E5A1DC9BB7C7}">
+					<ChildrenList>
+						<Action Name="Play" ID="{F17EE435-AF68-4F1F-9BE3-6A316283E3FA}" ShortID="326405431" Type="Play" Scope="One" Global="false"/>
+						<Action Name="Play" ID="{3F554228-EF48-443E-B8E9-B79BFDE3C684}" ShortID="9973069" Type="Play" Scope="One" Global="false"/>
+						<Action Name="Pause All Except" ID="{DAA29415-662D-4A14-9FFE-808567D45419}" ShortID="414660449" Type="Pause" Scope="AllExcept" Global="true">
+							<ElementList>
+								<Element ID="{017A314C-22D2-4EE3-8EF5-331B37C7C584}" Global="true">
+									<ObjectRef Name="Menu" ID="{739AA7F1-0A71-42DC-BFE3-5A66472B5927}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+								</Element>
+								<Element ID="{497E6790-C7F3-4D63-9568-AA04F1B9B1E4}" Global="true">
+									<ObjectRef Name="Music" ID="{1750D3AA-7083-4E24-AEA3-27682F06448D}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Leave_Menu" ID="{CF998780-CC15-4955-AD3E-03DB62A3EC3E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{C8F369C5-C716-4369-840F-E9EA860C104D}" ShortID="463179152" Type="Play" Scope="One" Global="false"/>
+						<Action Name="Stop" ID="{2BEB4C45-C346-4061-B651-26E60DC5CEF9}" ShortID="917756883" Type="Stop" Scope="One" Global="false"/>
+						<Action Name="Resume All" ID="{C9DC485D-EFCA-4C23-A7AA-7910096D0B3A}" ShortID="754654120" Type="Resume" Scope="All" Global="true"/>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Menu_Return" ID="{9AEB11B9-D90E-4A54-97FA-68650AB5EC84}">
+					<ChildrenList>
+						<Action Name="Play" ID="{EF537902-D9BE-40FC-AF9A-0144EFB00447}" ShortID="877002036" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C14DE7FF-F892-440B-B9E2-618BB2A63D00}" Global="false">
+									<ObjectRef Name="Menu_Return" ID="{69EE71E1-3674-4210-AC5C-D24CEE0A7622}" WorkUnitID="{3322AB82-3E01-4038-8E92-56C9994D5849}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Menu_Scroll" ID="{C4F69FF5-5B0F-4BA2-B264-00318F2C75F0}">
+					<ChildrenList>
+						<Action Name="Play" ID="{83A0C848-821C-4E86-A7FD-1C04605149BF}" ShortID="286985701" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{0917BA37-0F37-4E1B-A515-D17EE4D909FD}" Global="false">
+									<ObjectRef Name="Menu_Scroll" ID="{D0994439-A9C9-47BB-859E-290DE4BE9A0B}" WorkUnitID="{3322AB82-3E01-4038-8E92-56C9994D5849}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Menu_Slider" ID="{9B7A7E70-29F8-4182-A435-82B4CC966214}">
+					<ChildrenList>
+						<Action Name="Play" ID="{93E44D40-80A0-4A00-862C-D60581F7EADA}" ShortID="676622431" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{CA731F4F-9875-48F2-9E43-CA725D0C9272}" Global="false">
+									<ObjectRef Name="Menu_Slider" ID="{A1E8DD62-C9DB-4C7D-8979-A305F7BED40A}" WorkUnitID="{3322AB82-3E01-4038-8E92-56C9994D5849}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Menu_Select" ID="{72C0091B-17CF-4DF2-8DAB-FC0018F59CE1}">
+					<ChildrenList>
+						<Action Name="Play" ID="{1D6874D2-3BD5-49AD-B108-0B08C20445B6}" ShortID="604417562" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{02ACC3AA-711B-44B4-A477-DA35B7889248}" Global="false">
+									<ObjectRef Name="Menu_Select" ID="{D80F3316-B754-423B-AD39-7B7AF1F2E42B}" WorkUnitID="{3322AB82-3E01-4038-8E92-56C9994D5849}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

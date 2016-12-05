@@ -103,7 +103,7 @@
 								</Reference>
 							</ReferenceList>
 							<GroupingInfo>
-								<GroupRef Name="Enemy_Weapon" ID="{4ABDF2A0-E79F-4BFF-9C50-40B9E23D6798}"/>
+								<GroupRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
 								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
 							</GroupingInfo>
 						</SwitchContainer>
@@ -117,7 +117,7 @@
 								</Reference>
 							</ReferenceList>
 							<GroupingInfo>
-								<GroupRef Name="Enemy_Shield" ID="{77ED874F-B2F9-42E7-8377-F695DA184AE1}"/>
+								<GroupRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
 								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
 							</GroupingInfo>
 						</SwitchContainer>
@@ -177,7 +177,7 @@
 								</Reference>
 							</ReferenceList>
 							<GroupingInfo>
-								<GroupRef Name="Enemy_Weapon" ID="{4ABDF2A0-E79F-4BFF-9C50-40B9E23D6798}"/>
+								<GroupRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
 								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
 							</GroupingInfo>
 						</SwitchContainer>
@@ -191,7 +191,7 @@
 								</Reference>
 							</ReferenceList>
 							<GroupingInfo>
-								<GroupRef Name="Enemy_Shield" ID="{77ED874F-B2F9-42E7-8377-F695DA184AE1}"/>
+								<GroupRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
 								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
 							</GroupingInfo>
 						</SwitchContainer>

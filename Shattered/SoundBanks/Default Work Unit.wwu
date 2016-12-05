@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{90FF92A4-36D8-4309-84D9-0E88D8CB2C0A}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Combat" ID="{90B43306-15A2-4618-8BF2-CB80E199590B}" WorkUnitID="{90B43306-15A2-4618-8BF2-CB80E199590B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Menu" ID="{9EFC0CEC-FFB5-4ABA-BD3A-30FDF1B4BBCB}" WorkUnitID="{9EFC0CEC-FFB5-4ABA-BD3A-30FDF1B4BBCB}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Character" ID="{76CEB5F4-EDF1-4328-959C-69BF2571DE76}" WorkUnitID="{76CEB5F4-EDF1-4328-959C-69BF2571DE76}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
