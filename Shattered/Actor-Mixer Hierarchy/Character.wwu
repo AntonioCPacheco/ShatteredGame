@@ -656,25 +656,25 @@
 						</GroupingBehaviorList>
 						<GroupingList>
 							<Grouping>
-								<SwitchRef Name="Dirt" ID="{0B29B79B-94EA-4296-89C7-744E61D7E013}"/>
+								<SwitchRef Name="fs_Dirt" ID="{0B29B79B-94EA-4296-89C7-744E61D7E013}"/>
 								<ItemList>
 									<ItemRef Name="fs_dirt" ID="{2CB1CAC2-6347-4EF2-BA03-FCB389A74313}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
-								<SwitchRef Name="Stone" ID="{4BAF3D9E-86E9-49D1-B20D-F6FD9EA8236C}"/>
+								<SwitchRef Name="fs_Stone" ID="{4BAF3D9E-86E9-49D1-B20D-F6FD9EA8236C}"/>
 								<ItemList>
 									<ItemRef Name="fs_stone" ID="{5125D6F0-8F71-439A-8726-0ABBED539216}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
-								<SwitchRef Name="Grass" ID="{0DD724BA-3607-45BF-B6BA-0BBFD0B8CCEA}"/>
+								<SwitchRef Name="fs_Grass" ID="{0DD724BA-3607-45BF-B6BA-0BBFD0B8CCEA}"/>
 								<ItemList>
 									<ItemRef Name="fs_grass" ID="{F14ED3A5-ADB2-4691-BEFF-16B0EA20657C}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
-								<SwitchRef Name="Wood" ID="{C1AF57C1-AF11-44E3-91CD-4F2AFD691CC3}"/>
+								<SwitchRef Name="fs_Wood" ID="{C1AF57C1-AF11-44E3-91CD-4F2AFD691CC3}"/>
 								<ItemList>
 									<ItemRef Name="fs_wood" ID="{2F35AB42-67D2-44CF-8ADE-68532176AB35}"/>
 								</ItemList>

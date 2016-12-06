@@ -19,10 +19,10 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 	4064446173	Surface_Type			\Combat_Switches\Surface_Type	
 
 Switch	ID	Name	Switch Group			Notes
-	1216965916	Stone	Floor			
-	2058049674	Wood	Floor			
-	2195636714	Dirt	Floor			
-	4248645337	Grass	Floor			
+	83925039	fs_Grass	Floor			
+	834223070	fs_Stone	Floor			
+	2517613408	fs_Dirt	Floor			
+	3616930680	fs_Wood	Floor			
 	2454616260	Sword	Player_Weapon			
 	2523406417	Crossbow	Player_Weapon			
 	2695658315	Fist	Player_Weapon			
