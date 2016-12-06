@@ -62,6 +62,9 @@ var target_y;
 //Village Gate
 entered = false;
 
+//barracks door
+in = false;
+
 gmwRegisterObject(id, "foot", global.DEFAULT_GROUP);
 
 </string>
@@ -308,6 +311,64 @@ else if (!talking)
         instance_activate_region(1696,256,128,512,true);
         
         entered = true;
+    }
+    
+     if(key_up_pressed &amp;&amp; place_meeting(x, y, obj_door_barracks))
+    {
+        if(in)
+        {
+            var tiles_one = tile_get_ids_at_depth(-1);
+            var tiles_two = tile_get_ids_at_depth(-2);
+            for (var i = 0; i &lt; array_length_1d(tiles_one); i++;)
+            {
+                tile_set_alpha(tiles_one[i], 1);
+            }
+            for (var j = 0; j &lt; array_length_1d(tiles_two); j++;)
+            {
+                tile_set_alpha(tiles_two[j], 1);
+            }
+            tiles_one = 0;
+            tiles_two = 0;
+            
+            
+            //the values below are specific for the objects that are to be deactivated and activated
+            //this is specific for the left door of the barracks REFACTOR THIS TO BE GENERIC
+            instance_deactivate_region(8416,644,64,128,true,true);
+            instance_activate_region(8672,576,128,256,true);
+            
+            //the values below are specific for the objects that are to be deactivated and activated
+            //this is specific for the right door of the barracks REFACTOR THIS TO BE GENERIC
+            instance_deactivate_region(9952,640,128,128,true,true);
+            instance_activate_region(9696,512,128,256,true);
+            in = false;
+        }
+        else
+        {
+            var tiles_one = tile_get_ids_at_depth(-1);
+            var tiles_two = tile_get_ids_at_depth(-2);
+            for (var i = 0; i &lt; array_length_1d(tiles_one); i++;)
+            {
+                tile_set_alpha(tiles_one[i], 0);
+            }
+            for (var j = 0; j &lt; array_length_1d(tiles_two); j++;)
+            {
+                tile_set_alpha(tiles_two[j], 0);
+            }
+            tiles_one = 0;
+            tiles_two = 0;
+            
+            //the values below are specific for the objects that are to be deactivated and activated
+            //this is specific for the left door of the barracks REFACTOR THIS TO BE GENERIC
+            instance_deactivate_region(8672,576,128,256,true,true);
+            instance_activate_region(8416,644,128,256,true); 
+            
+            //the values below are specific for the objects that are to be deactivated and activated
+            //this is specific for the right door of the barracks REFACTOR THIS TO BE GENERIC
+            instance_deactivate_region(9696,576,64,192,true,true);
+            instance_activate_region(9952,640,128,256,true);
+             
+            in = true; 
+        }
     }
     
     if(key_up_pressed &amp;&amp; place_meeting(x, y, obj_door))

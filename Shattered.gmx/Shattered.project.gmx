@@ -133,6 +133,9 @@
     <sprite>sprites\terrain</sprite>
     <sprite>sprites\arrow_vertical</sprite>
     <sprite>sprites\sprt_crate</sprite>
+    <sprite>sprites\spikes</sprite>
+    <sprite>sprites\gate_handle</sprite>
+    <sprite>sprites\window</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\floor_tiles</background>
@@ -153,12 +156,13 @@
     <background>background\Crate</background>
     <background>background\Grids</background>
     <background>background\door</background>
-    <background>background\spikes</background>
+    <background>background\windows</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_door</object>
     <object>objects\obj_village_gate</object>
+    <object>objects\obj_door_barracks</object>
     <object>objects\obj_door_stair</object>
     <object>objects\obj_sound_controller</object>
     <object>objects\dialog_manager</object>
@@ -187,6 +191,9 @@
     <object>objects\obj_transparency_off</object>
     <object>objects\obj_transparency_on</object>
     <object>objects\obj_terrain_invisible</object>
+    <object>objects\obj_gate_handle</object>
+    <object>objects\obj_spikes</object>
+    <object>objects\obj_window</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Knights_Village</room>
