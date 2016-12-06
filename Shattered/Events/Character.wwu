@@ -39,6 +39,77 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Land" ID="{4575ED5E-C283-4096-A912-76023E9A4432}">
+					<ChildrenList>
+						<Action Name="Play" ID="{DF572914-0549-4CBE-A511-7575E83F4DD6}" ShortID="1003763263" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{E79AE3C8-E4C2-483E-88AF-FE9BC8D1DBE8}" Global="false">
+									<ObjectRef Name="land_surface_type" ID="{208A626B-878A-4D1C-B883-43A38D4DF296}" WorkUnitID="{9078A036-B040-45E5-B6E6-6911FC590376}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{CC8376BD-D0B5-4140-902A-F0F5E1FA0F4E}" ShortID="881473202" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5DD14008-6858-47BC-AF12-624BCD18DD25}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{73213785-1219-4024-8051-FC3F65D5F7F3}" Global="false">
+									<ObjectRef Name="movement_armor_type" ID="{A0C9B820-C272-4959-9B7E-35C6540EC4C4}" WorkUnitID="{9078A036-B040-45E5-B6E6-6911FC590376}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Jump" ID="{785C13AA-8E02-4513-B082-1B43079DCE9C}">
+					<ChildrenList>
+						<Action Name="Play" ID="{A4B2777C-AA21-409B-B168-05DA0FBDF17B}" ShortID="602442378" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{4985D01F-D467-4CFA-8273-5509A54320FA}" Global="false">
+									<ObjectRef Name="footstep_surface_type" ID="{DC515715-DD3E-4A80-8643-7851FF03A9AC}" WorkUnitID="{9078A036-B040-45E5-B6E6-6911FC590376}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{2E66CE58-0426-4618-8E57-73B47C8BF2DE}" ShortID="130120523" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{18BE7884-5659-48A3-AFC6-A1C6BD36B85D}" Global="false">
+									<ObjectRef Name="movement_armor_type" ID="{A0C9B820-C272-4959-9B7E-35C6540EC4C4}" WorkUnitID="{9078A036-B040-45E5-B6E6-6911FC590376}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{02C54480-E8C5-4059-9E83-0F9E5107863D}" ShortID="892876377" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5D378B19-AE8F-480D-92C3-D6177B750907}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.05"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{3E3AA526-7D2C-4F33-9BA9-AF9080F4FBE6}" Global="false">
+									<ObjectRef Name="jump_woosh" ID="{E5D10F58-DF7F-47F8-88A4-7190F4B5CA33}" WorkUnitID="{9078A036-B040-45E5-B6E6-6911FC590376}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
