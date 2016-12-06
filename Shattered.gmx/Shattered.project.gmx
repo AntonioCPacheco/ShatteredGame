@@ -155,14 +155,15 @@
     <object>objects\dialog_manager</object>
     <object>objects\obj_arrow</object>
     <object>objects\obj_attack_hit</object>
+    <object>objects\obj_attack_enemy_hit</object>
     <object>objects\obj_chest</object>
     <object>objects\obj_collectible</object>
     <object>objects\obj_dialog</object>
     <object>objects\obj_dialog_choice</object>
-    <object>objects\obj_enemy</object>
     <object>objects\obj_ladder_top</object>
     <object>objects\obj_movable</object>
-    <object>objects\obj_npc</object>
+    <object>objects\obj_guard</object>
+    <object>objects\obj_npc_new</object>
     <object>objects\obj_npc_test</object>
     <object>objects\obj_player</object>
     <object>objects\obj_speaker</object>
