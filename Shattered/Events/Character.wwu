@@ -27,12 +27,12 @@
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Play" ID="{FD022B14-335A-49F4-99DD-3B28629CB16B}" ShortID="624594881" Type="Play" Scope="One" Global="false">
+						<Action Name="Play" ID="{C45F338A-5E4F-40E9-952B-88C790429922}" ShortID="850497565" Type="Play" Scope="One" Global="false">
 							<PropertyList>
 								<Property Name="Delay" Type="Real64" Value="0.1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{E5AD6995-5DFD-4946-A171-4F347303ACC9}" Global="false">
+								<Element ID="{93895DBD-CF87-4D4B-988B-938623335C7B}" Global="false">
 									<ObjectRef Name="footstep_surface_type" ID="{DC515715-DD3E-4A80-8643-7851FF03A9AC}" WorkUnitID="{9078A036-B040-45E5-B6E6-6911FC590376}"/>
 								</Element>
 							</ElementList>

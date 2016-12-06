@@ -37,8 +37,70 @@
 					<ChildrenList>
 						<Bus Name="Non-World_Sound" ID="{BF4557EC-657B-4826-BCF8-D61DF8DD94E0}">
 							<ChildrenList>
-								<Bus Name="Music" ID="{1750D3AA-7083-4E24-AEA3-27682F06448D}"/>
-								<Bus Name="Menu" ID="{739AA7F1-0A71-42DC-BFE3-5A66472B5927}"/>
+								<Bus Name="Music" ID="{1750D3AA-7083-4E24-AEA3-27682F06448D}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{BC6A0D5C-C780-4861-8913-917A7E5FC19D}" ShortID="155286487">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Music_Volume" ID="{91224CBE-2D9E-4CD3-B999-24C9374E887A}" WorkUnitID="{81E881BB-DC5E-4E55-A788-195AE0144DD9}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{2CA75D7B-783F-4391-AA52-C441FC1BEC3E}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+								</Bus>
+								<Bus Name="Menu" ID="{739AA7F1-0A71-42DC-BFE3-5A66472B5927}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{33E6CF9B-4704-4A21-BAA2-18E9952C5AF8}" ShortID="62792414">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="SFX_Volume" ID="{46804FCA-2E6C-4136-94EB-4F1A27524343}" WorkUnitID="{81E881BB-DC5E-4E55-A788-195AE0144DD9}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{C9106F57-A41D-4266-882C-F82C478AF4D7}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+								</Bus>
 							</ChildrenList>
 						</Bus>
 						<Bus Name="World_Sound" ID="{2A01C43A-550D-4F88-AE11-27065E3C5505}">
@@ -100,7 +162,7 @@
 															</Point>
 															<Point>
 																<XPos>50</XPos>
-																<YPos>-0</YPos>
+																<YPos>0</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
@@ -122,6 +184,7 @@
 								</AuxBus>
 								<Bus Name="Character" ID="{5924D45D-2CF0-44AA-899E-DA3065551DB3}"/>
 								<Bus Name="Combat" ID="{B12E7CD5-4D6A-478A-A637-77E145736925}"/>
+								<Bus Name="Objects" ID="{53E6BD2B-A059-4ADA-B201-9BC78BE382AF}"/>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>
