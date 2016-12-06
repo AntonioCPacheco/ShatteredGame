@@ -151,9 +151,15 @@
     <background>background\Wood_tiles</background>
     <background>background\Lock</background>
     <background>background\Crate</background>
+    <background>background\Grids</background>
+    <background>background\door</background>
+    <background>background\spikes</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
+    <object>objects\obj_door</object>
+    <object>objects\obj_village_gate</object>
+    <object>objects\obj_door_stair</object>
     <object>objects\obj_sound_controller</object>
     <object>objects\dialog_manager</object>
     <object>objects\obj_arrow</object>
@@ -181,8 +187,6 @@
     <object>objects\obj_transparency_off</object>
     <object>objects\obj_transparency_on</object>
     <object>objects\obj_terrain_invisible</object>
-    <object>objects\obj_door</object>
-    <object>objects\obj_village_gate</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Knights_Village</room>
@@ -190,6 +194,7 @@
     <room>rooms\House_1</room>
     <room>rooms\House_2</room>
     <room>rooms\House_3</room>
+    <room>rooms\House_4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
