@@ -86,14 +86,6 @@ global.Surface_Dirt = 2195636714;
 
 // Set the music volume to max and start playing it
 global.VOLUME = 100;
-
-gmwPostEvent(global.Play_Footstep, id);
-gmwSetSwitch(global.Floor, global.Floor_Grass, global.Play_Footstep);
-gmwSetSwitch(global.Player_Weapon, global.Weapon_Sword, id);
-gmwPostEvent(global.Play_Weapon_Swing, id);
-gmwSetSwitch(global.Player_Weapon, global.Weapon_Crossbow, id);
-gmwPostEvent(global.Play_Weapon_Swing, id);
-
 </string>
           </argument>
         </arguments>

@@ -34,9 +34,11 @@ vsp = 0;
 max_vsp = 15;
 jumpsp = 25;
 movesp = 10;
+
 grounded = false;
 grab = 0;
 choosing = false;
+
 sprite_state = 0; //0 - idle | 1 - running | 2 - jumping | 3 - falling
 last_state = sprite_state;
 
@@ -52,7 +54,8 @@ image_speed = image_number / room_speed;
 keys = 0;
 
 //this global variable will be used to destroy the arrows that have been thrown if the is more than a certain treshold
-number_of_arrows = 0;
+MAX_ARROWS = 10;
+number_of_arrows = MAX_ARROWS;
 
 gmwRegisterObject(id, "player", global.DEFAULT_GROUP);
 
@@ -123,7 +126,7 @@ if(attacking)
         attacking = false;
         sprite_state = 0;
     } else if(round(image_index) == 1){
-        gmwSetSwitch(global.Player_Weapon, global.Weapon_Sword, id);
+        gmwSetSwitch(global.Player_Weapon, global.Weapon_Fist, id);
         gmwPostEvent(global.Play_Weapon_Swing, id);
         with instance_create(x, y, obj_attack_hit){
             image_xscale = obj_player.image_xscale;
@@ -263,9 +266,9 @@ else if (!talking)
         sprite_state = 4;
     }
     //Arrow
-    if(mouse_left)
+    if(mouse_left &amp;&amp; number_of_arrows &gt; 0)
     {
-        with  instance_create(x+80*sign(mouse_x-obj_player.x), y, obj_arrow)
+        with  instance_create(x, y, obj_arrow)
         {
             objective_x = mouse_x - obj_player.x;
             objective_y = mouse_y - obj_player.y;
@@ -279,10 +282,15 @@ else if (!talking)
             
             if(objective_y &gt; 0){
                 image_angle = 360 - image_angle;
-            }            
-        }
+            }
+            /*
+            x = obj_player.x + objective_x;
+            y = obj_player.y + objective_y;
+        */}
+        number_of_arrows--;
         
-        gmwSetSwitch(global.Player_Weapon, global.Weapon_Crossbow, id);
+        gmwSetSwitch(global.Player_Weapon, global.Weapon_Sword, id);
+        gmwSetSwitch(global.Surface_Type, global.Surface_Stone, id);
         gmwPostEvent(global.Play_Weapon_Swing, id);
     }
     
@@ -329,7 +337,6 @@ else if (!talking)
         else if(place_meeting(x, y+1, obj_ground_grass)){
             gmwSetSwitch(global.Floor, global.Floor_Grass, id);
             gmwSetSwitch(global.Player_Armor, global.Armor_Chainmail, id);
-            
         }
         else if(place_meeting(x, y+1, obj_ground_wood))
             gmwSetSwitch(global.Floor, global.Floor_Wood, id);
@@ -531,6 +538,11 @@ if(key_interact &amp;&amp; grounded){
           <argument>
             <kind>1</kind>
             <string>draw_text(5, 15, room_persistent);
+var toPrint = string(number_of_arrows) + "xArrow";
+if(number_of_arrows != 1){
+    toPrint += "s";
+}
+draw_text(5, 30, toPrint);
 </string>
           </argument>
         </arguments>
