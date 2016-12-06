@@ -37,7 +37,7 @@ max_vsp = 15;
 objective_x = 0;
 objective_y = 0;
 
-depth = 10;
+depth = -10000000;
 
 start_time = current_time;
 

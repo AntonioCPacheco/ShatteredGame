@@ -273,7 +273,13 @@ else if (!talking)
             norm = sqrt(objective_x*objective_x + objective_y*objective_y);
             objective_x = objective_x / norm;
             objective_y = objective_y / norm;
-            image_xscale = sign(objective_x);
+            //image_xscale = sign(objective_x);
+            //image_yscale = sign(objective_y);
+            image_angle = arccos(objective_x)*(180/pi);
+            
+            if(objective_y &gt; 0){
+                image_angle = 360 - image_angle;
+            }            
         }
         
         gmwSetSwitch(global.Player_Weapon, global.Weapon_Crossbow, id);
@@ -320,8 +326,11 @@ else if (!talking)
     if(grounded){
         if(place_meeting(x, y+1, obj_ground_stone))
             gmwSetSwitch(global.Floor, global.Floor_Stone, id);
-        else if(place_meeting(x, y+1, obj_ground_grass))
+        else if(place_meeting(x, y+1, obj_ground_grass)){
             gmwSetSwitch(global.Floor, global.Floor_Grass, id);
+            gmwSetSwitch(global.Player_Armor, global.Armor_Chainmail, id);
+            
+        }
         else if(place_meeting(x, y+1, obj_ground_wood))
             gmwSetSwitch(global.Floor, global.Floor_Wood, id);
         else

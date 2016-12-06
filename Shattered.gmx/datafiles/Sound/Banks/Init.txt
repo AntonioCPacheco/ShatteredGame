@@ -1,4 +1,5 @@
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	786572618	Reverb_OnOff			\Reverb\Reverb_OnOff	
 	1564184899	SFX_Volume			\Options\SFX_Volume	
 	4179668880	Master_Volume			\Options\Master_Volume	
 

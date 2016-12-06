@@ -21,6 +21,9 @@
 			<IncludedEvents>
 				<Event Id="1840670240" Name="Leave_Menu"/>
 				<Event Id="3422541661" Name="Pause_Menu"/>
+				<Event Id="267911644" Name="Play_Dialogue"/>
+				<Event Id="3249275730" Name="Play_Dialogue_End"/>
+				<Event Id="1660008929" Name="Play_Door_Open"/>
 				<Event Id="1602358412" Name="Play_Footstep"/>
 				<Event Id="1806488964" Name="Play_Menu_Return"/>
 				<Event Id="2417331897" Name="Play_Menu_Scroll"/>
@@ -30,6 +33,10 @@
 				<Event Id="703352881" Name="Play_Weapon_Swing"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="308963" Language="SFX">
+					<ShortName>DialogueEnd.wav</ShortName>
+					<Path>SFX\DialogueEnd_9E69E797.wem</Path>
+				</File>
 				<File Id="408051" Language="SFX">
 					<ShortName>FOOTSTEP - Metal Board Walk Barefoot Male - 27.wav</ShortName>
 					<Path>SFX\FOOTSTEP - Metal Board Walk Barefoot Male - 27_9E69E797.wem</Path>
@@ -58,6 +65,10 @@
 					<ShortName>Menu_Slider.wav</ShortName>
 					<Path>SFX\Menu_Slider_9E69E797.wem</Path>
 				</File>
+				<File Id="156876857" Language="SFX">
+					<ShortName>Dialogue.wav</ShortName>
+					<Path>SFX\Dialogue_9E69E797.wem</Path>
+				</File>
 				<File Id="202672985" Language="SFX">
 					<ShortName>chainmail2.wav</ShortName>
 					<Path>SFX\chainmail2_9E69E797.wem</Path>
@@ -77,6 +88,10 @@
 				<File Id="294053548" Language="SFX">
 					<ShortName>swing.wav</ShortName>
 					<Path>SFX\swing_9E69E797.wem</Path>
+				</File>
+				<File Id="306446229" Language="SFX">
+					<ShortName>door_close_003.wav</ShortName>
+					<Path>SFX\door_close_003_9E69E797.wem</Path>
 				</File>
 				<File Id="307241607" Language="SFX">
 					<ShortName>209403__samulis__leather-rustle-6.wav</ShortName>
@@ -124,7 +139,7 @@
 				</File>
 				<File Id="529912182" Language="SFX">
 					<ShortName>Bullet Body Hit.wav</ShortName>
-					<Path>SFX\Bullet Body Hit_3F240567.wem</Path>
+					<Path>SFX\Bullet Body Hit_DD30F28B.wem</Path>
 				</File>
 				<File Id="591563546" Language="SFX">
 					<ShortName>footsteps_gravel_03.wav</ShortName>
@@ -168,7 +183,11 @@
 				</File>
 				<File Id="878957263" Language="SFX">
 					<ShortName>footsteps_gravel_02.wav</ShortName>
-					<Path>SFX\footsteps_gravel_02_759EC20C.wem</Path>
+					<Path>SFX\footsteps_gravel_02_BE1616F8.wem</Path>
+				</File>
+				<File Id="908405205" Language="SFX">
+					<ShortName>door_open_004.wav</ShortName>
+					<Path>SFX\door_open_004_9E69E797.wem</Path>
 				</File>
 				<File Id="911977677" Language="SFX">
 					<ShortName>197779__samulis__footstep-on-stone-2.wav</ShortName>
@@ -176,7 +195,7 @@
 				</File>
 				<File Id="912013720" Language="SFX">
 					<ShortName>warfare_medieval_english_longbow_arrow_shoot_from_bow_001.wav</ShortName>
-					<Path>SFX\warfare_medieval_english_longbow_arrow_shoot_from_bow_001_3DB3EF10.wem</Path>
+					<Path>SFX\warfare_medieval_english_longbow_arrow_shoot_from_bow_001_EE2AD891.wem</Path>
 				</File>
 				<File Id="937178450" Language="SFX">
 					<ShortName>Grassy_Steps_5.wav</ShortName>

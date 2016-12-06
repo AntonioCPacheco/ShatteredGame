@@ -53,16 +53,19 @@ gmwRegisterObject(id, "SoundController", global.DEFAULT_GROUP);
 
 
 // Initialize links to IDs
-//sound players
+//Sound players
 global.Play_Footstep = 1602358412;
 global.Play_Weapon_Swing = 703352881;
 global.Play_Weapon_Impact = 3739832523;
+global.Play_Dialogue = 267911644;
+global.Play_Dialogue_End = 3249275730;
+//Switches
 //floor
 global.Floor = 1088209313;
-global.Floor_Stone = 1216965916;
-global.Floor_Grass = 4248645337;
-global.Floor_Wood = 2058049674;
-global.Floor_Dirt = 2195636714;
+global.Floor_Stone = 834223070;
+global.Floor_Grass = 83925039;
+global.Floor_Wood = 3616930680;
+global.Floor_Dirt = 2517613408;
 //weapons
 global.Player_Weapon = 1625387345;
 global.Weapon_Sword = 2454616260;
