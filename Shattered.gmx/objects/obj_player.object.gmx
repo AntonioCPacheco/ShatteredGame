@@ -32,8 +32,8 @@ grav = 1;
 hsp = 0;
 vsp = 0;
 max_vsp = 15;
-jumpsp = 25;
-movesp = 10;
+jumpsp = 20;
+movesp = 8;
 
 grounded = false;
 grab = 0;
@@ -157,6 +157,7 @@ else if (!talking)
         vsp = key_jump * -jumpsp;
         if(key_jump) {
             sprite_state = 2;
+            gmwPostEvent(global.Play_Footstep, id);
         }
     }
     //horizontal push
@@ -336,7 +337,7 @@ else if (!talking)
             gmwSetSwitch(global.Floor, global.Floor_Stone, id);
         else if(place_meeting(x, y+1, obj_ground_grass)){
             gmwSetSwitch(global.Floor, global.Floor_Grass, id);
-            gmwSetSwitch(global.Player_Armor, global.Armor_Chainmail, id);
+            //gmwSetSwitch(global.Player_Armor, global.Armor_Chainmail, id);
         }
         else if(place_meeting(x, y+1, obj_ground_wood))
             gmwSetSwitch(global.Floor, global.Floor_Wood, id);
