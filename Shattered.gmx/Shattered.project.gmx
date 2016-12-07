@@ -121,7 +121,6 @@
     <sprite>sprites\chest_open</sprite>
     <sprite>sprites\collectible</sprite>
     <sprite>sprites\ladder_hitbox</sprite>
-    <sprite>sprites\movable</sprite>
     <sprite>sprites\npc</sprite>
     <sprite>sprites\player</sprite>
     <sprite>sprites\player_attack</sprite>
@@ -133,7 +132,16 @@
     <sprite>sprites\speech_bubble</sprite>
     <sprite>sprites\terrain</sprite>
     <sprite>sprites\arrow_vertical</sprite>
-    <sprite>sprites\trigger</sprite>
+    <sprite>sprites\sprt_crate</sprite>
+    <sprite>sprites\spikes</sprite>
+    <sprite>sprites\gate_handle</sprite>
+    <sprite>sprites\window</sprite>
+    <sprite>sprites\Knight_Idle</sprite>
+    <sprite>sprites\Knight_Attack</sprite>
+    <sprite>sprites\Knight_Running</sprite>
+    <sprite>sprites\sealed_pipe</sprite>
+    <sprite>sprites\Knight_Falling</sprite>
+    <sprite>sprites\Knight_Jump</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\floor_tiles</background>
@@ -149,19 +157,34 @@
     <background>background\Tree_1</background>
     <background>background\Dirt_1</background>
     <background>background\House</background>
+    <background>background\Wood_tiles</background>
+    <background>background\Lock</background>
+    <background>background\Crate</background>
+    <background>background\Grids</background>
+    <background>background\door</background>
+    <background>background\windows</background>
+    <background>background\Destroyed_house</background>
+    <background>background\Sewer_slime</background>
+    <background>background\Sewer</background>
+    <background>background\market_fruit</background>
+    <background>background\fire_place</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
+    <object>objects\obj_door</object>
+    <object>objects\obj_village_gate</object>
+    <object>objects\obj_door_barracks</object>
+    <object>objects\obj_door_stair</object>
     <object>objects\obj_sound_controller</object>
     <object>objects\dialog_manager</object>
     <object>objects\obj_arrow</object>
     <object>objects\obj_attack_hit</object>
-    <object>objects\obj_attack_enemy_hit</object>
     <object>objects\obj_chest</object>
+    <object>objects\obj_choice_manager</object>
     <object>objects\obj_collectible</object>
     <object>objects\obj_dialog</object>
     <object>objects\obj_dialog_choice</object>
-    <object>objects\obj_ladder_top</object>
+    <object>objects\obj_enemy</object>
     <object>objects\obj_movable</object>
     <object>objects\obj_guard</object>
     <object>objects\obj_npc_new</object>
@@ -169,29 +192,32 @@
     <object>objects\obj_player</object>
     <object>objects\obj_speaker</object>
     <object>objects\obj_speech_bubble</object>
-    <object>objects\object0</object>
-    <object>objects\object8</object>
     <object>objects\par_ladder</object>
+    <object>objects\obj_ladder_top</object>
+    <object>objects\obj_terrain</object>
+    <object>objects\obj_ground</object>
+    <object>objects\obj_ground_grass</object>
+    <object>objects\obj_ground_stone</object>
+    <object>objects\obj_ground_wood</object>
+    <object>objects\obj_ground_sewers</object>
     <object>objects\obj_transparency_off</object>
     <object>objects\obj_transparency_on</object>
-    <object>objects\obj_door</object>
-    <object>objects\obj_village_gate</object>
-    <object>objects\obj_door_knights_house</object>
-    <object>objects\obj_door_village</object>
-    <object>objects\obj_gate_guard_trigger</object>
-    <object>objects\obj_gate_peaceful</object>
-    <objects name="Ground Objects">
-      <object>objects\obj_terrain</object>
-      <object>objects\obj_terrain_invisible</object>
-      <object>objects\obj_ground</object>
-      <object>objects\obj_ground_wood</object>
-      <object>objects\obj_ground_grass</object>
-      <object>objects\obj_ground_stone</object>
-    </objects>
+    <object>objects\obj_terrain_invisible</object>
+    <object>objects\obj_gate_handle</object>
+    <object>objects\obj_spikes</object>
+    <object>objects\obj_window</object>
+    <object>objects\obj_disable_obj</object>
+    <object>objects\obj_enable_obj</object>
+    <object>objects\obj_Death_by_touch</object>
+    <object>objects\obj_movable_deploy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Knights_Village</room>
     <room>rooms\Knights_House</room>
+    <room>rooms\House_1</room>
+    <room>rooms\House_2</room>
+    <room>rooms\House_3</room>
+    <room>rooms\House_4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
