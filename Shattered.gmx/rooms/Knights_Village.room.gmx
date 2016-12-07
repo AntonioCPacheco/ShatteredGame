@@ -587,7 +587,7 @@
     <instance objName="obj_terrain" x="15968" y="1344" name="inst_0E8AB4D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="15968" y="1216" name="inst_E0061308" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="15968" y="1088" name="inst_86196882" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="8224" y="672" name="inst_63AE6FC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="15648" y="832" name="inst_FCC6409E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Grass_1" x="0" y="896" w="128" h="128" xo="0" yo="0" id="10000239" name="inst_0ED47660" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1017,20 +1017,6 @@
     <tile bgName="Wall_1" x="1696" y="640" w="128" h="128" xo="0" yo="0" id="10000841" name="inst_652CE15E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Wall_1" x="1696" y="512" w="128" h="128" xo="0" yo="0" id="10000842" name="inst_7257641C" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Wall_1" x="1696" y="384" w="128" h="128" xo="0" yo="0" id="10000843" name="inst_38344348" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="House" x="16224" y="768" w="128" h="128" xo="384" yo="384" id="10000874" name="inst_F277F8DE" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="House" x="16096" y="768" w="128" h="128" xo="256" yo="384" id="10000875" name="inst_BC7A9A8E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="House" x="15968" y="768" w="128" h="128" xo="128" yo="384" id="10000876" name="inst_175DAC86" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="House" x="15840" y="768" w="128" h="128" xo="0" yo="384" id="10000877" name="inst_6D8C38BE" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="House" x="15840" y="640" w="128" h="128" xo="0" yo="256" id="10000878" name="inst_94201DB9" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="House" x="15968" y="640" w="128" h="128" xo="128" yo="256" id="10000879" name="inst_16A3C51B" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="House" x="16096" y="640" w="128" h="128" xo="256" yo="256" id="10000880" name="inst_594F9B70" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="House" x="16224" y="640" w="128" h="128" xo="384" yo="256" id="10000881" name="inst_ECF6289F" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="House" x="16224" y="512" w="128" h="128" xo="384" yo="128" id="10000882" name="inst_A7023B0E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="House" x="16096" y="512" w="128" h="128" xo="256" yo="128" id="10000883" name="inst_9D68AA5A" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="House" x="15968" y="512" w="128" h="128" xo="128" yo="128" id="10000884" name="inst_9A694640" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="House" x="15840" y="512" w="128" h="128" xo="0" yo="128" id="10000885" name="inst_91E4848C" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="House" x="15968" y="384" w="128" h="128" xo="128" yo="0" id="10000886" name="inst_EB8066A6" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="House" x="16096" y="384" w="128" h="128" xo="256" yo="0" id="10000887" name="inst_2F988BEC" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="floor_tiles" x="3232" y="1792" w="128" h="128" xo="0" yo="0" id="10000957" name="inst_7F3B32FB" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="floor_tiles" x="3360" y="1792" w="128" h="128" xo="0" yo="0" id="10000958" name="inst_4A764ED1" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="floor_tiles" x="3488" y="1792" w="128" h="128" xo="0" yo="0" id="10000959" name="inst_3A469AE4" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1676,7 +1662,6 @@
     <tile bgName="ladder" x="13984" y="1408" w="128" h="128" xo="128" yo="0" id="10001803" name="inst_1A18EB1D" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ladder" x="13984" y="1536" w="128" h="128" xo="128" yo="0" id="10001804" name="inst_EE00418F" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="ladder" x="13984" y="1664" w="128" h="128" xo="0" yo="128" id="10001805" name="inst_C55B54BE" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="House" x="15840" y="384" w="128" h="128" xo="0" yo="0" id="10001930" name="inst_71987666" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="floor_tiles" x="8480" y="1920" w="128" h="128" xo="0" yo="0" id="10001931" name="inst_17A79DCA" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="floor_tiles" x="8480" y="2048" w="128" h="128" xo="0" yo="0" id="10001932" name="inst_7B5DFEE8" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="floor_tiles" x="9504" y="2176" w="128" h="128" xo="0" yo="0" id="10001936" name="inst_FFAA74DF" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1804,6 +1789,21 @@
     <tile bgName="door" x="8544" y="768" w="128" h="128" xo="0" yo="128" id="10002311" name="inst_3044FE96" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="door" x="9824" y="640" w="128" h="128" xo="0" yo="0" id="10002312" name="inst_E76D01EA" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="door" x="9824" y="768" w="128" h="128" xo="0" yo="128" id="10002313" name="inst_0C0DEE9E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Destroyed_house" x="15776" y="768" w="128" h="128" xo="0" yo="384" id="10002314" name="inst_3B48B1FB" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Destroyed_house" x="15904" y="768" w="128" h="128" xo="128" yo="384" id="10002315" name="inst_D02E00B8" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Destroyed_house" x="16032" y="768" w="128" h="128" xo="256" yo="384" id="10002316" name="inst_3D18FDAE" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Destroyed_house" x="16160" y="768" w="128" h="128" xo="384" yo="384" id="10002317" name="inst_0F3E3389" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Destroyed_house" x="16160" y="640" w="128" h="128" xo="384" yo="256" id="10002318" name="inst_8E39FEBB" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Destroyed_house" x="16032" y="640" w="128" h="128" xo="256" yo="256" id="10002319" name="inst_11A93414" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Destroyed_house" x="15904" y="640" w="128" h="128" xo="128" yo="256" id="10002320" name="inst_45D6D279" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Destroyed_house" x="15776" y="640" w="128" h="128" xo="0" yo="256" id="10002321" name="inst_F2AB38F8" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Destroyed_house" x="15904" y="512" w="128" h="128" xo="128" yo="128" id="10002322" name="inst_B73F6BB8" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Destroyed_house" x="15904" y="384" w="128" h="128" xo="128" yo="0" id="10002323" name="inst_2D7EC53C" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Destroyed_house" x="16032" y="384" w="128" h="128" xo="256" yo="0" id="10002324" name="inst_77D8E060" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Destroyed_house" x="16032" y="512" w="128" h="128" xo="256" yo="128" id="10002325" name="inst_277551E1" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Destroyed_house" x="15776" y="512" w="128" h="128" xo="0" yo="128" id="10002326" name="inst_4E74EC69" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Destroyed_house" x="16160" y="512" w="128" h="128" xo="384" yo="128" id="10002327" name="inst_740CB2E7" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Destroyed_house" x="16160" y="384" w="128" h="128" xo="384" yo="0" id="10002328" name="inst_A2112123" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Wall_1" x="2208" y="896" w="128" h="128" xo="0" yo="0" id="10000364" name="inst_39F3D324" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Wall_1" x="2336" y="896" w="128" h="128" xo="0" yo="0" id="10000366" name="inst_73BECE4B" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Wall_1" x="2080" y="768" w="128" h="128" xo="0" yo="0" id="10000367" name="inst_F97F648F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
