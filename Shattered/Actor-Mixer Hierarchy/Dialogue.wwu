@@ -14,6 +14,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="DialogueEnd" ID="{C4750033-C427-4D03-BC5F-B4E30660E56D}" ShortID="624479781" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
@@ -24,19 +31,15 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="DialogueEnd" ID="{458F509E-CFF1-4986-94BF-606646882F57}" ShortID="308963">
+									<PropertyList>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>DialogueEnd.wav</AudioFile>
-								</AudioFileSource>
-								<AudioFileSource Name="Dialogue" ID="{E21BB0ED-16B0-4483-9145-182D4E18924D}" ShortID="156876857">
-									<Language>SFX</Language>
-									<AudioFile>Dialogue.wav</AudioFile>
-								</AudioFileSource>
-								<AudioFileSource Name="DialogueEnd_01" ID="{CB049B03-1E5E-4F50-BEBA-670F13967E5E}" ShortID="296856977">
-									<Language>SFX</Language>
-									<AudioFile>DialogueEnd.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="308963"/>
-									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -44,6 +47,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Dialogue" ID="{FAD45C8F-B142-448D-8698-F6356C299676}" ShortID="753729852" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1000</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
