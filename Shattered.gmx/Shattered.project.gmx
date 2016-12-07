@@ -136,6 +136,7 @@
     <sprite>sprites\spikes</sprite>
     <sprite>sprites\gate_handle</sprite>
     <sprite>sprites\window</sprite>
+    <sprite>sprites\parado</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\floor_tiles</background>
