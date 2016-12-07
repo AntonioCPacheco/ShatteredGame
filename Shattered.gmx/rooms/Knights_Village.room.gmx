@@ -610,7 +610,6 @@
     <instance objName="obj_Death_by_touch" x="11744" y="2272" name="inst_E690FB15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable" x="10720" y="2112" name="inst_BA474E11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable" x="9952" y="1856" name="inst_CA684B39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="12640" y="1664" name="inst_CB33D596" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_sewers" x="12896" y="1984" name="inst_348AC9EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_sewers" x="13024" y="2112" name="inst_E67AC591" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_sewers" x="15072" y="2112" name="inst_389CCF98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -648,6 +647,7 @@
     <instance objName="obj_movable_deploy" x="14688" y="1600" name="inst_73DC22DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_ladder" x="13918" y="1824" name="inst_0D7D29AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_ladder" x="14048" y="1888" name="inst_F6394ED3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="352" y="800" name="inst_19D91DA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Grass_1" x="0" y="896" w="128" h="128" xo="0" yo="0" id="10000239" name="inst_0ED47660" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
