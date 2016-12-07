@@ -47,38 +47,19 @@ if(place_meeting(x, y+vsp, obj_terrain)){
 
 y += vsp;
 
-//Friendly Follow
-if(friendly &amp;&amp; following)
-{
-    if((obj_player.x + 230) &lt; x)
-    { 
-        x-= obj_player.movesp;
-    }
-    if((obj_player.x -230) &gt; x)
-    {
-        x+= obj_player.movesp;
-    }
-}
 //////////////
 // States of Action
 //////////////
 //saves the npc's original position
 if(original_x == 0){ original_x = x; }
-//check if npc is performing an attack on player
-if(attacking &amp;&amp; !friendly)
+//check if npc is performing an atack
+if(attacking)
 {   
         with instance_create(x, y, obj_attack_enemy_hit){
             image_xscale = obj_player.image_xscale;
         }
         attacking = false;
     
-}
-else if(attacking)
-{
-    with instance_create(x, y, obj_attack_friendly_hit){
-            image_xscale = obj_player.image_xscale;
-        }
-    attacking = false;
 }
 //npc is idle
 else if(state_of_action == 0){
@@ -107,11 +88,11 @@ else if(state_of_action == 1){
     }
 }
 //npc is going after player trying to kill him
-else if(state_of_action == 2 &amp;&amp; !friendly){
-    if(place_meeting(x+20, y, obj_player)){
+else if(state_of_action == 2){
+    if(place_meeting(x+5, y, obj_player)){
         attacking = true;
     }
-    else if(place_meeting(x-20, y, obj_player)){
+    else if(place_meeting(x-5, y, obj_player)){
         attacking = true;
     }
         
@@ -125,10 +106,10 @@ else if(state_of_action == 2 &amp;&amp; !friendly){
     }
 
 }
-else if(state_of_action == 3){
-    friendly = true;
-    following = true;
-}
+/*else if(state_of_action == 3){
+
+
+}*/
 
 </string>
           </argument>
@@ -152,8 +133,9 @@ else if(state_of_action == 3){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(hp &lt;= 0 &amp;&amp; !following &amp;&amp; !friendly){
+            <string>if(hp &lt;= 0){
     instance_destroy();
+<<<<<<< HEAD
 
 }
 else if(!following &amp;&amp; !friendly){
@@ -163,22 +145,11 @@ else if(!following &amp;&amp; !friendly){
 else if(fcount == 2){
     friendly = false;
     state_of_action = 2;
+=======
+>>>>>>> origin/master
 }
-else if(!following &amp;&amp; friendly){
-//show text "hey, stop it!"
-    if(obj_player.x &lt; x){
-        x += 15;
-        fcount += 1;
-    }
-    if(obj_player.x &gt; x){
-        x -= 15;
-        fcount += 1;
-    }
-}
-
-with(other)
-{
-    instance_destroy();
+else{ 
+    hp -= 35;
 }
 </string>
           </argument>
@@ -202,9 +173,10 @@ with(other)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(hp &lt;= 0 &amp;&amp; !following &amp;&amp; !friendly){
+            <string>if(hp &lt;= 0){
     instance_destroy();
 
+<<<<<<< HEAD
 }
 else if(!following &amp;&amp; !friendly){
     state_of_action = 2;
@@ -223,12 +195,15 @@ else if(!following &amp;&amp; friendly){
     if(obj_player.x &gt; x){
         x -= 15;
         fcount += 1;
+=======
+    with(other)
+    {
+        instance_destroy();
+>>>>>>> origin/master
     }
 }
-
-with(other)
-{
-    instance_destroy();
+else{
+    hp -= 25;
 }
 </string>
           </argument>

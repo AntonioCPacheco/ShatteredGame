@@ -34,7 +34,6 @@ vsp = 0;
 max_vsp = 15;
 jumpsp = 20;
 movesp = 8;
-hp = 0;
 
 triggered_to_interact = false;
 triggered_to_attack = false;
@@ -583,34 +582,6 @@ if((key_interact || triggered_to_interact) &amp;&amp; grounded){
             instSpeaker.dialog.choice++;
         }
     }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_attack_enemy_hit">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(hp &lt;= 0){
-    game_restart();
-}
-else{
-    hp -= 25;
 }
 </string>
           </argument>
