@@ -36,7 +36,9 @@ original_x = 0;
 attacking = false;
 moving_right = true;
 state_of_action = 1;
-friendly = false;
+friendly = true;
+following = false
+fcount= 0;
 </string>
           </argument>
         </arguments>
