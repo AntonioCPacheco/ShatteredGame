@@ -33,7 +33,7 @@ dialog_page = -1; //-1 because it is incremented at the beggining
 
 change = true;   
                   
-xoffset = -(sprite_width/4);//-32;
+xoffset = -(sprite_width/8);//-32;
 yoffset = -(sprite_height/2);//-192;
 
 // 0 = NPC Line
@@ -41,17 +41,18 @@ yoffset = -(sprite_height/2);//-192;
 // 2 = Player Choice
 
 order[0] = 0;
-order[1] = 0;
-order[2] = 1;
-order[3] = 0;
-order[4] = 2;
+order[1] = 1;
+order[2] = 0;
+order[3] = 2;
+order[4] = 0;
+order[5] = 0;
 
-text[0] = "Who goes there?";
-text[1] = "State your business.";
-text[2] = "I just need to pass through, that's all.";
-text[3] = "To get through our territory you have to pay a toll.";
-text[4] = "Here's 5 gold pieces.#I'd rather not.";
-
+text[0] = "Who goes there? State your business.";
+text[1] = "I seek passage into the city.";
+text[2] = "Very well, drop your weapons and walk towards the gate.";
+text[3] = "*Drop weapons*#*Keep weapons*";
+text[4] = "Grab his weapons and bring him inside.";
+text[5] = "Very well. Then stay outside, scum...";
 //my_path=npc_movement;
 //path_start(my_path,1,0,1);
 </string>

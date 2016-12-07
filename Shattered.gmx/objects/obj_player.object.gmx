@@ -41,6 +41,8 @@ triggered_by = noone;
 grounded = false;
 grab = 0;
 choosing = false;
+last_choice = -1;
+deleteNext = false;
 
 sprite_state = 0; //0 - idle | 1 - running | 2 - jumping | 3 - falling
 last_state = sprite_state;
@@ -446,7 +448,24 @@ if((key_interact || triggered_to_interact) &amp;&amp; grounded){
                     dialog.text_count = string_length(dialog.text);
                 } else {
                     dialog_page++;
-                    if(dialog_page &gt;= array_length_1d(text)) { //if no more dialog
+                    if(instPlayer.choosing){
+                        with (dialog){ 
+                            if(instance_exists(obj_dialog_choice)){ //if dialog was choice
+                                instPlayer.choosing = false;
+                                instPlayer.last_choice = instance_nearest(x,y, obj_dialog_choice).choice;
+                                //BEGIN HACK Change for next delivery
+                                if(instPlayer.last_choice == 0){
+                                    instSpeaker.dialog_page = -1;
+                                    instSpeaker.change = false;
+                                } else {
+                                    instSpeaker.dialog_page++;
+                                }
+                            }
+                            instance_destroy();
+                        }
+                    }
+                    else if(dialog_page &gt;= array_length_1d(text) || instPlayer.deleteNext) { //if no more dialog
+                        deleteNext = false;
                         dialog_page = -1;
                         change = false;
                         if(instance_exists(obj_npc_new)){  //resume npc path
@@ -454,13 +473,11 @@ if((key_interact || triggered_to_interact) &amp;&amp; grounded){
                                 path_speed = 1;
                             }
                         }
-                        with (dialog){ 
-                            if(instance_exists(obj_dialog_choice)){ //if dialog was choice
-                                instPlayer.choosing = false;
-                            }
+                        with (dialog){
                             instance_destroy();
                         }
-                    } else if(order[dialog_page] != order[dialog_page-1]){ //if there is still dialog and new dialog is a choice
+                    }
+                    else if(order[dialog_page] != order[dialog_page-1]){ //if there is still dialog and new dialog is a choice
                         with (dialog){  
                             if(instance_exists(obj_dialog_choice)){
                                 instPlayer.choosing = false;
@@ -468,6 +485,7 @@ if((key_interact || triggered_to_interact) &amp;&amp; grounded){
                             instance_destroy();
                         }
                     }
+                    
                 }
             } else { //else switch page and stop npc
                 dialog_page++;
@@ -524,6 +542,9 @@ if((key_interact || triggered_to_interact) &amp;&amp; grounded){
 } else if (choosing &amp;&amp; (key_up_pressed || key_down_pressed)){
     var inst;
     instSpeaker = instance_place(x, y, obj_speaker);
+    if(instSpeaker == noone){
+        instSpeaker = triggered_by;
+    }
     if (instSpeaker != noone){  //NPC dialog
         if(key_up_pressed){
             instSpeaker.dialog.choice--;

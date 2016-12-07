@@ -26,7 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>var guard = instance_nearest(x,y, obj_gate_guard);
-if(guard != noone){
+if(guard != noone &amp;&amp; instance_nearest(x,y, obj_player).last_choice == 0){
+    guard.dialog_page=3;
+    obj_player.deleteNext = true;
     obj_player.triggered_to_interact = true;
     obj_player.triggered_by = guard;
 }

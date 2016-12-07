@@ -179,6 +179,7 @@
     <object>objects\obj_door_knights_house</object>
     <object>objects\obj_door_village</object>
     <object>objects\obj_gate_guard_trigger</object>
+    <object>objects\obj_gate_peaceful</object>
     <objects name="Ground Objects">
       <object>objects\obj_terrain</object>
       <object>objects\obj_terrain_invisible</object>
