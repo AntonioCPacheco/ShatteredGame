@@ -163,6 +163,7 @@
     <background>background\windows</background>
     <background>background\Destroyed_house</background>
     <background>background\Sewer_slime</background>
+    <background>background\Sewer</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
