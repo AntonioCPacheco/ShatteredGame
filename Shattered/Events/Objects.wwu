@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DE6ABF70-FE29-4DD0-877E-43FC1E546BF7}" SchemaVersion="70">
+	<Events>
+		<WorkUnit Name="Objects" ID="{DE6ABF70-FE29-4DD0-877E-43FC1E546BF7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Door_Open" ID="{CA859AA3-3BEF-4FCA-B5B5-F382D8BBA3EC}">
+					<ChildrenList>
+						<Action Name="Play" ID="{3FA34B8E-8789-4582-B568-4EDAE977277D}" ShortID="456301987" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{FE62D967-CD41-4245-8094-0F51088D5DDC}" Global="false">
+									<ObjectRef Name="door_open_004" ID="{E438101F-D276-41A6-B318-9A05C284A9EF}" WorkUnitID="{1427E7EB-578A-4C28-98B0-1BCB3028C67A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{965ADBD5-4C3C-4FD7-974C-299CE0E35C05}" ShortID="595915830" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{2C55B04F-2288-43B7-9C54-C3DE8CD5C59D}" Global="false">
+									<ObjectRef Name="door_close_003" ID="{E87E3C5E-BD31-4303-815D-1408FEC13117}" WorkUnitID="{1427E7EB-578A-4C28-98B0-1BCB3028C67A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

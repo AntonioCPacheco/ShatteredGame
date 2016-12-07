@@ -52,6 +52,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Menu_Select" ID="{D80F3316-B754-423B-AD39-7B7AF1F2E42B}" ShortID="6050288" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>350</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>

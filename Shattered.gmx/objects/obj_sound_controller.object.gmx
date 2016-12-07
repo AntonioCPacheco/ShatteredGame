@@ -53,16 +53,54 @@ gmwRegisterObject(id, "SoundController", global.DEFAULT_GROUP);
 
 
 // Initialize links to IDs
+//Sound players
 global.Play_Footstep = 1602358412;
+global.Play_Weapon_Swing = 703352881;
+global.Play_Weapon_Impact = 3739832523;
+global.Play_Dialogue = 267911644;
+global.Play_Dialogue_End = 3249275730;
+//Switches
+//floor
 global.Floor = 1088209313;
-global.Stone = 1216965916;
+global.Floor_Stone = 834223070;
+global.Floor_Grass = 83925039;
+global.Floor_Wood = 3616930680;
+global.Floor_Dirt = 2517613408;
+gmwSetSwitch(global.Floor, global.Floor_Stone, obj_player.id);
+//weapons
+global.Player_Weapon = 1625387345;
+global.Weapon_Sword = 2454616260;
+global.Weapon_Crossbow = 2523406417;
+global.Weapon_Fist =2695658315;
+gmwSetSwitch(global.Player_Weapon, global.Weapon_Sword, obj_player.id);
+//armor
+global.Player_Armor = 1772252326;
+global.Armor_MetalPlate = 564569494;
+global.Armor_Chainmail =1842129769
+global.Armor_Leather = 3624926856;
+gmwSetSwitch(global.Player_Armor, global.Armor_Chainmail, obj_player.id);
+//surface
+global.Surface_Type = 4064446173;
+global.Surface_Flesh = 1153642577;
+global.Surface_Stone = 1216965916;
+global.Surface_Wood = 2058049674;
+global.Surface_Dirt = 2195636714;
+gmwSetSwitch(global.Surface_Type, global.Surface_Stone, obj_player.id);
+
+//game parameters
+global.Reverb_OnOff = 786572618;
+global.Music_Volume = 1006694123;
+global.SFX_Volume = 1564184899;
+global.Master_Volume = 4179668880;
 
 // Set the music volume to max and start playing it
 global.VOLUME = 100;
 
-gmwPostEvent(global.Play_Footstep, id);
-gmwSetSwitch(global.Floor,global.Stone, global.Play_Footstep);
-
+//DEFAULTS
+gmwSetGlobalParameter(global.Reverb_OnOff, 100);
+gmwSetGlobalParameter(global.Music_Volume, 100);
+gmwSetGlobalParameter(global.SFX_Volume, 100);
+gmwSetGlobalParameter(global.Master_Volume, 20);
 </string>
           </argument>
         </arguments>

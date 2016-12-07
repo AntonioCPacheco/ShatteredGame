@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{45F27939-ED74-4CFC-8E81-48CB2EC5012C}" SchemaVersion="70">
+	<AudioObjects>
+		<WorkUnit Name="Dialogue" ID="{45F27939-ED74-4CFC-8E81-48CB2EC5012C}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Dialogue" ID="{1ABB307C-5B5A-4BB7-9B5F-F8A298E99659}" ShortID="314916106">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="DialogueEnd" ID="{C4750033-C427-4D03-BC5F-B4E30660E56D}" ShortID="624479781" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DialogueEnd" ID="{458F509E-CFF1-4986-94BF-606646882F57}" ShortID="308963">
+									<PropertyList>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>DialogueEnd.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="DialogueEnd" ID="{458F509E-CFF1-4986-94BF-606646882F57}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dialogue" ID="{FAD45C8F-B142-448D-8698-F6356C299676}" ShortID="753729852" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1000</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8F6F01B3-E8CC-4B10-BAD9-30AD7DB7BC1A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DD2CAAF-A2F8-49AE-94F8-D62D355399C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dialogue" ID="{702EE914-1A55-4C71-808C-0A62D0BBB783}" ShortID="942879407">
+									<Language>SFX</Language>
+									<AudioFile>Dialogue.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="156876857"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dialogue" ID="{702EE914-1A55-4C71-808C-0A62D0BBB783}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

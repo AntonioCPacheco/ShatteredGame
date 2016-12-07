@@ -53,7 +53,7 @@ lastchoice = -1;
             <string>event_inherited();
 
 
-choice = sign(choice) * (choice % 2);
+choice = sign(choice) * (choice % (string_count("#", text)+1));
 if(lastchoice != choice){
     with(obj_dialog){
         text = string_delete(text, string_pos("&gt;", text), 1);

@@ -19,11 +19,28 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1840670240" Name="Leave_Menu"/>
+				<Event Id="3422541661" Name="Pause_Menu"/>
+				<Event Id="267911644" Name="Play_Dialogue"/>
+				<Event Id="3249275730" Name="Play_Dialogue_End"/>
+				<Event Id="1660008929" Name="Play_Door_Open"/>
 				<Event Id="1602358412" Name="Play_Footstep"/>
+				<Event Id="1806488964" Name="Play_Menu_Return"/>
+				<Event Id="2417331897" Name="Play_Menu_Scroll"/>
+				<Event Id="2167056030" Name="Play_Menu_Select"/>
+				<Event Id="3735555653" Name="Play_Menu_Slider"/>
 				<Event Id="3739832523" Name="Play_Weapon_Impact"/>
 				<Event Id="703352881" Name="Play_Weapon_Swing"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="308963" Language="SFX">
+					<ShortName>DialogueEnd.wav</ShortName>
+					<Path>SFX\DialogueEnd_9E69E797.wem</Path>
+				</File>
+				<File Id="408051" Language="SFX">
+					<ShortName>FOOTSTEP - Metal Board Walk Barefoot Male - 27.wav</ShortName>
+					<Path>SFX\FOOTSTEP - Metal Board Walk Barefoot Male - 27_9E69E797.wem</Path>
+				</File>
 				<File Id="7752225" Language="SFX">
 					<ShortName>Grassy_Steps_1.wav</ShortName>
 					<Path>SFX\Grassy_Steps_1_9E69E797.wem</Path>
@@ -31,6 +48,26 @@
 				<File Id="23408836" Language="SFX">
 					<ShortName>197780__samulis__footstep-on-stone-3.wav</ShortName>
 					<Path>SFX\197780__samulis__footstep-on-stone-3_9E69E797.wem</Path>
+				</File>
+				<File Id="53994213" Language="SFX">
+					<ShortName>FOOTSTEP - Metal Board Walk Barefoot Male - 2.wav</ShortName>
+					<Path>SFX\FOOTSTEP - Metal Board Walk Barefoot Male - 2_9E69E797.wem</Path>
+				</File>
+				<File Id="80030715" Language="SFX">
+					<ShortName>footsteps_gravel_05.wav</ShortName>
+					<Path>SFX\footsteps_gravel_05_9E69E797.wem</Path>
+				</File>
+				<File Id="81650940" Language="SFX">
+					<ShortName>FOOTSTEP - Metal Board Run Barefoot Male - 10.wav</ShortName>
+					<Path>SFX\FOOTSTEP - Metal Board Run Barefoot Male - 10_9E69E797.wem</Path>
+				</File>
+				<File Id="111688755" Language="SFX">
+					<ShortName>Menu_Slider.wav</ShortName>
+					<Path>SFX\Menu_Slider_9E69E797.wem</Path>
+				</File>
+				<File Id="156876857" Language="SFX">
+					<ShortName>Dialogue.wav</ShortName>
+					<Path>SFX\Dialogue_9E69E797.wem</Path>
 				</File>
 				<File Id="202672985" Language="SFX">
 					<ShortName>chainmail2.wav</ShortName>
@@ -40,13 +77,41 @@
 					<ShortName>Grassy_Steps_4.wav</ShortName>
 					<Path>SFX\Grassy_Steps_4_8BF80143.wem</Path>
 				</File>
+				<File Id="261081011" Language="SFX">
+					<ShortName>swing2.wav</ShortName>
+					<Path>SFX\swing2_9E69E797.wem</Path>
+				</File>
 				<File Id="287656003" Language="SFX">
 					<ShortName>Stab_Punch_Hit_136.wav</ShortName>
 					<Path>SFX\Stab_Punch_Hit_136_9E69E797.wem</Path>
 				</File>
+				<File Id="294053548" Language="SFX">
+					<ShortName>swing.wav</ShortName>
+					<Path>SFX\swing_9E69E797.wem</Path>
+				</File>
+				<File Id="306446229" Language="SFX">
+					<ShortName>door_close_003.wav</ShortName>
+					<Path>SFX\door_close_003_9E69E797.wem</Path>
+				</File>
 				<File Id="307241607" Language="SFX">
 					<ShortName>209403__samulis__leather-rustle-6.wav</ShortName>
 					<Path>SFX\209403__samulis__leather-rustle-6_9E69E797.wem</Path>
+				</File>
+				<File Id="347669044" Language="SFX">
+					<ShortName>footsteps_gravel_04.wav</ShortName>
+					<Path>SFX\footsteps_gravel_04_9E69E797.wem</Path>
+				</File>
+				<File Id="363742317" Language="SFX">
+					<ShortName>Menu_Select.wav</ShortName>
+					<Path>SFX\Menu_Select_9E69E797.wem</Path>
+				</File>
+				<File Id="386389206" Language="SFX">
+					<ShortName>footsteps_gravel_01.wav</ShortName>
+					<Path>SFX\footsteps_gravel_01_9E69E797.wem</Path>
+				</File>
+				<File Id="409031593" Language="SFX">
+					<ShortName>Menu_Scroll.wav</ShortName>
+					<Path>SFX\Menu_Scroll_9E69E797.wem</Path>
 				</File>
 				<File Id="428452357" Language="SFX">
 					<ShortName>Sword Stab Through Flesh 02.wav</ShortName>
@@ -68,6 +133,18 @@
 					<ShortName>209397__samulis__leather-rustle-3.wav</ShortName>
 					<Path>SFX\209397__samulis__leather-rustle-3_EA5F75BB.wem</Path>
 				</File>
+				<File Id="519028106" Language="SFX">
+					<ShortName>Menu_Return.wav</ShortName>
+					<Path>SFX\Menu_Return_9E69E797.wem</Path>
+				</File>
+				<File Id="529912182" Language="SFX">
+					<ShortName>Bullet Body Hit.wav</ShortName>
+					<Path>SFX\Bullet Body Hit_DD30F28B.wem</Path>
+				</File>
+				<File Id="591563546" Language="SFX">
+					<ShortName>footsteps_gravel_03.wav</ShortName>
+					<Path>SFX\footsteps_gravel_03_9E69E797.wem</Path>
+				</File>
 				<File Id="613985335" Language="SFX">
 					<ShortName>chainmail1.wav</ShortName>
 					<Path>SFX\chainmail1_9E69E797.wem</Path>
@@ -80,9 +157,21 @@
 					<ShortName>197778__samulis__footstep-on-stone.wav</ShortName>
 					<Path>SFX\197778__samulis__footstep-on-stone_9E69E797.wem</Path>
 				</File>
+				<File Id="734598525" Language="SFX">
+					<ShortName>swing3.wav</ShortName>
+					<Path>SFX\swing3_9E69E797.wem</Path>
+				</File>
+				<File Id="735024882" Language="SFX">
+					<ShortName>FOOTSTEP - Metal Board Run Barefoot Male - 1.wav</ShortName>
+					<Path>SFX\FOOTSTEP - Metal Board Run Barefoot Male - 1_9E69E797.wem</Path>
+				</File>
 				<File Id="790847928" Language="SFX">
 					<ShortName>Sword Stab Quick.wav</ShortName>
 					<Path>SFX\Sword Stab Quick_9E69E797.wem</Path>
+				</File>
+				<File Id="819627823" Language="SFX">
+					<ShortName>FOOTSTEP - Metal Board Land Barefoot Male - 1.wav</ShortName>
+					<Path>SFX\FOOTSTEP - Metal Board Land Barefoot Male - 1_9E69E797.wem</Path>
 				</File>
 				<File Id="842099656" Language="SFX">
 					<ShortName>209404__samulis__plate-armor-rustle-5.wav</ShortName>
@@ -92,9 +181,21 @@
 					<ShortName>209396__samulis__leather-rustle-5.wav</ShortName>
 					<Path>SFX\209396__samulis__leather-rustle-5_9E69E797.wem</Path>
 				</File>
+				<File Id="878957263" Language="SFX">
+					<ShortName>footsteps_gravel_02.wav</ShortName>
+					<Path>SFX\footsteps_gravel_02_BE1616F8.wem</Path>
+				</File>
+				<File Id="908405205" Language="SFX">
+					<ShortName>door_open_004.wav</ShortName>
+					<Path>SFX\door_open_004_9E69E797.wem</Path>
+				</File>
 				<File Id="911977677" Language="SFX">
 					<ShortName>197779__samulis__footstep-on-stone-2.wav</ShortName>
 					<Path>SFX\197779__samulis__footstep-on-stone-2_9E69E797.wem</Path>
+				</File>
+				<File Id="912013720" Language="SFX">
+					<ShortName>warfare_medieval_english_longbow_arrow_shoot_from_bow_001.wav</ShortName>
+					<Path>SFX\warfare_medieval_english_longbow_arrow_shoot_from_bow_001_EE2AD891.wem</Path>
 				</File>
 				<File Id="937178450" Language="SFX">
 					<ShortName>Grassy_Steps_5.wav</ShortName>
@@ -107,6 +208,14 @@
 				<File Id="942657143" Language="SFX">
 					<ShortName>197781__samulis__footstep-on-stone-4.wav</ShortName>
 					<Path>SFX\197781__samulis__footstep-on-stone-4_9E69E797.wem</Path>
+				</File>
+				<File Id="976038632" Language="SFX">
+					<ShortName>FOOTSTEP - Metal Board Walk Barefoot Male - 24.wav</ShortName>
+					<Path>SFX\FOOTSTEP - Metal Board Walk Barefoot Male - 24_9E69E797.wem</Path>
+				</File>
+				<File Id="1068519868" Language="SFX">
+					<ShortName>Arrow Hit.wav</ShortName>
+					<Path>SFX\Arrow Hit_9E69E797.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

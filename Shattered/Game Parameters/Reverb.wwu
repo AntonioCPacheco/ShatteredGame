@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C1C7AF16-0471-468E-842D-9EA7E4E5ECEE}" SchemaVersion="70">
+	<GameParameters>
+		<WorkUnit Name="Reverb" ID="{C1C7AF16-0471-468E-842D-9EA7E4E5ECEE}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Reverb_OnOff" ID="{59A2F0E9-5DF7-43BF-AC0F-7C1BD3C26913}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

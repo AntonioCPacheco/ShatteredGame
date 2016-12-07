@@ -12,10 +12,10 @@
 				</SwitchGroup>
 				<SwitchGroup Name="Floor" ID="{25F30CB3-486C-427D-92F0-0C8186A9980F}">
 					<ChildrenList>
-						<Switch Name="Stone" ID="{4BAF3D9E-86E9-49D1-B20D-F6FD9EA8236C}"/>
-						<Switch Name="Dirt" ID="{0B29B79B-94EA-4296-89C7-744E61D7E013}"/>
-						<Switch Name="Grass" ID="{0DD724BA-3607-45BF-B6BA-0BBFD0B8CCEA}"/>
-						<Switch Name="Wood" ID="{C1AF57C1-AF11-44E3-91CD-4F2AFD691CC3}"/>
+						<Switch Name="fs_Stone" ID="{4BAF3D9E-86E9-49D1-B20D-F6FD9EA8236C}"/>
+						<Switch Name="fs_Dirt" ID="{0B29B79B-94EA-4296-89C7-744E61D7E013}"/>
+						<Switch Name="fs_Grass" ID="{0DD724BA-3607-45BF-B6BA-0BBFD0B8CCEA}"/>
+						<Switch Name="fs_Wood" ID="{C1AF57C1-AF11-44E3-91CD-4F2AFD691CC3}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

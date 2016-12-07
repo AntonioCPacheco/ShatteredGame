@@ -1,6 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
+	267911644	Play_Dialogue			\Dialogue\Play_Dialogue	
 	703352881	Play_Weapon_Swing			\Combat\Play_Weapon_Swing	
 	1602358412	Play_Footstep			\Character\Play_Footstep	
+	1660008929	Play_Door_Open			\Objects\Play_Door_Open	
+	1806488964	Play_Menu_Return			\Menu\Play_Menu_Return	
+	1840670240	Leave_Menu			\Menu\Leave_Menu	
+	2167056030	Play_Menu_Select			\Menu\Play_Menu_Select	
+	2417331897	Play_Menu_Scroll			\Menu\Play_Menu_Scroll	
+	3249275730	Play_Dialogue_End			\Dialogue\Play_Dialogue_End	
+	3422541661	Pause_Menu			\Menu\Pause_Menu	
+	3735555653	Play_Menu_Slider			\Menu\Play_Menu_Slider	
 	3739832523	Play_Weapon_Impact			\Combat\Play_Weapon_Impact	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -10,10 +19,10 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 	4064446173	Surface_Type			\Combat_Switches\Surface_Type	
 
 Switch	ID	Name	Switch Group			Notes
-	1216965916	Stone	Floor			
-	2058049674	Wood	Floor			
-	2195636714	Dirt	Floor			
-	4248645337	Grass	Floor			
+	83925039	fs_Grass	Floor			
+	834223070	fs_Stone	Floor			
+	2517613408	fs_Dirt	Floor			
+	3616930680	fs_Wood	Floor			
 	2454616260	Sword	Player_Weapon			
 	2523406417	Crossbow	Player_Weapon			
 	2695658315	Fist	Player_Weapon			
@@ -25,26 +34,76 @@ Switch	ID	Name	Switch Group			Notes
 	2058049674	Wood	Surface_Type			
 	2195636714	Dirt	Surface_Type			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	786572618	Reverb_OnOff			\Reverb\Reverb_OnOff	
+	1006694123	Music_Volume			\Options\Music_Volume	
+	1029930033	SS_Air_Fury			\Factory SoundSeed Air Game Syncs\SS_Air_Fury	
+	1564184899	SFX_Volume			\Options\SFX_Volume	
+	3074696722	SS_Air_Size			\Factory SoundSeed Air Game Syncs\SS_Air_Size	
+	4179668880	Master_Volume			\Options\Master_Volume	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	436743010	Character			\Default Work Unit\Master Audio Bus\World_Sound\Character	
+	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
+	951797413	Non-World_Sound			\Default Work Unit\Master Audio Bus\Non-World_Sound	
+	1695690031	Objects			\Default Work Unit\Master Audio Bus\World_Sound\Objects	
+	1705094007	World_Sound			\Default Work Unit\Master Audio Bus\World_Sound	
+	2607556080	Menu			\Default Work Unit\Master Audio Bus\Non-World_Sound\Menu	
+	2764240573	Combat			\Default Work Unit\Master Audio Bus\World_Sound\Combat	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Non-World_Sound\Music	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2991323841	Reverb_Sewers			\Default Work Unit\Master Audio Bus\World_Sound\Reverb_Sewers	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1706684651	Plate_Medium	Wwise RoomVerb			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	308963	DialogueEnd	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\DialogueEnd_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\Dialogue\DialogueEnd		176464
+	408051	FOOTSTEP - Metal Board Walk Barefoot Male - 27	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\FOOTSTEP - Metal Board Walk Barefoot Male - 27_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_wood\FOOTSTEP - Metal Board Walk Barefoot Male - 27		44094
 	7752225	Grassy_Steps_1	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Grassy_Steps_1_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_grass\Grassy_Steps_1		128772
 	23408836	197780__samulis__footstep-on-stone-3	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\197780__samulis__footstep-on-stone-3_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_stone\197780__samulis__footstep-on-stone-3		78780
+	53994213	FOOTSTEP - Metal Board Walk Barefoot Male - 2	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\FOOTSTEP - Metal Board Walk Barefoot Male - 2_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_wood\FOOTSTEP - Metal Board Walk Barefoot Male - 2		41022
+	80030715	footsteps_gravel_05	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\footsteps_gravel_05_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_dirt\footsteps_gravel_05		153392
+	81650940	FOOTSTEP - Metal Board Run Barefoot Male - 10	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\FOOTSTEP - Metal Board Run Barefoot Male - 10_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_wood\FOOTSTEP - Metal Board Run Barefoot Male - 10		30270
+	111688755	Menu_Slider	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Menu_Slider_9E69E797.wem		\Actor-Mixer Hierarchy\UI\Menu\Menu_Slider		352864
+	156876857	Dialogue	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Dialogue_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\Dialogue\Dialogue		88264
 	202672985	chainmail2	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\chainmail2_9E69E797.wem		\Actor-Mixer Hierarchy\Character\movement_armor_type\mov_chainmail\chainmail2		132444
 	243705276	Grassy_Steps_4	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Grassy_Steps_4_8BF80143.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_grass\Grassy_Steps_4		104420
+	261081011	swing2	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\swing2_9E69E797.wem		\Actor-Mixer Hierarchy\Combat\swing_weapon_type\swing_sword\swing2		25868
 	287656003	Stab_Punch_Hit_136	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Stab_Punch_Hit_136_9E69E797.wem		\Actor-Mixer Hierarchy\Combat\impact_weapon_type\impact_sword_surface_type\imp_sword_flesh\Stab_Punch_Hit_136		52468
+	294053548	swing	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\swing_9E69E797.wem		\Actor-Mixer Hierarchy\Combat\swing_weapon_type\swing_sword\swing		40568
+	306446229	door_close_003	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\door_close_003_9E69E797.wem		\Actor-Mixer Hierarchy\Objects\Door\door_close_003		128140
 	307241607	209403__samulis__leather-rustle-6	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\209403__samulis__leather-rustle-6_9E69E797.wem		\Actor-Mixer Hierarchy\Character\movement_armor_type\mov_leather\209403__samulis__leather-rustle-6		82840
+	347669044	footsteps_gravel_04	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\footsteps_gravel_04_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_dirt\footsteps_gravel_04		141600
+	363742317	Menu_Select	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Menu_Select_9E69E797.wem		\Actor-Mixer Hierarchy\UI\Menu\Menu_Select		352864
+	386389206	footsteps_gravel_01	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\footsteps_gravel_01_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_dirt\footsteps_gravel_01		141600
+	409031593	Menu_Scroll	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Menu_Scroll_9E69E797.wem		\Actor-Mixer Hierarchy\UI\Menu\Menu_Scroll		176464
 	428452357	Sword Stab Through Flesh 02	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Sword Stab Through Flesh 02_9E69E797.wem		\Actor-Mixer Hierarchy\Combat\impact_weapon_type\impact_sword_surface_type\imp_sword_flesh\Sword Stab Through Flesh 02		99342
 	436167839	Grassy_Steps_2	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Grassy_Steps_2_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_grass\Grassy_Steps_2		130512
 	439958929	Grassy_Steps_3	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Grassy_Steps_3_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_grass\Grassy_Steps_3		118336
 	447824877	209405__samulis__plate-armor-rustle-4	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\209405__samulis__plate-armor-rustle-4_095CE2EE.wem		\Actor-Mixer Hierarchy\Character\movement_armor_type\mov_metalplate\209405__samulis__plate-armor-rustle-4		88472
 	472921331	209397__samulis__leather-rustle-3	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\209397__samulis__leather-rustle-3_EA5F75BB.wem		\Actor-Mixer Hierarchy\Character\movement_armor_type\mov_leather\209397__samulis__leather-rustle-3		98192
+	519028106	Menu_Return	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Menu_Return_9E69E797.wem		\Actor-Mixer Hierarchy\UI\Menu\Menu_Return		352864
+	529912182	Bullet Body Hit	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Bullet Body Hit_DD30F28B.wem		\Actor-Mixer Hierarchy\Combat\impact_weapon_type\impact_crossbow_surface_type\imp_crossbow_flesh\Bullet Body Hit		18360
+	591563546	footsteps_gravel_03	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\footsteps_gravel_03_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_dirt\footsteps_gravel_03		118008
 	613985335	chainmail1	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\chainmail1_9E69E797.wem		\Actor-Mixer Hierarchy\Character\movement_armor_type\mov_chainmail\chainmail1		103044
 	638163781	209400__samulis__plate-armor-rustle-3	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\209400__samulis__plate-armor-rustle-3_485D613F.wem		\Actor-Mixer Hierarchy\Character\movement_armor_type\mov_metalplate\209400__samulis__plate-armor-rustle-3		92344
 	646444598	197778__samulis__footstep-on-stone	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\197778__samulis__footstep-on-stone_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_stone\197778__samulis__footstep-on-stone		82356
+	734598525	swing3	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\swing3_9E69E797.wem		\Actor-Mixer Hierarchy\Combat\swing_weapon_type\swing_sword\swing3		24492
+	735024882	FOOTSTEP - Metal Board Run Barefoot Male - 1	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\FOOTSTEP - Metal Board Run Barefoot Male - 1_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_wood\FOOTSTEP - Metal Board Run Barefoot Male - 1		26686
 	790847928	Sword Stab Quick	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Sword Stab Quick_9E69E797.wem		\Actor-Mixer Hierarchy\Combat\impact_weapon_type\impact_sword_surface_type\imp_sword_flesh\Sword Stab Quick		16530
+	819627823	FOOTSTEP - Metal Board Land Barefoot Male - 1	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\FOOTSTEP - Metal Board Land Barefoot Male - 1_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_wood\FOOTSTEP - Metal Board Land Barefoot Male - 1		62014
 	842099656	209404__samulis__plate-armor-rustle-5	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\209404__samulis__plate-armor-rustle-5_8D7FE39C.wem		\Actor-Mixer Hierarchy\Character\movement_armor_type\mov_metalplate\209404__samulis__plate-armor-rustle-5		107400
 	863457260	209396__samulis__leather-rustle-5	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\209396__samulis__leather-rustle-5_9E69E797.wem		\Actor-Mixer Hierarchy\Character\movement_armor_type\mov_leather\209396__samulis__leather-rustle-5		106476
+	878957263	footsteps_gravel_02	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\footsteps_gravel_02_BE1616F8.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_dirt\footsteps_gravel_02		50316
+	908405205	door_open_004	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\door_open_004_9E69E797.wem		\Actor-Mixer Hierarchy\Objects\Door\door_open_004		144140
 	911977677	197779__samulis__footstep-on-stone-2	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\197779__samulis__footstep-on-stone-2_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_stone\197779__samulis__footstep-on-stone-2		68044
+	912013720	warfare_medieval_english_longbow_arrow_shoot_from_bow_001	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\warfare_medieval_english_longbow_arrow_shoot_from_bow_001_EE2AD891.wem		\Actor-Mixer Hierarchy\Combat\swing_weapon_type\crossbow\warfare_medieval_english_longbow_arrow_shoot_from_bow_001		65148
 	937178450	Grassy_Steps_5	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Grassy_Steps_5_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_grass\Grassy_Steps_5		90508
 	941630177	Grassy_Steps_6	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Grassy_Steps_6_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_grass\Grassy_Steps_6		142684
 	942657143	197781__samulis__footstep-on-stone-4	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\197781__samulis__footstep-on-stone-4_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_stone\197781__samulis__footstep-on-stone-4		82356
+	976038632	FOOTSTEP - Metal Board Walk Barefoot Male - 24	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\FOOTSTEP - Metal Board Walk Barefoot Male - 24_9E69E797.wem		\Actor-Mixer Hierarchy\Character\footstep_surface_type\fs_wood\FOOTSTEP - Metal Board Walk Barefoot Male - 24		43582
+	1068519868	Arrow Hit	C:\Users\acort\Documents\GitHub\ShatteredGame\Shattered\.cache\Windows\SFX\Arrow Hit_9E69E797.wem		\Actor-Mixer Hierarchy\Combat\impact_weapon_type\impact_crossbow_surface_type\imp_crossbow_wood\Arrow Hit		35480
 

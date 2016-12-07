@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="4" ename="obj_player">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string> image_speed = image_number / (room_speed + 2);
+            <string>obj_player.keys++;
+instance_destroy();
 </string>
           </argument>
         </arguments>

@@ -32,17 +32,32 @@ grav = 1;
 hsp = 0;
 vsp = 0;
 max_vsp = 15;
+
 jumpsp = 23;
 movesp = 10;
+
+
+triggered_to_interact = false;
+triggered_to_attack = false;
+triggered_by = noone;
+
 grounded = false;
 grab = 0;
 choosing = false;
+last_choice = -1;
+deleteNext = false;
+
+mid_cutscene = false;
+
 sprite_state = 0; //0 - idle | 1 - running | 2 - jumping | 3 - falling
 last_state = sprite_state;
 
 climbing_ladder = false;
 attacking = false;
 talking = false;
+
+//HACK
+open_gate = false;
 
 first_xscale = image_xscale;
 
@@ -52,7 +67,8 @@ image_speed = image_number / room_speed;
 keys = 0;
 
 //this global variable will be used to destroy the arrows that have been thrown if the is more than a certain treshold
-number_of_arrows = 0;
+MAX_ARROWS = 10;
+number_of_arrows = MAX_ARROWS;
 
 //Variables for changing room
 var target_room;
@@ -65,7 +81,7 @@ entered = false;
 //barracks door
 in = false;
 
-gmwRegisterObject(id, "foot", global.DEFAULT_GROUP);
+gmwRegisterObject(id, "player", global.DEFAULT_GROUP);
 
 </string>
           </argument>
@@ -103,6 +119,20 @@ key_interact = keyboard_check_pressed(ord("E"));
 key_grab = keyboard_check_pressed(ord("G"));
 mouse_left = mouse_check_button_pressed(mb_left);
 
+if(mid_cutscene){
+    key_right = 0;
+    key_left = 0;
+    key_up_pressed = 0;
+    key_down_pressed = 0;
+    key_up = 0;
+    key_down = 0;
+    key_jump = 0;
+    key_attack = 0;
+    key_interact = 0;
+    key_grab = 0;
+    mouse_left = 0;
+}
+
 
 
 </string>
@@ -134,19 +164,22 @@ if(attacking)
         attacking = false;
         sprite_state = 0;
     } else if(round(image_index) == 1){
+        gmwSetSwitch(global.Player_Weapon, global.Weapon_Fist, id);
+        gmwPostEvent(global.Play_Weapon_Swing, id);
         with instance_create(x, y, obj_attack_hit){
             image_xscale = obj_player.image_xscale;
         }
     }
 } 
-else if (!talking)
+else if (!talking || mid_cutscene)
 {
     //Ground Check &amp; top-ladder check
     grounded = place_meeting(x, y+1, obj_terrain) || (!climbing_ladder &amp;&amp; !place_meeting(x, y, obj_ladder_top) &amp;&amp; place_meeting(x, y+1, obj_ladder_top));
     
     //Horizontal Input
     move = key_left + key_right;
-    hsp = move * movesp;
+    if(!mid_cutscene)
+        hsp = move * movesp;
     
     //Sprite direction
     if(sign(hsp) &lt; 0){
@@ -163,6 +196,7 @@ else if (!talking)
         vsp = key_jump * -jumpsp;
         if(key_jump) {
             sprite_state = 2;
+            gmwPostEvent(global.Play_Footstep, id);
         }
     }
     
@@ -272,16 +306,17 @@ else if (!talking)
     }
     
     //Attack
-    if(key_attack &amp;&amp; grounded){
+    if((key_attack || triggered_to_attack) &amp;&amp; grounded){
+        triggered_to_attack = false;
         vsp = 0;
         hsp = 0;
         attacking = true;
         sprite_state = 4;
     }
     //Arrow
-    if(mouse_left)
+    if(mouse_left &amp;&amp; number_of_arrows &gt; 0)
     {
-        with  instance_create(x+80*sign(mouse_x-obj_player.x), y, obj_arrow)
+        with  instance_create(x, y, obj_arrow)
         {
             objective_x = mouse_x - obj_player.x;
             objective_y = mouse_y - obj_player.y;
@@ -289,12 +324,27 @@ else if (!talking)
             norm = sqrt(objective_x*objective_x + objective_y*objective_y);
             objective_x = objective_x / norm;
             objective_y = objective_y / norm;
-            image_xscale = sign(objective_x);
-        }
+            //image_xscale = sign(objective_x);
+            //image_yscale = sign(objective_y);
+            image_angle = arccos(objective_x)*(180/pi);
+            
+            if(objective_y &gt; 0){
+                image_angle = 360 - image_angle;
+            }
+            /*
+            x = obj_player.x + objective_x;
+            y = obj_player.y + objective_y;
+        */}
+        number_of_arrows--;
+        
+        gmwSetSwitch(global.Player_Weapon, global.Weapon_Crossbow, id);
+        gmwSetSwitch(global.Surface_Type, global.Surface_Stone, id);
+        gmwPostEvent(global.Play_Weapon_Swing, id);
     }
     
     if(key_up_pressed &amp;&amp; place_meeting(x, y, obj_village_gate) &amp;&amp; !entered)
     {
+        open_gate = false;
         //tile_layer_hide(-1);
         //tile_layer_hide(-2);
         var tiles_one = tile_get_ids_at_depth(-1);
@@ -384,10 +434,23 @@ else if (!talking)
         obj_player.x = target_x;
         obj_player.y = target_y;
     }
- 
-    //needed for the sound to follow the character
-    gmwSet2DPosition(id, x, y, 0, 0); 
+    
+    //sound
+    gmwSet2DPosition(id, x, y, 0, 0);
+    if(grounded){
+        if(place_meeting(x, y+1, obj_ground_stone))
+            gmwSetSwitch(global.Floor, global.Floor_Stone, id);
+        else if(place_meeting(x, y+1, obj_ground_grass)){
+            gmwSetSwitch(global.Floor, global.Floor_Grass, id);
+            gmwSetSwitch(global.Player_Armor, global.Armor_Chainmail, id);
+        }
+        else if(place_meeting(x, y+1, obj_ground_wood))
+            gmwSetSwitch(global.Floor, global.Floor_Wood, id);
+        else
+            gmwSetSwitch(global.Floor, global.Floor_Dirt, id);
+    }
 }
+hsp = 0;
 </string>
           </argument>
         </arguments>
@@ -440,7 +503,6 @@ last_state = sprite_state;
 if(sprite_state == 1 &amp;&amp; (image_index==1 || image_index==3))
 {
     gmwPostEvent(global.Play_Footstep, id);
-    gmwSetSwitch(global.Floor,global.Stone, id);
 }
 
 </string>
@@ -468,76 +530,110 @@ if(sprite_state == 1 &amp;&amp; (image_index==1 || image_index==3))
 //Object interaction
 
 //NPC interaction
-if(key_interact &amp;&amp; grounded){
+if((key_interact || triggered_to_interact) &amp;&amp; grounded){
+    sprite_state = 0;
+    triggered_to_interact = false;
     var instSpeaker;
     var instChest;
     instSpeaker = instance_place(x, y, obj_speaker);
+    if(instSpeaker == noone){
+        instSpeaker = triggered_by;
+    }
     instChest = instance_place(x, y, obj_chest);
     if (instSpeaker != noone){  //NPC dialog
         with (instSpeaker){
             var instPlayer;
-            instPlayer = instance_place(x, y, obj_player);
-            dialog_page++;
+            instPlayer = instance_nearest(x, y, obj_player);
             if instance_exists(dialog){
-                if(dialog_page &gt;= array_length_1d(text)) {
-                    dialog_page = -1;
-                    change = false;
-                    if(instance_exists(obj_npc_test)){
-                        with (obj_npc_test){
-                            path_speed = 1;
+                if(!dialog.ended &amp;&amp; !instPlayer.mid_cutscene){ //if still writing text
+                    dialog.text_count = string_length(dialog.text);
+                } else {
+                    dialog_page++;
+                    if(instPlayer.choosing){
+                        with (dialog){ 
+                            if(instance_exists(obj_dialog_choice)){ //if dialog was choice
+                                instPlayer.choosing = false;
+                                instPlayer.last_choice = instance_nearest(x,y, obj_dialog_choice).choice;
+                                //BEGIN HACK Change for next delivery
+                                if(instPlayer.last_choice == 0){
+                                    instSpeaker.dialog_page = -1;
+                                    instSpeaker.change = false;
+                                } else {
+                                    instSpeaker.dialog_page++;
+                                }
+                            }
+                            instance_destroy();
                         }
                     }
-                    with (dialog){ 
-                        if(instance_exists(obj_dialog_choice)){
-                            instPlayer.choosing = false;
+                    else if(dialog_page &gt;= array_length_1d(text) || instPlayer.deleteNext) { //if no more dialog
+                        deleteNext = false;
+                        dialog_page = -1;
+                        change = false;
+                        if(instance_exists(obj_npc_new)){  //resume npc path
+                            with (obj_npc_new){
+                                path_speed = 1;
+                            }
                         }
-                        instance_destroy();
-                    }
-                } else if(order[dialog_page] != order[dialog_page-1]){
-                    with (dialog){  
-                        if(instance_exists(obj_dialog_choice)){
-                            instPlayer.choosing = false;
+                        with (dialog){
+                            instance_destroy();
                         }
-                        instance_destroy();
                     }
+                    else if(order[dialog_page] != order[dialog_page-1]){ //if there is still dialog and new dialog is a choice
+                        with (dialog){  
+                            if(instance_exists(obj_dialog_choice)){
+                                instPlayer.choosing = false;
+                            }
+                            instance_destroy();
+                        }
+                    }
+                    
                 }
-            } else {
-                if(instance_exists(obj_npc_test)){
-                    with (obj_npc_test){
+            } else { //else switch page and stop npc
+                dialog_page++;
+                if(instance_exists(obj_npc_new)){
+                    with (obj_npc_new){
                         path_speed = 0;
                     }
                 }
             }
-            if(!instance_exists(dialog) &amp;&amp; change){
+            if(!instance_exists(dialog) &amp;&amp; change){ //create new dialog box for new dialog text
                 
                 change = false;
                 AUXxoffset = 0;
                 AUXyoffset = 0;
                 switch(order[dialog_page]){
-                case 0:
+                case 0: //npc text
                     AUXxoffset = xoffset;
                     AUXyoffset = yoffset;
                     dialog = instance_create(x+AUXxoffset, y+AUXyoffset, obj_dialog);
+                    dialog.speaker = self;
                     break;
-                case 1:
+                case 1: //player text
                     AUXxoffset = 16;//-((obj_player.sprite_width*obj_player.image_xscale)/4);
                     AUXyoffset = -57;//-((obj_player.sprite_height*obj_player.image_yscale)/2);
                     dialog = instance_create(instPlayer.x+AUXxoffset, instPlayer.y+AUXyoffset, obj_dialog);
+                    dialog.speaker = instPlayer;
                     break;
-                case 2:
+                case 2: //player choice text
                     AUXxoffset = 16;//((instPlayer.sprite_width*0.2)*instPlayer.image_xscale);
                     AUXyoffset = -57;//-((instPlayer.sprite_height*0.4)*instPlayer.image_yscale);
                     instPlayer.choosing = true;
                     dialog = instance_create(instPlayer.x+AUXxoffset, instPlayer.y+AUXyoffset, obj_dialog_choice);
+                    dialog.speaker = instPlayer;
                     break;
                 default:
                     break;
-                }
+                }           
+                dialog.xoffset = AUXxoffset;
+                dialog.yoffset = AUXyoffset;
             }
             instPlayer.talking = false;
             if(dialog_page != -1) {
                 dialog.text = text[dialog_page];
                 instPlayer.talking = true;
+            }
+            if(!instPlayer.talking){
+                instPlayer.triggered_by = noone;
             }
             change = true;
         }
@@ -552,6 +648,9 @@ if(key_interact &amp;&amp; grounded){
 } else if (choosing &amp;&amp; (key_up_pressed || key_down_pressed)){
     var inst;
     instSpeaker = instance_place(x, y, obj_speaker);
+    if(instSpeaker == noone){
+        instSpeaker = triggered_by;
+    }
     if (instSpeaker != noone){  //NPC dialog
         if(key_up_pressed){
             instSpeaker.dialog.choice--;
@@ -583,6 +682,17 @@ if(key_interact &amp;&amp; grounded){
           <argument>
             <kind>1</kind>
             <string>draw_text(5, 15, room_persistent);
+var toPrint = string(number_of_arrows) + "xArrow";
+if(number_of_arrows != 1){
+    toPrint += "s";
+}
+draw_text(5, 30, toPrint);
+
+var toPrint = string(keys) + "xKey";
+if(keys != 1){
+    toPrint += "s";
+}
+draw_text(5, 45, toPrint);
 </string>
           </argument>
         </arguments>

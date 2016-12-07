@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1D69B94F-2065-407C-929B-536D099DE577}" SchemaVersion="70">
+	<Events>
+		<WorkUnit Name="Dialogue" ID="{1D69B94F-2065-407C-929B-536D099DE577}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Dialogue" ID="{E7784154-D407-4373-AFAF-4A77872B9B5F}">
+					<ChildrenList>
+						<Action Name="Play" ID="{F5615D23-895E-4A28-B244-CC567117CE48}" ShortID="433505798" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{ECB0F9DB-BD9F-4200-BAD4-0BCBAB16E8CD}" Global="false">
+									<ObjectRef Name="Dialogue" ID="{FAD45C8F-B142-448D-8698-F6356C299676}" WorkUnitID="{45F27939-ED74-4CFC-8E81-48CB2EC5012C}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Dialogue_End" ID="{19920AB9-D617-4ED1-99CE-0EC322706766}">
+					<ChildrenList>
+						<Action Name="Play" ID="{DF4B2076-4CC4-46EF-80EF-BC2D57EB38BC}" ShortID="725822831" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{085DE230-8B33-4972-A759-451CAAB469AA}" Global="false">
+									<ObjectRef Name="DialogueEnd" ID="{C4750033-C427-4D03-BC5F-B4E30660E56D}" WorkUnitID="{45F27939-ED74-4CFC-8E81-48CB2EC5012C}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

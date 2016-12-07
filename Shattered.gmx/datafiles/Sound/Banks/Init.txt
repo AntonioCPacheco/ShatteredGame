@@ -1,10 +1,19 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	786572618	Reverb_OnOff			\Reverb\Reverb_OnOff	
+	1006694123	Music_Volume			\Options\Music_Volume	
+	1564184899	SFX_Volume			\Options\SFX_Volume	
+	4179668880	Master_Volume			\Options\Master_Volume	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	436743010	Character			\Default Work Unit\Master Audio Bus\World_Sound\Character	
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
 	951797413	Non-World_Sound			\Default Work Unit\Master Audio Bus\Non-World_Sound	
+	1695690031	Objects			\Default Work Unit\Master Audio Bus\World_Sound\Objects	
 	1705094007	World_Sound			\Default Work Unit\Master Audio Bus\World_Sound	
+	2607556080	Menu			\Default Work Unit\Master Audio Bus\Non-World_Sound\Menu	
 	2764240573	Combat			\Default Work Unit\Master Audio Bus\World_Sound\Combat	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Non-World_Sound\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	2991323841	Reverb_Sewers			\Default Work Unit\Master Audio Bus\World_Sound\Reverb_Sewers	
