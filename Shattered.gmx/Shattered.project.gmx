@@ -198,10 +198,7 @@
       <object>objects\obj_gate_guard_2_trigger_3</object>
     </objects>
   </objects>
-  <rooms name="rooms">
-    <room>rooms\Knights_Village</room>
-    <room>rooms\Knights_House</room>
-  </rooms>
+  <rooms name="rooms"/>
   <help>
     <rtf>help.rtf</rtf>
   </help>
