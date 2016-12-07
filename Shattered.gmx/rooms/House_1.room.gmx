@@ -121,6 +121,7 @@
     <tile bgName="Wood_tiles" x="1408" y="0" w="128" h="128" xo="128" yo="0" id="10001927" name="inst_DAE9D2DD" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Wood_tiles" x="0" y="0" w="128" h="128" xo="128" yo="0" id="10001928" name="inst_66137BCE" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Wood_tiles" x="1536" y="0" w="128" h="128" xo="128" yo="0" id="10001929" name="inst_2F7F9F30" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Lock" x="160" y="832" w="128" h="128" xo="0" yo="0" id="10002677" name="inst_DD743700" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

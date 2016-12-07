@@ -140,6 +140,8 @@
     <sprite>sprites\Knight_Attack</sprite>
     <sprite>sprites\Knight_Running</sprite>
     <sprite>sprites\sealed_pipe</sprite>
+    <sprite>sprites\Knight_Falling</sprite>
+    <sprite>sprites\Knight_Jump</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\floor_tiles</background>
@@ -164,6 +166,8 @@
     <background>background\Destroyed_house</background>
     <background>background\Sewer_slime</background>
     <background>background\Sewer</background>
+    <background>background\market_fruit</background>
+    <background>background\fire_place</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">

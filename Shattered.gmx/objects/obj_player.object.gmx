@@ -32,7 +32,7 @@ grav = 1;
 hsp = 0;
 vsp = 0;
 max_vsp = 15;
-jumpsp = 25;
+jumpsp = 23;
 movesp = 10;
 grounded = false;
 grab = 0;
@@ -182,13 +182,13 @@ else if (!talking)
             if(block == noone) block = instance_place(x-5, y, obj_movable);
             with(block){
             if(!place_meeting(x+obj_player.sprite_width-(18*sign(obj_player.hsp)),y,obj_terrain)){
-                    if(place_meeting(x/*+obj_player.hsp*/,y,obj_terrain)){
+                    if(place_meeting(x+obj_player.hsp,y,obj_terrain)){
                         while (!place_meeting(x+sign(obj_player.hsp), y, obj_terrain)){
                             x+=sign(obj_player.hsp);
                         }
                         obj_player.hsp = 0;
                     }
-                    else if(place_meeting(x/*+obj_player.hsp*/,y,obj_enemy)){
+                    else if(place_meeting(x+obj_player.hsp,y,obj_enemy)){
                         while (!place_meeting(x+sign(obj_player.hsp), y, obj_enemy)){
                             x+=sign(obj_player.hsp);
                         }
@@ -420,10 +420,10 @@ if(last_state != sprite_state){
             sprite_index = /*player_running*/Knight_Running;
             break;
         case 2:
-            sprite_index = /*player_jump*/Knight_Idle;
+            sprite_index = /*player_jump*/Knight_Jump;
             break;
         case 3:
-            sprite_index = /*player_falling*/Knight_Idle;
+            sprite_index = /*player_falling*/Knight_Falling;
             break;
         case 4:
             sprite_index = /*player_attack*/Knight_Attack;
