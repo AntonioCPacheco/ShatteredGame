@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="obj_player" xview="0" yview="0" wview="1600" hview="960" xport="0" yport="0" wport="1600" hport="960" hborder="750" vborder="200" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="obj_player" xview="0" yview="0" wview="1600" hview="960" xport="0" yport="0" wport="1600" hport="960" hborder="400" vborder="400" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -462,8 +462,8 @@
     <instance objName="obj_terrain" x="15328" y="960" name="inst_67330B5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="15456" y="960" name="inst_19D0D5FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="5664" y="800" name="inst_CCBA429E" locked="0" code="rm = House_1;&#xA;spawn_x = 416;&#xA;spawn_y = 765;&#xA;" scaleX="0.75" scaleY="1.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="7328" y="800" name="inst_E2BA464B" locked="0" code="rm = House_2;&#xA;spawn_x = 416;&#xA;spawn_y = 765;&#xA;" scaleX="0.75" scaleY="1.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="7968" y="800" name="inst_3C036C52" locked="0" code="rm = House_3;&#xA;spawn_x = 416;&#xA;spawn_y = 765;&#xA;" scaleX="0.75" scaleY="1.625" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="7328" y="800" name="inst_E2BA464B" locked="0" code="rm = House_2;&#xA;spawn_x = 416;&#xA;spawn_y = 765;" scaleX="0.75" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="7968" y="800" name="inst_3C036C52" locked="0" code="rm = House_3;&#xA;spawn_x = 416;&#xA;spawn_y = 765;" scaleX="0.75" scaleY="1.625" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="14112" y="800" name="inst_6133AA0E" locked="0" code="rm = House_4;&#xA;spawn_x = 416;&#xA;spawn_y = 765;" scaleX="0.75" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="16160" y="800" name="inst_0DEE1ECD" locked="0" code="rm = Knights_House;&#xA;spawn_x = 416;&#xA;spawn_y = 765;&#xA;" scaleX="0.75" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_transparency_off" x="5600" y="1472" name="inst_E515F370" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

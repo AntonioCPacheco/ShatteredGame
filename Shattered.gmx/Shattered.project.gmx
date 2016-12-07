@@ -142,7 +142,6 @@
     <sprite>sprites\sealed_pipe</sprite>
     <sprite>sprites\Knight_Falling</sprite>
     <sprite>sprites\Knight_Jump</sprite>
-    <sprite>sprites\trigger</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\floor_tiles</background>
@@ -170,9 +169,7 @@
     <background>background\market_fruit</background>
     <background>background\fire_place</background>
   </backgrounds>
-  <paths name="paths">
-    <path>paths\path_gate_guard_2</path>
-  </paths>
+  <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_door</object>
     <object>objects\obj_village_gate</object>
@@ -182,21 +179,29 @@
     <object>objects\dialog_manager</object>
     <object>objects\obj_arrow</object>
     <object>objects\obj_attack_hit</object>
-    <object>objects\obj_attack_enemy_hit</object>
     <object>objects\obj_chest</object>
+    <object>objects\obj_choice_manager</object>
     <object>objects\obj_collectible</object>
     <object>objects\obj_dialog</object>
     <object>objects\obj_dialog_choice</object>
+    <object>objects\obj_enemy</object>
     <object>objects\obj_movable</object>
-    <object>objects\obj_guard</object>
-    <object>objects\obj_npc_new</object>
-    <object>objects\obj_gate_guard</object>
-    <object>objects\obj_gate_guard_2</object>
+    <object>objects\obj_npc</object>
+    <object>objects\obj_npc_test</object>
     <object>objects\obj_player</object>
     <object>objects\obj_speaker</object>
     <object>objects\obj_speech_bubble</object>
     <object>objects\par_ladder</object>
     <object>objects\obj_ladder_top</object>
+    <object>objects\obj_terrain</object>
+    <object>objects\obj_ground</object>
+    <object>objects\obj_ground_grass</object>
+    <object>objects\obj_ground_stone</object>
+    <object>objects\obj_ground_wood</object>
+    <object>objects\obj_ground_sewers</object>
+    <object>objects\obj_transparency_off</object>
+    <object>objects\obj_transparency_on</object>
+    <object>objects\obj_terrain_invisible</object>
     <object>objects\obj_gate_handle</object>
     <object>objects\obj_spikes</object>
     <object>objects\obj_window</object>
@@ -204,24 +209,6 @@
     <object>objects\obj_enable_obj</object>
     <object>objects\obj_Death_by_touch</object>
     <object>objects\obj_movable_deploy</object>
-    <object>objects\obj_transparency_off</object>
-    <object>objects\obj_transparency_on</object>
-    <objects name="Ground Objects">
-      <object>objects\obj_terrain</object>
-      <object>objects\obj_terrain_invisible</object>
-      <object>objects\obj_ground</object>
-      <object>objects\obj_ground_wood</object>
-      <object>objects\obj_ground_grass</object>
-      <object>objects\obj_ground_stone</object>
-	  <object>objects\obj_ground_sewers</object>
-    </objects>
-    <objects name="Triggers">
-      <object>objects\obj_gate_guard_trigger</object>
-      <object>objects\obj_gate_peaceful</object>
-      <object>objects\obj_gate_guard_2_trigger_1</object>
-      <object>objects\obj_gate_guard_2_trigger_2</object>
-      <object>objects\obj_gate_guard_2_trigger_3</object>
-    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Knights_Village</room>

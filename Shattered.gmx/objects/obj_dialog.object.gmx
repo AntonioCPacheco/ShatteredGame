@@ -29,49 +29,10 @@
 text = noone;
 text_visible = "";
 text_count = 0;
-last_frame_text = text_visible;
-spd = 0.35;
+spd = 0.75;
 display_scale = display_get_gui_width()/ view_wview[0];
 width = sprite_width*display_scale;
 margin = 8;
-
-ended = false;
-
-speaker = noone;
-xoffset = 0;
-yoffset = 0;
-
-//Sound
-gmwRegisterObject(id, "DialogBox", global.DEFAULT_GROUP);
-
-start_time = current_time;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-if(speaker != noone){
-    x = speaker.x + xoffset;
-    y = speaker.y + yoffset;
-}
 </string>
           </argument>
         </arguments>
@@ -95,21 +56,10 @@ if(speaker != noone){
           <argument>
             <kind>1</kind>
             <string>/// Draw dialog
-if(current_time - start_time &gt; 10000){
-    instance_deactivate_object(self);
-}
-
-depth = -10000;
+depth = -2;
 
 text_count += spd;
 text_visible = string_copy(text, 0, text_count);
-if(last_frame_text != text_visible){
-    gmwPostEvent(global.Play_Dialogue, id);
-    last_frame_text = text_visible;
-} else if(string_length(text_visible) == string_length(text) &amp;&amp; !ended){
-    //gmwPostEvent(global.Play_Dialogue_End, id);
-    ended = true;
-}
 var xx = (x - view_xview[0])*display_scale - sprite_xoffset;
 var yy = (y - view_yview[0])*display_scale - sprite_yoffset;
 draw_text_ext(xx+margin, yy+margin, text_visible, -1, width-(2*margin));
