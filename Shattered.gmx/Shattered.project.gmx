@@ -165,8 +165,6 @@
     <object>objects\obj_dialog_choice</object>
     <object>objects\obj_ladder_top</object>
     <object>objects\obj_movable</object>
-    <object>objects\obj_guard</object>
-    <object>objects\obj_npc_new</object>
     <object>objects\obj_gate_guard</object>
     <object>objects\obj_gate_guard_2</object>
     <object>objects\obj_player</object>
@@ -196,6 +194,8 @@
       <object>objects\obj_gate_guard_2_trigger_2</object>
       <object>objects\obj_gate_guard_2_trigger_3</object>
     </objects>
+    <object>objects\obj_guard</object>
+    <object>objects\obj_npc_new</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Knights_Village</room>
