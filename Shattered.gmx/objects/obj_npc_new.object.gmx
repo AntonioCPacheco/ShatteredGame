@@ -157,6 +157,7 @@ else if(state_of_action == 3){
 
 }
 else if(!following &amp;&amp; !friendly){
+    state_of_action = 2;
     hp -= 25;
 }
 else if(fcount == 2){
@@ -206,6 +207,7 @@ with(other)
 
 }
 else if(!following &amp;&amp; !friendly){
+    state_of_action = 2;
     hp -= 25;
 }
 else if(fcount == 2){
