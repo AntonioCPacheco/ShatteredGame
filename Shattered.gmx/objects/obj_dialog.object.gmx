@@ -37,8 +37,41 @@ margin = 8;
 
 ended = false;
 
+speaker = noone;
+xoffset = 0;
+yoffset = 0;
+
 //Sound
 gmwRegisterObject(id, "DialogBox", global.DEFAULT_GROUP);
+
+start_time = current_time;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+if(speaker != noone){
+    x = speaker.x + xoffset;
+    y = speaker.y + yoffset;
+}
 </string>
           </argument>
         </arguments>
@@ -62,7 +95,11 @@ gmwRegisterObject(id, "DialogBox", global.DEFAULT_GROUP);
           <argument>
             <kind>1</kind>
             <string>/// Draw dialog
-depth = -2;
+if(current_time - start_time &gt; 10000){
+    instance_deactivate_object(self);
+}
+
+depth = -10000;
 
 text_count += spd;
 text_visible = string_copy(text, 0, text_count);

@@ -37,6 +37,7 @@ movesp = 8;
 hp = 0;
 
 triggered_to_interact = false;
+triggered_to_attack = false;
 triggered_by = noone;
 
 grounded = false;
@@ -45,12 +46,17 @@ choosing = false;
 last_choice = -1;
 deleteNext = false;
 
+mid_cutscene = false;
+
 sprite_state = 0; //0 - idle | 1 - running | 2 - jumping | 3 - falling
 last_state = sprite_state;
 
 climbing_ladder = false;
 attacking = false;
 talking = false;
+
+//HACK
+open_gate = false;
 
 first_xscale = image_xscale;
 
@@ -101,6 +107,20 @@ key_interact = keyboard_check_pressed(ord("E"));
 key_grab = keyboard_check_pressed(ord("G"));
 mouse_left = mouse_check_button_pressed(mb_left);
 
+if(mid_cutscene){
+    key_right = 0;
+    key_left = 0;
+    key_up_pressed = 0;
+    key_down_pressed = 0;
+    key_up = 0;
+    key_down = 0;
+    key_jump = 0;
+    key_attack = 0;
+    key_interact = 0;
+    key_grab = 0;
+    mouse_left = 0;
+}
+
 
 
 </string>
@@ -139,14 +159,15 @@ if(attacking)
         }
     }
 } 
-else if (!talking)
+else if (!talking || mid_cutscene)
 {
     //Ground Check &amp; top-ladder check
     grounded = place_meeting(x, y+1, obj_terrain) || (!climbing_ladder &amp;&amp; !place_meeting(x, y, obj_ladder_top) &amp;&amp; place_meeting(x, y+1, obj_ladder_top));
     
     //Horizontal Input
     move = key_left + key_right;
-    hsp = move * movesp;
+    if(!mid_cutscene)
+        hsp = move * movesp;
     
     //Sprite direction
     if(sign(hsp) &lt; 0){
@@ -266,7 +287,8 @@ else if (!talking)
     }
     
     //Attack
-    if(key_attack &amp;&amp; grounded){
+    if((key_attack || triggered_to_attack) &amp;&amp; grounded){
+        triggered_to_attack = false;
         vsp = 0;
         hsp = 0;
         attacking = true;
@@ -301,8 +323,9 @@ else if (!talking)
         gmwPostEvent(global.Play_Weapon_Swing, id);
     }
     
-    if(key_up &amp; place_meeting(x, y, obj_village_gate))
+    if((key_up || open_gate) &amp; place_meeting(x, y, obj_village_gate))
     {
+        open_gate = false;
         //tile_layer_hide(-1);
         //tile_layer_hide(-2);
         var tiles_one = tile_get_ids_at_depth(-1);
@@ -321,6 +344,7 @@ else if (!talking)
         //this is specific fo th entrance of the village REFACTOR THIS TO BE GENERIC
         instance_deactivate_region(2208,384,1,384,true,true);
         instance_activate_region(1696,256,128,512,true);
+        with(instance_nearest(x,y, obj_gate_guard)){instance_destroy();}
     }
     
     //doors
@@ -351,6 +375,7 @@ else if (!talking)
             gmwSetSwitch(global.Floor, global.Floor_Dirt, id);
     }
 }
+hsp = 0;
 </string>
           </argument>
         </arguments>
@@ -445,7 +470,7 @@ if((key_interact || triggered_to_interact) &amp;&amp; grounded){
             var instPlayer;
             instPlayer = instance_nearest(x, y, obj_player);
             if instance_exists(dialog){
-                if(!dialog.ended){ //if still writing text
+                if(!dialog.ended &amp;&amp; !instPlayer.mid_cutscene){ //if still writing text
                     dialog.text_count = string_length(dialog.text);
                 } else {
                     dialog_page++;
@@ -506,21 +531,26 @@ if((key_interact || triggered_to_interact) &amp;&amp; grounded){
                     AUXxoffset = xoffset;
                     AUXyoffset = yoffset;
                     dialog = instance_create(x+AUXxoffset, y+AUXyoffset, obj_dialog);
+                    dialog.speaker = self;
                     break;
                 case 1: //player text
                     AUXxoffset = 16;//-((obj_player.sprite_width*obj_player.image_xscale)/4);
                     AUXyoffset = -57;//-((obj_player.sprite_height*obj_player.image_yscale)/2);
                     dialog = instance_create(instPlayer.x+AUXxoffset, instPlayer.y+AUXyoffset, obj_dialog);
+                    dialog.speaker = instPlayer;
                     break;
                 case 2: //player choice text
                     AUXxoffset = 16;//((instPlayer.sprite_width*0.2)*instPlayer.image_xscale);
                     AUXyoffset = -57;//-((instPlayer.sprite_height*0.4)*instPlayer.image_yscale);
                     instPlayer.choosing = true;
                     dialog = instance_create(instPlayer.x+AUXxoffset, instPlayer.y+AUXyoffset, obj_dialog_choice);
+                    dialog.speaker = instPlayer;
                     break;
                 default:
                     break;
-                }
+                }           
+                dialog.xoffset = AUXxoffset;
+                dialog.yoffset = AUXyoffset;
             }
             instPlayer.talking = false;
             if(dialog_page != -1) {
@@ -610,6 +640,12 @@ if(number_of_arrows != 1){
     toPrint += "s";
 }
 draw_text(5, 30, toPrint);
+
+var toPrint = string(keys) + "xKey";
+if(keys != 1){
+    toPrint += "s";
+}
+draw_text(5, 45, toPrint);
 </string>
           </argument>
         </arguments>
