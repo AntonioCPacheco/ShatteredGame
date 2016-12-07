@@ -25,17 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var guard = instance_nearest(x,y, obj_gate_guard);
+            <string>var guard = instance_nearest(x,y, obj_gate_guard_2);
 if(guard != noone &amp;&amp; instance_nearest(x,y, obj_player).last_choice == 0){
-    guard.dialog_page=3;
-    obj_player.deleteNext = true;
+    guard.dialog_page = 1;
+    //obj_player.deleteNext = true;
     obj_player.triggered_to_interact = true;
     obj_player.triggered_by = guard;
-    obj_player.mid_cutscene = true;
-    
-    with(instance_create(1920, 832, obj_gate_guard_2)){
-        xscale = 1;
-    }
+    obj_player.mid_cutscene = false;
 }
 instance_destroy();
 </string>

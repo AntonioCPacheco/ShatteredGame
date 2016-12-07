@@ -97,9 +97,11 @@ else if(state_of_action == 2){
     }
         
     else if(obj_player.x &lt; x){
+        image_xscale = -1;
         hsp = -5;
     }    
     else if(obj_player.x &gt; x){
+        image_xscale= 1;
         hsp = 5;
     }
 
