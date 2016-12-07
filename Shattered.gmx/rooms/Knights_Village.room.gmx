@@ -239,19 +239,13 @@
     <instance objName="obj_ground_stone" x="2400" y="960" name="inst_91D04944" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gate_guard" x="1920" y="352" name="inst_BB606CE7" locked="0" code="" scaleX="-1" scaleY="1" colour="4290822336" rotation="0"/>
     <instance objName="obj_gate_guard_trigger" x="1344" y="480" name="inst_A3324F4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-<<<<<<< HEAD
     <instance objName="obj_gate_peaceful" x="1696" y="480" name="inst_DB340642" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-<<<<<<< HEAD
-    <instance objName="obj_guard" x="512" y="704" name="inst_1EA459E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_guard" x="768" y="672" name="inst_5486AA54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-=======
+
     <instance objName="obj_gate_peaceful" x="1664" y="480" name="inst_DB340642" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gate_guard_2_trigger_1" x="1728" y="608" name="inst_D80FA39D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gate_guard_2_trigger_2" x="1920" y="640" name="inst_00000DED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gate_guard_2_trigger_3" x="2624" y="640" name="inst_B19CDCEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
->>>>>>> 126307021a5771d392d5295db59c99d800c4eaa9
-=======
->>>>>>> parent of bedc96e... NPC part 2, friendly and following added.
+
   </instances>
   <tiles>
     <tile bgName="Grass_1" x="0" y="896" w="128" h="128" xo="0" yo="0" id="10000239" name="inst_0ED47660" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
