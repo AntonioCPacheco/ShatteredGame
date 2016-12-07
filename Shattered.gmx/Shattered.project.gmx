@@ -117,9 +117,17 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\arrow_horizontal</sprite>
+    <sprite>sprites\arrow_vertical</sprite>
     <sprite>sprites\chest_closed</sprite>
     <sprite>sprites\chest_open</sprite>
     <sprite>sprites\collectible</sprite>
+    <sprite>sprites\enemy</sprite>
+    <sprite>sprites\gate_handle</sprite>
+    <sprite>sprites\Knight_Attack</sprite>
+    <sprite>sprites\Knight_Falling</sprite>
+    <sprite>sprites\Knight_Idle</sprite>
+    <sprite>sprites\Knight_Jump</sprite>
+    <sprite>sprites\Knight_Running</sprite>
     <sprite>sprites\ladder_hitbox</sprite>
     <sprite>sprites\movable</sprite>
     <sprite>sprites\npc</sprite>
@@ -130,25 +138,42 @@
     <sprite>sprites\player_idle</sprite>
     <sprite>sprites\player_jump</sprite>
     <sprite>sprites\player_running</sprite>
+    <sprite>sprites\sealed_pipe</sprite>
     <sprite>sprites\speech_bubble</sprite>
+    <sprite>sprites\spikes_new</sprite>
+    <sprite>sprites\sprite0</sprite>
+    <sprite>sprites\sprt_crate</sprite>
     <sprite>sprites\terrain</sprite>
-    <sprite>sprites\arrow_vertical</sprite>
     <sprite>sprites\trigger</sprite>
+    <sprite>sprites\window</sprite>
+    <sprite>sprites\sprite30</sprite>
   </sprites>
   <backgrounds name="background">
+    <background>background\Cloud</background>
+    <background>background\Crate</background>
+    <background>background\Destroyed_house</background>
+    <background>background\Dirt_1</background>
+    <background>background\door</background>
+    <background>background\down_door</background>
+    <background>background\fire_place</background>
     <background>background\floor_tiles</background>
-    <background>background\ladder</background>
+    <background>background\grass</background>
     <background>background\Grass_1</background>
     <background>background\Grass_2</background>
-    <background>background\Stone_1</background>
-    <background>background\Wall_1</background>
-    <background>background\upper_door</background>
-    <background>background\middle_door</background>
-    <background>background\down_door</background>
-    <background>background\Cloud</background>
-    <background>background\Tree_1</background>
-    <background>background\Dirt_1</background>
+    <background>background\Grids</background>
     <background>background\House</background>
+    <background>background\ladder</background>
+    <background>background\Lock</background>
+    <background>background\market_fruit</background>
+    <background>background\middle_door</background>
+    <background>background\Sewer</background>
+    <background>background\Sewer_slime</background>
+    <background>background\stone_1</background>
+    <background>background\Tree_1</background>
+    <background>background\upper_door</background>
+    <background>background\Wall_1</background>
+    <background>background\windows</background>
+    <background>background\Wood_tiles</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_gate_guard_2</path>
@@ -196,10 +221,31 @@
     </objects>
     <object>objects\obj_guard</object>
     <object>objects\obj_npc_new</object>
+    <object>objects\obj_choice_manager</object>
+    <object>objects\obj_Death_by_touch</object>
+    <object>objects\obj_disable_obj</object>
+    <object>objects\obj_door_barracks</object>
+    <object>objects\obj_door_stair</object>
+    <object>objects\obj_enable_obj</object>
+    <object>objects\obj_enemy</object>
+    <object>objects\obj_gate_handle</object>
+    <object>objects\obj_ground_sewers</object>
+    <object>objects\obj_movable_deploy</object>
+    <object>objects\obj_npc</object>
+    <object>objects\obj_npc_test</object>
+    <object>objects\obj_spikes</object>
+    <object>objects\obj_window</object>
+    <object>objects\obj_key</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Knights_Village</room>
+    <room>rooms\House_1</room>
+    <room>rooms\House_2</room>
+    <room>rooms\House_3</room>
+    <room>rooms\House_4</room>
     <room>rooms\Knights_House</room>
+    <room>rooms\room0</room>
+    <room>rooms\Test</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

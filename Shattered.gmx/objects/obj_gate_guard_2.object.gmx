@@ -119,7 +119,7 @@ if(x &gt;= 2640){
     obj_player.image_xscale*=-1;
     obj_player.mid_cutscene = false;
     obj_player.talking = false;
-    instance_create(x,y, obj_collectible);
+    instance_create(x,y, obj_key);
     instance_destroy();
 }
 </string>
