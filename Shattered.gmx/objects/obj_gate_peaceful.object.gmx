@@ -31,11 +31,6 @@ if(guard != noone &amp;&amp; instance_nearest(x,y, obj_player).last_choice == 0)
     obj_player.deleteNext = true;
     obj_player.triggered_to_interact = true;
     obj_player.triggered_by = guard;
-    obj_player.mid_cutscene = true;
-    
-    with(instance_create(1920, 832, obj_gate_guard_2)){
-        xscale = 1;
-    }
 }
 instance_destroy();
 </string>

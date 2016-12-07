@@ -33,6 +33,11 @@ spd = 0.75;
 display_scale = display_get_gui_width()/ view_wview[0];
 width = sprite_width*display_scale;
 margin = 8;
+
+ended = false;
+
+//Sound
+gmwRegisterObject(id, "DialogBox", global.DEFAULT_GROUP);
 </string>
           </argument>
         </arguments>

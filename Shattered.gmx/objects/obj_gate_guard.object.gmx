@@ -100,16 +100,7 @@ text[5] = "Very well. Then stay outside, scum...";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(instance_create(1920, 800, obj_guard)){
-    depth = -10000;
-    state_of_action = 2;
-}
-with(instance_create(2016, 800, obj_guard)){
-    depth = -10000;
-    state_of_action = 2;
-}
-
-instance_destroy();
+            <string>instance_destroy();
 
 with(other)
 {

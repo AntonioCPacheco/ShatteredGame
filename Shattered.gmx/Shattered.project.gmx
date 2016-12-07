@@ -186,8 +186,9 @@
     <object>objects\obj_dialog_choice</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_movable</object>
-    <object>objects\obj_npc</object>
-    <object>objects\obj_npc_test</object>
+    <object>objects\obj_guard</object>
+    <object>objects\obj_npc_new</object>
+    <object>objects\obj_gate_guard</object>
     <object>objects\obj_player</object>
     <object>objects\obj_speaker</object>
     <object>objects\obj_speech_bubble</object>

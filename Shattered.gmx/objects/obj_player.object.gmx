@@ -32,11 +32,20 @@ grav = 1;
 hsp = 0;
 vsp = 0;
 max_vsp = 15;
+<<<<<<< HEAD
 jumpsp = 23;
 movesp = 10;
 grounded = false;
 grab = 0;
 choosing = false;
+hp = 0;
+
+triggered_to_interact = false;
+triggered_by = noone;
+
+last_choice = -1;
+deleteNext = false;
+
 sprite_state = 0; //0 - idle | 1 - running | 2 - jumping | 3 - falling
 last_state = sprite_state;
 
@@ -316,9 +325,9 @@ else if (!talking)
         //this is specific fo th entrance of the village REFACTOR THIS TO BE GENERIC
         instance_deactivate_region(2208,384,1,384,true,true);
         instance_activate_region(1696,256,128,512,true);
-        
         entered = true;
     }
+
     
      if(key_up_pressed &amp;&amp; place_meeting(x, y, obj_door_barracks))
     {
@@ -479,12 +488,24 @@ if(key_interact &amp;&amp; grounded){
             instPlayer = instance_place(x, y, obj_player);
             dialog_page++;
             if instance_exists(dialog){
-                if(dialog_page &gt;= array_length_1d(text)) {
-                    dialog_page = -1;
-                    change = false;
-                    if(instance_exists(obj_npc_test)){
-                        with (obj_npc_test){
-                            path_speed = 1;
+                if(!dialog.ended){ //if still writing text
+                    dialog.text_count = string_length(dialog.text);
+                } else {
+                    dialog_page++;
+                    if(instPlayer.choosing){
+                        with (dialog){ 
+                            if(instance_exists(obj_dialog_choice)){ //if dialog was choice
+                                instPlayer.choosing = false;
+                                instPlayer.last_choice = instance_nearest(x,y, obj_dialog_choice).choice;
+                                //BEGIN HACK Change for next delivery
+                                if(instPlayer.last_choice == 0){
+                                    instSpeaker.dialog_page = -1;
+                                    instSpeaker.change = false;
+                                } else {
+                                    instSpeaker.dialog_page++;
+                                }
+                            }
+                            instance_destroy();
                         }
                     }
                     with (dialog){ 
@@ -565,6 +586,34 @@ if(key_interact &amp;&amp; grounded){
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_attack_enemy_hit">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(hp &lt;= 0){
+    game_restart();
+}
+else{
+    hp -= 25;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
@@ -583,6 +632,13 @@ if(key_interact &amp;&amp; grounded){
           <argument>
             <kind>1</kind>
             <string>draw_text(5, 15, room_persistent);
+
+var toPrint = string(number_of_arrows) + "xArrow";
+if(number_of_arrows != 1){
+    toPrint += "s";
+}
+draw_text(5, 30, toPrint);
+
 </string>
           </argument>
         </arguments>
