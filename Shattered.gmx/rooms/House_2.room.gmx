@@ -69,7 +69,7 @@
     <instance objName="obj_terrain" x="1600" y="192" name="inst_FD1C1406" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="1600" y="64" name="inst_7DAB601A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="2016" y="1184" name="inst_7F258789" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="448" y="736" name="inst_243C5516" locked="0" code="rm = Knights_Village;&#xA;spawn_x = 7328;&#xA;spawn_y = 844;&#xA;" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="448" y="736" name="inst_243C5516" locked="0" code="rm = Knights_Village;&#xA;spawn_x = 7328;&#xA;spawn_y = 830;&#xA;" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder_top" x="192" y="896" name="inst_E6FD7D58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door_stair" x="192" y="928" name="inst_DF5CF718" locked="0" code="rm = Knights_Village;&#xA;spawn_x = 7264;&#xA;spawn_y = 1150;&#xA;" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_terrain" x="64" y="896" name="inst_5F6726DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

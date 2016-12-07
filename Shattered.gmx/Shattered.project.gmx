@@ -139,6 +139,7 @@
     <sprite>sprites\Knight_Idle</sprite>
     <sprite>sprites\Knight_Attack</sprite>
     <sprite>sprites\Knight_Running</sprite>
+    <sprite>sprites\sealed_pipe</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\floor_tiles</background>
@@ -161,6 +162,7 @@
     <background>background\door</background>
     <background>background\windows</background>
     <background>background\Destroyed_house</background>
+    <background>background\Sewer_slime</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -198,6 +200,10 @@
     <object>objects\obj_gate_handle</object>
     <object>objects\obj_spikes</object>
     <object>objects\obj_window</object>
+    <object>objects\obj_disable_obj</object>
+    <object>objects\obj_enable_obj</object>
+    <object>objects\obj_Death_by_touch</object>
+    <object>objects\obj_movable_deploy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Knights_Village</room>

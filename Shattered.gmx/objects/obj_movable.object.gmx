@@ -28,6 +28,8 @@
             <string>grav = 1;
 vsp = 0;
 max_vsp = 15;
+grounded = false;
+
 
 depth = -3;
 </string>
@@ -52,15 +54,26 @@ depth = -3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(vsp &lt; max_vsp) vsp += grav;
+            <string>grounded = place_meeting(x, y+1, obj_terrain)
 
-if(place_meeting(x, y+vsp, obj_terrain)){
-        while(!place_meeting(x, y+sign(vsp), obj_terrain)){
+if(vsp &lt; max_vsp) vsp += grav;
+
+if(place_meeting(x, y+vsp, obj_terrain))
+{
+        while(!place_meeting(x, y+sign(vsp), obj_terrain))
+        {
             y+=sign(vsp);
         }
         vsp = 0;
 }
+
+if(!grounded)
+{
+    obj_player.grab = 0;
+}
+
 y += vsp;
+
 </string>
           </argument>
         </arguments>
