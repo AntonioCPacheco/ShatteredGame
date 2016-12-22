@@ -667,7 +667,7 @@
     <instance objName="obj_gate_guard_2_trigger_3" x="2528" y="640" name="inst_48B986EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gate_guard" x="1920" y="352" name="inst_D4468709" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_disable_obj" x="8448" y="384" name="inst_7BC86EC1" locked="0" code="" scaleX="0.5" scaleY="2.0546875" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="15776" y="736" name="inst_88721461" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="416" y="768" name="inst_0E7AA954" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Grass_1" x="0" y="896" w="128" h="128" xo="0" yo="0" id="10000239" name="inst_0ED47660" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
