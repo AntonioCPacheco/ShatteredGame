@@ -48,7 +48,7 @@ instance_activate_region(8416,644,128,256,true);
 instance_deactivate_region(9696,576,64,192,true,true);
 instance_activate_region(9952,640,128,256,true);
  
-in = true; 
+obj_player.in_barracks = true; 
 </string>
           </argument>
         </arguments>

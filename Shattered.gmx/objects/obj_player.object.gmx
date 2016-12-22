@@ -56,15 +56,15 @@ climbing_ladder = false;
 attacking = false;
 talking = false;
 
-//HACK
-open_gate = false;
-
 first_xscale = image_xscale;
 
 image_speed = image_number / room_speed;
 
 //number of collectibles you picked
 keys = 0;
+
+// this variable is used to check properties when entering or leaving the barracks in the knights village
+in_barracks = false;
 
 //this global variable will be used to destroy the arrows that have been thrown if the is more than a certain treshold
 MAX_ARROWS = 10;
@@ -322,43 +322,6 @@ else if (!talking || mid_cutscene)
         gmwSetSwitch(global.Player_Weapon, global.Weapon_Crossbow, id);
         gmwSetSwitch(global.Surface_Type, global.Surface_Stone, id);
         gmwPostEvent(global.Play_Weapon_Swing, id);
-    }
-    
-    if((key_up || open_gate) &amp; place_meeting(x, y, obj_village_gate))
-    {
-        open_gate = false;
-        //tile_layer_hide(-1);
-        //tile_layer_hide(-2);
-        var tiles_one = tile_get_ids_at_depth(-1);
-        var tiles_two = tile_get_ids_at_depth(-2);
-        for (var i = 0; i &lt; array_length_1d(tiles_one); i++;)
-        {
-            tile_set_alpha(tiles_one[i], 0.5);
-        }
-         for (var j = 0; j &lt; array_length_1d(tiles_two); j++;)
-        {
-            tile_set_alpha(tiles_two[j], 0.5);
-        }
-        tiles_one = 0;
-        tiles_two = 0;
-        //the values below are specific for the objects that are to be deactivated and activated
-        //this is specific fo th entrance of the village REFACTOR THIS TO BE GENERIC
-        instance_deactivate_region(2208,384,1,384,true,true);
-        instance_activate_region(1696,256,128,512,true);
-        with(instance_nearest(x,y, obj_gate_guard)){instance_destroy();}
-    }
-    
-    //doors
-    if(key_up &amp; place_meeting(x, y, obj_door_knights_house))
-    {
-        room_goto(Knights_House);
-        obj_player.x = 96;
-        obj_player.y = 768;
-    }
-    
-    if(key_up &amp; place_meeting(x, y, obj_door_village))
-    {
-        room_goto_previous();
     }
     
     //sound

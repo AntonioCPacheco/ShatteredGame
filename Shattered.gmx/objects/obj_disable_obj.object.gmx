@@ -48,7 +48,7 @@ instance_activate_region(8672,576,128,256,true);
 //this is specific for the right door of the barracks REFACTOR THIS TO BE GENERIC
 instance_deactivate_region(9952,640,128,128,true,true);
 instance_activate_region(9696,512,128,256,true);
-in = false;
+obj_player.in_barracks = false;
 </string>
           </argument>
         </arguments>
