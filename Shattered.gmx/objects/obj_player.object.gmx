@@ -34,7 +34,7 @@ grav = 1;
 hsp = 0;
 vsp = 0;
 max_vsp = 15;
-jumpsp = 23;
+jumpsp = 25;
 movesp = 10;
 
 triggered_to_interact = false;
