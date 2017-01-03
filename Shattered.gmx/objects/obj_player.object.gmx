@@ -107,6 +107,7 @@ key_attack = keyboard_check(ord("F"));
 key_interact = keyboard_check_pressed(ord("E"));
 key_grab = keyboard_check_pressed(ord("G"));
 mouse_left = mouse_check_button_pressed(mb_left);
+key_restart = keyboard_check(ord("R"));
 
 if(mid_cutscene){
     key_right = 0;
@@ -144,7 +145,12 @@ if(mid_cutscene){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Movement &amp; Attacks
+            <string>if(key_restart)
+{
+    game_restart();
+}
+
+///Movement &amp; Attacks
 
 //While Attacking
 if(attacking)

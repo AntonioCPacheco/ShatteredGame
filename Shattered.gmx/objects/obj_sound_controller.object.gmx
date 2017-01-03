@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>0</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -127,7 +127,7 @@ gmwSetGlobalParameter(global.Master_Volume, 20);
 gmwUnregisterObject(id, global.DEFAULT_GROUP);
 
 // Unload the sound banks
-gmwUnloadBank(global.TEST_BANK);
+gmwUnloadBank(global.INIT_BANK);
 gmwUnloadBank(global.GAME_BANK);
 
 // Stop GMWWise
