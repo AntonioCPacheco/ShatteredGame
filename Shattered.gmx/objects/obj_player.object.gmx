@@ -34,7 +34,7 @@ grav = 1;
 hsp = 0;
 vsp = 0;
 max_vsp = 15;
-jumpsp = 25;
+jumpsp = 23;
 movesp = 10;
 
 triggered_to_interact = false;
@@ -46,6 +46,9 @@ grab = 0;
 choosing = false;
 last_choice = -1;
 deleteNext = false;
+
+//Variable to check if there is crossbow or not, this variable will be used to know when to shoot arrows or rocks
+crossbow = false;
 
 mid_cutscene = false;
 
