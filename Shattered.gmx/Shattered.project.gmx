@@ -141,6 +141,8 @@
     <sprite>sprites\window</sprite>
     <sprite>sprites\Key</sprite>
     <sprite>sprites\arrow_menu</sprite>
+    <sprite>sprites\horizontal_slider</sprite>
+    <sprite>sprites\horizontal_bar</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Cloud</background>
@@ -253,6 +255,9 @@
     <objects name="Menu Objects">
       <object>objects\obj_start_menu</object>
       <object>objects\obj_pause_menu</object>
+      <object>objects\obj_hslider</object>
+      <object>objects\obj_hbar</object>
+      <object>objects\obj_on_click_do</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -263,6 +268,7 @@
     <room>rooms\House_3</room>
     <room>rooms\House_4</room>
     <room>rooms\Knights_House</room>
+    <room>rooms\Options_Menu</room>
     <room>rooms\Test</room>
   </rooms>
   <help>

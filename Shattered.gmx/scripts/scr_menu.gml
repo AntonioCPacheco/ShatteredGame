@@ -15,7 +15,7 @@ switch(mpos)
     }
     case 2:
     {
-        //missing options menu
+        room_goto(Options_Menu);
         break;
     }
     case 3:
