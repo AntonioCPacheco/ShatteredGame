@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>0</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -66,29 +66,30 @@ global.Floor_Stone = 834223070;
 global.Floor_Grass = 83925039;
 global.Floor_Wood = 3616930680;
 global.Floor_Dirt = 2517613408;
-gmwSetSwitch(global.Floor, global.Floor_Stone, obj_player.id);
+//gmwSetSwitch(global.Floor, global.Floor_Stone, obj_player.id);
 //weapons
 global.Player_Weapon = 1625387345;
 global.Weapon_Sword = 2454616260;
 global.Weapon_Crossbow = 2523406417;
 global.Weapon_Fist =2695658315;
-gmwSetSwitch(global.Player_Weapon, global.Weapon_Sword, obj_player.id);
+//gmwSetSwitch(global.Player_Weapon, global.Weapon_Sword, obj_player.id);
 //armor
 global.Player_Armor = 1772252326;
 global.Armor_MetalPlate = 564569494;
 global.Armor_Chainmail =1842129769
 global.Armor_Leather = 3624926856;
-gmwSetSwitch(global.Player_Armor, global.Armor_Chainmail, obj_player.id);
+//gmwSetSwitch(global.Player_Armor, global.Armor_Chainmail, obj_player.id);
 //surface
 global.Surface_Type = 4064446173;
 global.Surface_Flesh = 1153642577;
 global.Surface_Stone = 1216965916;
 global.Surface_Wood = 2058049674;
 global.Surface_Dirt = 2195636714;
-gmwSetSwitch(global.Surface_Type, global.Surface_Stone, obj_player.id);
+//gmwSetSwitch(global.Surface_Type, global.Surface_Stone, obj_player.id);
 
 //game parameters
 global.Reverb_OnOff = 786572618;
+
 global.Music_Volume = 1006694123;
 global.SFX_Volume = 1564184899;
 global.Master_Volume = 4179668880;
@@ -97,10 +98,16 @@ global.Master_Volume = 4179668880;
 global.VOLUME = 100;
 
 //DEFAULTS
-gmwSetGlobalParameter(global.Reverb_OnOff, 100);
-gmwSetGlobalParameter(global.Music_Volume, 100);
-gmwSetGlobalParameter(global.SFX_Volume, 100);
-gmwSetGlobalParameter(global.Master_Volume, 20);
+gmwSetGlobalParameter(global.Reverb_OnOff, global.VOLUME);
+gmwSetGlobalParameter(global.Music_Volume, global.VOLUME);
+gmwSetGlobalParameter(global.SFX_Volume, global.VOLUME);
+gmwSetGlobalParameter(global.Master_Volume, global.VOLUME);
+
+
+// variable that enables to only create switchs for the player when he first appears
+playeroff = true;
+param = -1;
+percentage = 100;
 </string>
           </argument>
         </arguments>
@@ -178,7 +185,45 @@ gmwProcess();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>if(room == Knights_Village &amp;&amp; playeroff)
+{
+    gmwSetSwitch(global.Floor, global.Floor_Stone, obj_player.id);
+    gmwSetSwitch(global.Player_Weapon, global.Weapon_Sword, obj_player.id);
+    gmwSetSwitch(global.Player_Armor, global.Armor_Chainmail, obj_player.id);
+    gmwSetSwitch(global.Surface_Type, global.Surface_Stone, obj_player.id);
+    
+    playeroff = false;
+}
+
+if(room == Options_Menu)
+{
+    switch(param)
+    {
+        case 0:
+        {
+            global.Volume = percentage;
+            gmwSetGlobalParameter(global.Master_Volume, global.Volume);
+            break;
+        }
+        case 1:
+        {  
+            global.Volume = percentage;
+            gmwSetGlobalParameter(global.Music_Volume, global.Volume);
+            break;
+        }
+        case 2:
+        {
+            global.Volume = percentage;
+            gmwSetGlobalParameter(global.SFX_Volume, global.Volume);
+            break;
+        }
+        default:
+        {
+            break;
+        }  
+    }
+}
+</string>
           </argument>
         </arguments>
       </action>
