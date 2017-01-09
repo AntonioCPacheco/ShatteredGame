@@ -65,6 +65,7 @@ image_speed = image_number / room_speed;
 
 //number of collectibles you picked
 keys = 0;
+sewers_key = false;
 
 // this variable is used to check properties when entering or leaving the barracks in the knights village
 in_barracks = false;
