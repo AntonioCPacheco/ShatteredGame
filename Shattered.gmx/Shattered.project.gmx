@@ -143,6 +143,7 @@
     <sprite>sprites\arrow_menu</sprite>
     <sprite>sprites\horizontal_slider</sprite>
     <sprite>sprites\horizontal_bar</sprite>
+    <sprite>sprites\lock</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Cloud</background>
@@ -159,7 +160,6 @@
     <background>background\Grids</background>
     <background>background\House</background>
     <background>background\ladder</background>
-    <background>background\Lock</background>
     <background>background\market_fruit</background>
     <background>background\middle_door</background>
     <background>background\Sewer</background>
@@ -198,6 +198,7 @@
       <object>objects\obj_door_barracks</object>
       <object>objects\obj_door_stair</object>
       <object>objects\obj_village_gate</object>
+      <object>objects\obj_lock_sewers</object>
     </objects>
     <objects name="Ground Objects">
       <object>objects\obj_ground</object>
