@@ -140,6 +140,7 @@
     <sprite>sprites\trigger</sprite>
     <sprite>sprites\window</sprite>
     <sprite>sprites\Key</sprite>
+    <sprite>sprites\arrow_menu</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Cloud</background>
@@ -171,6 +172,12 @@
   <paths name="paths">
     <path>paths\path_gate_guard_2</path>
   </paths>
+  <scripts name="scripts">
+    <script>scripts\scr_menu.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
     <objects name="Collectible Objects">
       <object>objects\obj_collectible</object>
@@ -243,8 +250,13 @@
       <object>objects\obj_gate_guard_2_trigger_2</object>
       <object>objects\obj_gate_guard_2_trigger_3</object>
     </objects>
+    <objects name="Menu Objects">
+      <object>objects\obj_start_menu</object>
+      <object>objects\obj_pause_menu</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Start_Menu</room>
     <room>rooms\Knights_Village</room>
     <room>rooms\House_1</room>
     <room>rooms\House_2</room>
