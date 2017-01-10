@@ -467,8 +467,8 @@ if((key_interact || triggered_to_interact) &amp;&amp; grounded){
                         deleteNext = false;
                         dialog_page = -1;
                         change = false;
-                        if(instance_exists(obj_npc_new)){  //resume npc path
-                            with (obj_npc_new){
+                        if(instance_exists(obj_npc_base)){  //resume npc path
+                            with (obj_npc_base){
                                 path_speed = 1;
                             }
                         }
