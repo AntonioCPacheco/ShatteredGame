@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if(vulnerableCount &lt; 25) { vulnerableCount++; vulnerable = false; }
+else { vulnerable = true; }
 if(vsp &lt; max_vsp) vsp += grav;
 
 //horizontal collision
@@ -150,29 +151,32 @@ else if(state_of_action == 3){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(hp &lt;= 0 &amp;&amp; !following &amp;&amp; !friendly){
-    instance_destroy();
-
-}
-else if(!following &amp;&amp; !friendly){
+            <string>
+if(!following &amp;&amp; !friendly &amp;&amp; vulnerable){
     hp -= 25;
+    vulnerableCount = 0;
 }
-else if(fcount == 2){
-    friendly = false;
-    state_of_action = 2;
-}
-else if(!following &amp;&amp; friendly){
+
+else if(!following &amp;&amp; friendly &amp;&amp; vulnerable){
 //show text "hey, stop it!"
     if(obj_player.x &lt; x){
         x += 15;
         fcount += 1;
+        vulnerableCount = 0;
     }
     if(obj_player.x &gt; x){
         x -= 15;
         fcount += 1;
+        vulnerableCount = 0;
     }
 }
-
+if(hp &lt;= 0 &amp;&amp; !following &amp;&amp; !friendly &amp;&amp; vulnerable){
+    instance_destroy();
+}
+if(fcount == 2){
+    friendly = false;
+    state_of_action = 2;
+}
 with(other)
 {
     instance_destroy();
@@ -199,29 +203,31 @@ with(other)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(hp &lt;= 0 &amp;&amp; !following &amp;&amp; !friendly){
-    instance_destroy();
-
-}
-else if(!following &amp;&amp; !friendly){
+            <string>if(!following &amp;&amp; !friendly &amp;&amp; vulnerable){
     hp -= 25;
+    vulnerableCount = 0;
 }
-else if(fcount == 2){
-    friendly = false;
-    state_of_action = 2;
-}
-else if(!following &amp;&amp; friendly){
+
+else if(!following &amp;&amp; friendly &amp;&amp; vulnerable){
 //show text "hey, stop it!"
     if(obj_player.x &lt; x){
         x += 15;
         fcount += 1;
+        vulnerableCount = 0;
     }
     if(obj_player.x &gt; x){
         x -= 15;
         fcount += 1;
+        vulnerableCount = 0;
     }
 }
-
+if(hp &lt;= 0 &amp;&amp; !following &amp;&amp; !friendly &amp;&amp; vulnerable){
+    instance_destroy();
+}
+if(fcount == 2){
+    friendly = false;
+    state_of_action = 2;
+}
 with(other)
 {
     instance_destroy();

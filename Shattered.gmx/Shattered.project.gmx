@@ -222,11 +222,8 @@
     <objects name="NPC Objects">
       <object>objects\obj_gate_guard_2</object>
       <object>objects\obj_gate_guard</object>
-      <object>objects\obj_npc</object>
-      <object>objects\obj_npc_test</object>
-      <object>objects\obj_enemy</object>
       <object>objects\obj_guard</object>
-      <object>objects\obj_npc_new</object>
+      <object>objects\obj_npc_base</object>
       <object>objects\obj_attack_enemy_hit</object>
     </objects>
     <object>objects\obj_chest</object>
