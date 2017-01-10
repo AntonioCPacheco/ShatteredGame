@@ -162,7 +162,6 @@
     <background>background\ladder</background>
     <background>background\market_fruit</background>
     <background>background\middle_door</background>
-    <background>background\Sewer</background>
     <background>background\Sewer_slime</background>
     <background>background\stone_1</background>
     <background>background\Tree_1</background>
@@ -170,8 +169,9 @@
     <background>background\Wall_1</background>
     <background>background\windows</background>
     <background>background\Wood_tiles</background>
-    <background>background\background26</background>
-    <background>background\background30</background>
+    <background>background\Night_Sky</background>
+    <background>background\Sewers</background>
+    <background>background\background28</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_gate_guard_2</path>
