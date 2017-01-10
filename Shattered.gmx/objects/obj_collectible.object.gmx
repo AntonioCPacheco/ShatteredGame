@@ -48,8 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_player.keys++;
-instance_destroy();
+            <string>instance_destroy();
 </string>
           </argument>
         </arguments>
