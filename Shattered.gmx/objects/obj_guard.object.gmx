@@ -40,6 +40,8 @@ state_of_action = 1;
 friendly = true;
 following = false
 fcount= 0;
+vulnerableCount = 25;
+vulnerable = true;
 </string>
           </argument>
         </arguments>

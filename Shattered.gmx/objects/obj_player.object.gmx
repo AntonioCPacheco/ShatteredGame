@@ -49,7 +49,8 @@ deleteNext = false;
 
 //Variable to check if there is crossbow or not, this variable will be used to know when to shoot arrows or rocks
 crossbow = false;
-
+ableArrow = true;
+ableArrowCount = 35;
 mid_cutscene = false;
 
 sprite_state = 0; //0 - idle | 1 - running | 2 - jumping | 3 - falling
@@ -207,21 +208,16 @@ else if (!talking || mid_cutscene)
             var block = instance_place(x+5,y,obj_movable);
             if(block == noone) block = instance_place(x-5, y, obj_movable);
             with(block){
-            if(!place_meeting(x+obj_player.sprite_width-(18*sign(obj_player.hsp)),y,obj_terrain)){
-                    if(place_meeting(x+obj_player.hsp,y,obj_terrain)){
-                        while (!place_meeting(x+sign(obj_player.hsp), y, obj_terrain)){
-                            x+=sign(obj_player.hsp);
+                if((!place_meeting(x+obj_player.sprite_width,y,obj_terrain) &amp;&amp; obj_player.x &gt; x) || (!place_meeting(x-obj_player.sprite_width,y,obj_terrain) &amp;&amp; obj_player.x &lt; x)){
+                        if(place_meeting(x+obj_player.hsp,y,obj_terrain)){
+                            while (!place_meeting(x+sign(obj_player.hsp), y, obj_terrain)){
+                                x+=sign(obj_player.hsp);
+                                obj_player.x += sign(obj_player.hsp);
+                            }
+                            obj_player.hsp = 0;
                         }
-                        obj_player.hsp = 0;
-                    }
-                    else if(place_meeting(x+obj_player.hsp,y,obj_enemy)){
-                        while (!place_meeting(x+sign(obj_player.hsp), y, obj_enemy)){
-                            x+=sign(obj_player.hsp);
-                        }
-                        obj_player.hsp = 0;
-                    }
-                    x+=obj_player.hsp/2;
-            }
+                        x+=obj_player.hsp/2;
+                }
             }
             obj_player.hsp/=2; 
           
@@ -306,7 +302,9 @@ else if (!talking || mid_cutscene)
         sprite_state = 4;
     }
     //Arrow
-    if(mouse_left &amp;&amp; number_of_arrows &gt; 0)
+    if(ableArrowCount &lt; 35) { ableArrowCount++; ableArrow = false;}
+    else { ableArrow = true; } 
+    if(mouse_left &amp;&amp; number_of_arrows &gt; 0 &amp;&amp; ableArrow)
     {
         with  instance_create(x, y, obj_arrow)
         {
@@ -328,6 +326,7 @@ else if (!talking || mid_cutscene)
             y = obj_player.y + objective_y;
         */}
         number_of_arrows--;
+        ableArrowCount = 0;
         
         gmwSetSwitch(global.Player_Weapon, global.Weapon_Crossbow, id);
         gmwSetSwitch(global.Surface_Type, global.Surface_Stone, id);
@@ -489,8 +488,8 @@ if((key_interact || triggered_to_interact) &amp;&amp; grounded){
                 }
             } else { //else switch page and stop npc
                 dialog_page++;
-                if(instance_exists(obj_npc_new)){
-                    with (obj_npc_new){
+                if(instance_exists(obj_npc_base)){
+                    with (obj_npc_base){
                         path_speed = 0;
                     }
                 }
