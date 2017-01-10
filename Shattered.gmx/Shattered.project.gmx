@@ -170,6 +170,8 @@
     <background>background\Wall_1</background>
     <background>background\windows</background>
     <background>background\Wood_tiles</background>
+    <background>background\background26</background>
+    <background>background\background30</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_gate_guard_2</path>
