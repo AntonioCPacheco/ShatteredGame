@@ -4,7 +4,7 @@
   <width>25000</width>
   <height>3000</height>
   <vsnap>64</vsnap>
-  <hsnap>128</hsnap>
+  <hsnap>64</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>-1</persistent>
@@ -41,14 +41,14 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="obj_player" xview="0" yview="0" wview="1600" hview="960" xport="0" yport="0" wport="1600" hport="960" hborder="720" vborder="200" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="obj_player" xview="0" yview="0" wview="1820" hview="1024" xport="0" yport="0" wport="1820" hport="1024" hborder="800" vborder="360" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
     <instance objName="obj_ground_grass" x="64" y="1408" name="inst_92131F16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -185,13 +185,11 @@
     <instance objName="obj_ground_grass" x="10816" y="1024" name="inst_21D37873" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="10816" y="896" name="inst_9D84B231" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="10944" y="896" name="inst_A60231B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground_grass" x="11072" y="896" name="inst_B8A5E912" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="11200" y="896" name="inst_B61D111A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground_grass" x="11200" y="1024" name="inst_8FFB706E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground_grass" x="11200" y="1152" name="inst_06F4D65D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground_grass" x="11200" y="1280" name="inst_A8146690" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground_grass" x="11200" y="1408" name="inst_3329E9F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground_grass" x="11200" y="1536" name="inst_95DA975E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground_grass" x="11328" y="1024" name="inst_8FFB706E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground_grass" x="11328" y="1152" name="inst_06F4D65D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground_grass" x="11328" y="1280" name="inst_A8146690" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground_grass" x="11328" y="1408" name="inst_3329E9F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="11328" y="1536" name="inst_52EC279C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="11456" y="1536" name="inst_3AAE4C45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="11584" y="1536" name="inst_29743965" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -215,7 +213,7 @@
     <instance objName="obj_movable_deploy" x="14912" y="1024" name="inst_2A66E38E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable_deploy" x="16384" y="768" name="inst_F7D2B6A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sound_controller" x="0" y="0" name="inst_088A8EDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_movable_deploy" x="11456" y="1152" name="inst_18BE2685" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_movable_deploy" x="11648" y="1152" name="inst_18BE2685" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="15168" y="1536" name="inst_E9EE7B30" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="15424" y="1280" name="inst_CC4307E4" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="15680" y="1408" name="inst_C6E89E4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -229,9 +227,16 @@
     <instance objName="obj_ground_grass" x="18560" y="2304" name="inst_4762DE95" locked="0" code="" scaleX="16" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collectible" x="19072" y="1984" name="inst_54E0143A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="19648" y="1600" name="inst_CA0CCC29" locked="0" code="" scaleX="1" scaleY="11.953125" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="192" y="1216" name="inst_39BB7CB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_movable" x="10560" y="1280" name="inst_1FEA2DF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_movable" x="10560" y="1152" name="inst_48A342CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="11136" y="640" name="inst_39BB7CB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground_grass" x="11328" y="896" name="inst_CAF9F0CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground_grass" x="10944" y="1024" name="inst_A77ECF6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground_grass" x="10944" y="1152" name="inst_DBB5CB22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground_grass" x="10944" y="1280" name="inst_DDBCC020" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground_grass" x="11072" y="1280" name="inst_07ADC4AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground_grass" x="11200" y="1280" name="inst_8DEED73D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground_grass" x="11200" y="1152" name="inst_F419EE88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground_grass" x="11200" y="1024" name="inst_825A599A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_movable_deploy" x="11072" y="896" name="inst_560DBCBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Grass_1" x="3200" y="1344" w="128" h="128" xo="0" yo="0" id="10002908" name="inst_8351F88B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -374,15 +379,13 @@
     <tile bgName="Dirt_1" x="10752" y="960" w="128" h="128" xo="0" yo="0" id="10003089" name="inst_BE6141A3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Grass_2" x="10752" y="832" w="128" h="128" xo="0" yo="0" id="10003091" name="inst_088C98F5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Grass_2" x="10880" y="832" w="128" h="128" xo="0" yo="0" id="10003092" name="inst_C4E7DA98" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Grass_2" x="11008" y="832" w="128" h="128" xo="0" yo="0" id="10003093" name="inst_1514256E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Grass_2" x="11136" y="832" w="128" h="128" xo="0" yo="0" id="10003094" name="inst_1B2F32A1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Dirt_1" x="11136" y="960" w="128" h="128" xo="0" yo="0" id="10003098" name="inst_139EA30A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Dirt_1" x="11136" y="1088" w="128" h="128" xo="0" yo="0" id="10003099" name="inst_B90D200A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Dirt_1" x="11136" y="1216" w="128" h="128" xo="0" yo="0" id="10003100" name="inst_137C162B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Dirt_1" x="11136" y="1344" w="128" h="128" xo="0" yo="0" id="10003101" name="inst_A1903363" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Grass_2" x="11264" y="832" w="128" h="128" xo="0" yo="0" id="10003094" name="inst_1B2F32A1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Dirt_1" x="11264" y="960" w="128" h="128" xo="0" yo="0" id="10003098" name="inst_139EA30A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Dirt_1" x="11264" y="1088" w="128" h="128" xo="0" yo="0" id="10003099" name="inst_B90D200A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Dirt_1" x="11264" y="1216" w="128" h="128" xo="0" yo="0" id="10003100" name="inst_137C162B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Dirt_1" x="11264" y="1344" w="128" h="128" xo="0" yo="0" id="10003101" name="inst_A1903363" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Dirt_1" x="11136" y="1472" w="128" h="128" xo="0" yo="0" id="10003102" name="inst_696DBB36" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Grass_2" x="11264" y="1472" w="128" h="128" xo="0" yo="0" id="10003103" name="inst_263F8635" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Grass_2" x="11392" y="1472" w="128" h="128" xo="0" yo="0" id="10003104" name="inst_2D6B8CE0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Grass_2" x="11392" y="1472" w="128" h="128" xo="0" yo="0" id="10003103" name="inst_263F8635" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Grass_2" x="11520" y="1472" w="128" h="128" xo="0" yo="0" id="10003105" name="inst_D91845C1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Grass_2" x="11648" y="1472" w="128" h="128" xo="0" yo="0" id="10003106" name="inst_CC5EA044" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Grass_2" x="11776" y="1472" w="128" h="128" xo="0" yo="0" id="10003107" name="inst_CC866A07" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1409,8 +1412,6 @@
     <tile bgName="Dirt_1" x="10880" y="2112" w="128" h="128" xo="0" yo="0" id="10004457" name="inst_3AAF1C2D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Dirt_1" x="10880" y="2240" w="128" h="128" xo="0" yo="0" id="10004458" name="inst_BD3274B7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Dirt_1" x="10880" y="2368" w="128" h="128" xo="0" yo="0" id="10004459" name="inst_7409CE01" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Dirt_1" x="11008" y="960" w="128" h="128" xo="0" yo="0" id="10004460" name="inst_1F86F82A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Dirt_1" x="11008" y="1088" w="128" h="128" xo="0" yo="0" id="10004461" name="inst_ADFF4E7A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Dirt_1" x="11008" y="1216" w="128" h="128" xo="0" yo="0" id="10004462" name="inst_8569A758" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Dirt_1" x="11008" y="1344" w="128" h="128" xo="0" yo="0" id="10004463" name="inst_AEA3E878" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Dirt_1" x="11008" y="1472" w="128" h="128" xo="0" yo="0" id="10004464" name="inst_5F18D052" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1975,6 +1976,12 @@
     <tile bgName="Dirt_1" x="20224" y="2624" w="128" h="128" xo="0" yo="0" id="10005078" name="inst_26569A56" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Dirt_1" x="20224" y="2752" w="128" h="128" xo="0" yo="0" id="10005079" name="inst_AB6FD4E4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Dirt_1" x="20224" y="2880" w="128" h="128" xo="0" yo="0" id="10005080" name="inst_708F9DA7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Dirt_1" x="11264" y="1472" w="128" h="128" xo="0" yo="0" id="10005081" name="inst_69DFB080" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Dirt_1" x="11136" y="960" w="128" h="128" xo="0" yo="0" id="10005082" name="inst_C3EB071D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Dirt_1" x="11136" y="1088" w="128" h="128" xo="0" yo="0" id="10005083" name="inst_A0CA8A48" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Dirt_1" x="11136" y="1216" w="128" h="128" xo="0" yo="0" id="10005084" name="inst_574932DC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Dirt_1" x="11136" y="1344" w="128" h="128" xo="0" yo="0" id="10005085" name="inst_FADDB58B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Grass_2" x="11136" y="832" w="128" h="128" xo="0" yo="0" id="10005086" name="inst_49C16606" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

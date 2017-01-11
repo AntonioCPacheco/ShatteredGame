@@ -151,12 +151,12 @@ if(mid_cutscene){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(key_restart)
+            <string>
+///Movement &amp; Attacks
+if(key_restart)
 {
     game_restart();
 }
-
-///Movement &amp; Attacks
 
 //While Attacking
 if(attacking)
