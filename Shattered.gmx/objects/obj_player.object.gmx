@@ -157,7 +157,21 @@ if(mid_cutscene){
 }
 
 ///Movement &amp; Attacks
-
+if(place_meeting(x, y+5, obj_moving_platform_base)){
+    var platform = instance_place(x, y+5, obj_moving_platform_base);
+    if(platform.behavior == 1){
+        if(platform.goingRight) {x++;}
+        else {x--;}
+    }
+    else if(platform.behavior == 2){
+        if(platform.goingRight) {y++;}
+        else {y--;}
+    }
+    else{
+        x += cos(platform.angle) * platform.length;
+        y += sin(platform.angle) * platform.length;
+    }
+}
 //While Attacking
 if(attacking)
 {   
