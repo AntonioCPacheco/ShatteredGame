@@ -681,16 +681,16 @@
     <instance objName="obj_ground_stone" x="6240" y="960" name="inst_110A1B45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_stone" x="6496" y="960" name="inst_98A88539" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_sewers" x="6368" y="960" name="inst_61C64651" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_guard" x="3840" y="800" name="inst_92E5DBC1" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_guard" x="4096" y="800" name="inst_63EB26C9" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_guard" x="6592" y="800" name="inst_57622C0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_guard" x="3840" y="800" name="inst_92E5DBC1" locked="0" code="friendly = false;&#xA;" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_guard" x="4096" y="800" name="inst_63EB26C9" locked="0" code="friendly = false;&#xA;" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_guard" x="6592" y="800" name="inst_57622C0D" locked="0" code="friendly = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_guard" x="8928" y="800" name="inst_CF1E8532" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_guard" x="9184" y="800" name="inst_E57F5DFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_guard" x="9472" y="800" name="inst_71E7456E" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_guard" x="12928" y="800" name="inst_61A85D0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_guard" x="11104" y="800" name="inst_5D3D38FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_guard" x="11296" y="800" name="inst_AF09B273" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_guard" x="12736" y="800" name="inst_A5CB05D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_guard" x="12928" y="800" name="inst_61A85D0D" locked="0" code="friendly = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_guard" x="11104" y="800" name="inst_5D3D38FC" locked="0" code="friendly = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_guard" x="11296" y="800" name="inst_AF09B273" locked="0" code="friendly = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_guard" x="12736" y="800" name="inst_A5CB05D5" locked="0" code="friendly = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Grass_1" x="0" y="896" w="128" h="128" xo="0" yo="0" id="10000239" name="inst_0ED47660" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
