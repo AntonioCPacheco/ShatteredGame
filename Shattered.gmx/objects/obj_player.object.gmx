@@ -581,10 +581,10 @@ if((key_interact || triggered_to_interact) &amp;&amp; grounded){
           <argument>
             <kind>1</kind>
             <string>if(hp &lt;= 0){
-    /*with(obj_sound_controller)
+    with(obj_sound_controller)
     {
         instance_destroy();
-    }*/
+    }
     game_restart();
 }
 else{
