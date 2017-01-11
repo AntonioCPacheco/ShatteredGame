@@ -237,6 +237,9 @@
     <instance objName="obj_ground_grass" x="11200" y="1152" name="inst_F419EE88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="11200" y="1024" name="inst_825A599A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable_deploy" x="11072" y="896" name="inst_560DBCBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_movable" x="10560" y="1280" name="inst_1FEA2DF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_movable" x="10560" y="1152" name="inst_48A342CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_moving_grass" x="1152" y="1300" name="inst_07884FDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Grass_1" x="3200" y="1344" w="128" h="128" xo="0" yo="0" id="10002908" name="inst_8351F88B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
