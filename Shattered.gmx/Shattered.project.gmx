@@ -271,6 +271,7 @@
     <room>rooms\Knights_House</room>
     <room>rooms\Options_Menu</room>
     <room>rooms\Test</room>
+    <room>rooms\First_Level</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
