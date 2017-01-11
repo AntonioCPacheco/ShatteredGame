@@ -131,7 +131,7 @@ percentage = 100;
           <argument>
             <kind>1</kind>
             <string>// Unregister the sound controller
-gmwUnregisterObject(id, global.DEFAULT_GROUP);
+//gmwUnregisterObject(id, global.DEFAULT_GROUP);
 
 // Unload the sound banks
 gmwUnloadBank(global.INIT_BANK);

@@ -144,6 +144,7 @@
     <sprite>sprites\horizontal_slider</sprite>
     <sprite>sprites\horizontal_bar</sprite>
     <sprite>sprites\lock</sprite>
+    <sprite>sprites\heart</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Crate</background>
@@ -171,6 +172,7 @@
     <background>background\Night_Sky</background>
     <background>background\Sewers</background>
     <background>background\Clouds</background>
+    <background>background\Life_frame</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_gate_guard_2</path>
