@@ -3,7 +3,7 @@
   <spriteName>Knight_Idle</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1000</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>Knight_Idle</maskName>
@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize Variables
-depth = -1000;
 
 if(room == First_Level)
 {
