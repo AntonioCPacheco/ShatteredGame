@@ -175,6 +175,11 @@
     <sprite>sprites\terrain</sprite>
     <sprite>sprites\trigger</sprite>
     <sprite>sprites\window</sprite>
+    <sprites name="Guard">
+      <sprite>sprites\Guard_running</sprite>
+      <sprite>sprites\Guard_attack</sprite>
+      <sprite>sprites\Guard_idle</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Crate</background>
@@ -212,6 +217,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
+    <font>fonts\fnt_default</font>
   </fonts>
   <objects name="objects">
     <objects name="Collectible Objects">

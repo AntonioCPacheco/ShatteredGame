@@ -74,13 +74,15 @@ if(attacking &amp;&amp; !friendly)
         attacking = false;
     
 }
-else if(attacking)
+/*else if(attacking)
 {
-    with instance_create(x, y, obj_attack_friendly_hit){
+    with instance_create(x, y, obj_attack_enemy_hit){
             image_xscale = obj_player.image_xscale;
         }
     attacking = false;
-}
+    sprite_state = 0;
+}*/
+
 //npc is idle
 else if(state_of_action == 0){
    hsp = 0;
@@ -127,6 +129,17 @@ else if(state_of_action == 2 &amp;&amp; !friendly){
 else if(state_of_action == 3){
     friendly = true;
     following = true;
+}
+
+//Switching between sprites
+if(attacking)
+{
+    sprite_state = 2;
+}
+else if(hsp == 0 &amp;&amp; vsp == 0){
+    sprite_state = 0;
+} else if(vsp == 0 &amp;&amp; hsp != 0) {
+    sprite_state = 1;
 }
 
 </string>
