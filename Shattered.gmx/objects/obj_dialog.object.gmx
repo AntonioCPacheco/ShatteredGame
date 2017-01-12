@@ -30,9 +30,10 @@ text = noone;
 text_visible = "";
 text_count = 0;
 last_frame_text = text_visible;
-spd = 0.35;
-display_scale = display_get_gui_width()/ view_wview[0];
-width = sprite_width*display_scale;
+spd = 0.5;
+display_scale_h = display_get_gui_width()/view_wview[0];
+display_scale_v = display_get_gui_height()/view_hview[0];
+width = sprite_width*display_scale_h;
 margin = 8;
 
 ended = false;
@@ -110,8 +111,10 @@ if(last_frame_text != text_visible){
     //gmwPostEvent(global.Play_Dialogue_End, id);
     ended = true;
 }
-var xx = (x - view_xview[0])*display_scale - sprite_xoffset;
-var yy = (y - view_yview[0])*display_scale - sprite_yoffset;
+var xx = (x - view_xview[0] - sprite_xoffset)*display_scale_h;
+var yy = (y - view_yview[0] - sprite_yoffset)*display_scale_v;
+draw_set_valign(fa_top);
+draw_set_font(fnt_default);
 draw_text_ext(xx+margin, yy+margin, text_visible, -1, width-(2*margin));
 </string>
           </argument>
