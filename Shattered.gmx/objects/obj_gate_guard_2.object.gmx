@@ -110,6 +110,7 @@ image_speed = image_number / room_speed;
         collided_with_player++;
     else {
         obj_player.x += path_speed;
+        obj_player.sprite_state = 1;
     }
 } else if (collided_with_player &gt; 0){
     collided_with_player++;

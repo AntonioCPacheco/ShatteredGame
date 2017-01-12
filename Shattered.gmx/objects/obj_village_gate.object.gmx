@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(other.key_up_pressed || open_gate)
+            <string>if(other.key_up_pressed &amp;&amp; open_gate)
 {
     open_gate = false;
     //tile_layer_hide(-1);
