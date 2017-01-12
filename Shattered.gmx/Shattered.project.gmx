@@ -150,7 +150,6 @@
       <sprite>sprites\Knight_Running</sprite>
       <sprite>sprites\Knight_throwing</sprite>
     </sprites>
-    <sprite>sprites\moving_grass</sprite>
     <sprite>sprites\weapons_dropped</sprite>
     <sprites name="Knight_level2_noWeapons">
       <sprite>sprites\noWeapon_climbing</sprite>
