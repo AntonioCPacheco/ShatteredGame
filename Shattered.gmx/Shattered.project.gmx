@@ -288,6 +288,7 @@
     </objects>
     <objects name="Menu Objects">
       <object>objects\obj_start_menu</object>
+      <object>objects\obj_intro_text</object>
       <object>objects\obj_pause_menu</object>
       <object>objects\obj_hslider</object>
       <object>objects\obj_hbar</object>
@@ -296,6 +297,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_Menu</room>
+    <room>rooms\Intro_Room</room>
     <room>rooms\Options_Menu</room>
     <room>rooms\First_Level</room>
     <room>rooms\Knights_Village</room>

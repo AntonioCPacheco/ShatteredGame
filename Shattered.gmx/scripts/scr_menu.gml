@@ -3,9 +3,12 @@ switch(mpos)
 {
     case 0:
     {
+    /*
         room_goto(First_Level);
         draw_set_font(-1);
         draw_set_color(c_black);
+        break;*/
+        room_goto(Intro_Room);
         break;
     }
     case 1:
