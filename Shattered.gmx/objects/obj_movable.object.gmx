@@ -53,6 +53,22 @@ grounded = false;
             <kind>1</kind>
             <string>if(vsp &lt; max_vsp) vsp += grav;
 
+if(place_meeting(x, y+5, obj_moving_platform_base)){
+    var platform = instance_place(x, y+5, obj_moving_platform_base);
+    if(platform.behavior == 1){
+        if(platform.goingRight) {x+=platform.velocity;}
+        else {x-=platform.velocity;}
+    }
+    else if(platform.behavior == 2){
+        if(platform.goingRight) {y+=platform.velocity;}
+        else {y-=platform.velocity;}
+    }
+    else{
+        x += cos(platform.angle) * platform.length;
+        y += sin(platform.angle) * platform.length;
+    }
+}
+
 if(place_meeting(x, y+vsp, obj_terrain))
 {
     while(!place_meeting(x, y+sign(vsp), obj_terrain))
@@ -63,9 +79,12 @@ if(place_meeting(x, y+vsp, obj_terrain))
 }
 else
 {
-    obj_player.grab = false;
+    var p = instance_nearest(x, y, obj_player);
+    if(p!=noone)
+        p.grab = false;
 }
 y += vsp;
+
 </string>
           </argument>
         </arguments>

@@ -3,7 +3,9 @@ switch(mpos)
 {
     case 0:
     {
-        //missing level 1
+        room_goto(First_Level);
+        draw_set_font(-1);
+        draw_set_color(c_black);
         break;
     }
     case 1:

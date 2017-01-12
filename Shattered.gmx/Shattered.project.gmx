@@ -152,7 +152,8 @@
       <sprite>sprites\Knight_opening_door</sprite>
       <sprite>sprites\Knight_Running</sprite>
       <sprite>sprites\Knight_throwing</sprite>
-    </sprites>
+    <sprite>sprites\moving_grass</sprite>
+
   </sprites>
   <backgrounds name="background">
     <background>background\Crate</background>
@@ -214,11 +215,13 @@
     <objects name="Ground Objects">
       <object>objects\obj_ground</object>
       <object>objects\obj_ground_grass</object>
+      <object>objects\obj_moving_platform_base</object>
       <object>objects\obj_ground_sewers</object>
       <object>objects\obj_ground_stone</object>
       <object>objects\obj_ground_wood</object>
       <object>objects\obj_terrain</object>
       <object>objects\obj_terrain_invisible</object>
+      <object>objects\obj_moving_grass</object>
     </objects>
     <objects name="Ladder Objects">
       <object>objects\obj_ladder_top</object>
@@ -279,6 +282,7 @@
     <room>rooms\Knights_House</room>
     <room>rooms\Options_Menu</room>
     <room>rooms\Test</room>
+    <room>rooms\First_Level</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
