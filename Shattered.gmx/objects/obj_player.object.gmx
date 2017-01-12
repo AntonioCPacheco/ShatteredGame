@@ -344,7 +344,7 @@ else if (!talking || mid_cutscene)
     }
     
     //Attack
-    if((key_attack || triggered_to_attack) &amp;&amp; grounded){
+    if((key_attack || triggered_to_attack) &amp;&amp; grounded &amp;&amp; weapons){
         triggered_to_attack = false;
         vsp = 0;
         hsp = 0;
@@ -750,7 +750,7 @@ if((key_interact || triggered_to_interact) &amp;&amp; grounded){
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_ground_spikes">
+    <event eventtype="4" ename="obj_attack_enemy_hit">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -784,7 +784,7 @@ else if(!invulnerable){
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_attack_enemy_hit">
+    <event eventtype="4" ename="obj_ground_spikes">
       <action>
         <libid>1</libid>
         <id>603</id>
