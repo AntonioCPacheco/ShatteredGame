@@ -225,9 +225,9 @@
     <instance objName="obj_ground_grass" x="17216" y="896" name="inst_B5F63D98" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="17472" y="1536" name="inst_39124AB0" locked="0" code="" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="18560" y="2304" name="inst_4762DE95" locked="0" code="" scaleX="16" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collectible" x="19072" y="1984" name="inst_54E0143A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collectible" x="19328" y="2048" name="inst_54E0143A" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="19648" y="1600" name="inst_CA0CCC29" locked="0" code="" scaleX="1" scaleY="11.953125" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="11136" y="640" name="inst_39BB7CB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="15360" y="1024" name="inst_39BB7CB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="11328" y="896" name="inst_CAF9F0CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="10944" y="1024" name="inst_A77ECF6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_grass" x="10944" y="1152" name="inst_DBB5CB22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -239,7 +239,12 @@
     <instance objName="obj_movable_deploy" x="11072" y="896" name="inst_560DBCBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable" x="10560" y="1280" name="inst_1FEA2DF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable" x="10560" y="1152" name="inst_48A342CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_moving_grass" x="1152" y="1300" name="inst_07884FDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_moving_grass" x="9984" y="832" name="inst_07884FDD" locked="0" code="event_inherited();&#xA;behavior = 1;&#xA;centerPoint = x;&#xA;velocity = 2;&#xA;goingLeft = true;&#xA;goingRight = false;&#xA;radius = 200;&#xA;angle = 0;&#xA;length = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_moving_grass" x="9856" y="832" name="inst_B3FD2A8F" locked="0" code="event_inherited();&#xA;behavior = 1;&#xA;centerPoint = x;&#xA;velocity = 2;&#xA;goingLeft = true;&#xA;goingRight = false;&#xA;radius = 200;&#xA;angle = 0;&#xA;length = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_moving_grass" x="10112" y="832" name="inst_72A8DDD3" locked="0" code="event_inherited();&#xA;behavior = 1;&#xA;centerPoint = x;&#xA;velocity = 2;&#xA;goingLeft = true;&#xA;goingRight = false;&#xA;radius = 200;&#xA;angle = 0;&#xA;length = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_moving_grass" x="16192" y="1216" name="inst_0709FFFC" locked="0" code="event_inherited();&#xA;behavior = 1;&#xA;centerPoint = x;&#xA;velocity = 2;&#xA;goingLeft = true;&#xA;goingRight = false;&#xA;radius = 200;&#xA;angle = 0;&#xA;length = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_moving_grass" x="16320" y="1216" name="inst_F10D8E2C" locked="0" code="event_inherited();&#xA;behavior = 1;&#xA;centerPoint = x;&#xA;velocity = 2;&#xA;goingLeft = true;&#xA;goingRight = false;&#xA;radius = 200;&#xA;angle = 0;&#xA;length = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_moving_grass" x="16448" y="1216" name="inst_AC81345F" locked="0" code="event_inherited();&#xA;behavior = 1;&#xA;centerPoint = x;&#xA;velocity = 2;&#xA;goingLeft = true;&#xA;goingRight = false;&#xA;radius = 200;&#xA;angle = 0;&#xA;length = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Grass_1" x="3200" y="1344" w="128" h="128" xo="0" yo="0" id="10002908" name="inst_8351F88B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

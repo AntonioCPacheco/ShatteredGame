@@ -30,9 +30,9 @@ behavior = 3;
 centerPoint = x;
 goingLeft = true;
 goingRight = false;
-radius = 100
+radius = 100;
 angle = 0;
-length = 10;
+length = 2;
 </string>
           </argument>
         </arguments>
