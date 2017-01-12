@@ -217,6 +217,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
+    <font>fonts\fnt_default</font>
   </fonts>
   <objects name="objects">
     <objects name="Collectible Objects">
