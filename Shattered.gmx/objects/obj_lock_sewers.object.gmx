@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!other.sewers_key)
+            <string>if(!other.sewers_key &amp;&amp; (other.key_down || other.key_down_pressed))
 {
     if(other.y &gt; y)
     {

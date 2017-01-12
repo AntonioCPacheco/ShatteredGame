@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>Knight_Idle</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -27,6 +27,17 @@
             <kind>1</kind>
             <string>///Initialize Variables
 depth = -1000;
+
+if(room == First_Level)
+{
+    rags = true;
+    weapons = false;
+}
+else if(room == Knights_Village)
+{
+    rags = false;
+    weapons = true;
+}
 
 hp = 100;
 hearts = 4
@@ -152,11 +163,6 @@ if(mid_cutscene){
           <argument>
             <kind>1</kind>
             <string>///Movement &amp; Attacks
-if(key_restart)
-{
-    game_restart();
-}
-
 if(place_meeting(x, y+5, obj_moving_platform_base)){
     var platform = instance_place(x, y+5, obj_moving_platform_base);
     if(platform.behavior == 1){
@@ -373,6 +379,16 @@ else if (!talking || mid_cutscene)
     }
 }
 hsp = 0;
+
+
+if(key_restart)
+{
+    with(obj_sound_controller)
+    {
+        instance_destroy();
+    }
+    game_restart();
+}
 </string>
           </argument>
         </arguments>
@@ -396,50 +412,134 @@ hsp = 0;
             <string>///Changing sprites
 //depth = -1;
 // sprite_state: 0 - idle | 1 - running | 2 - jumping | 3 - falling | 4 - attacking 
-if(last_state != sprite_state){
-    switch(sprite_state){
-        case 0:
-            sprite_index = Knight_Idle;
-            break;
-        case 1:
-            sprite_index = Knight_Running;
-            break;
-        case 2:
-            sprite_index = Knight_Jump;
-            break;
-        case 3:
-            sprite_index = Knight_Falling;
-            break;
-        case 4:
-            sprite_index = Knight_Attack;
-            break;
-        case 5:
-            sprite_index = Knight_climbing;
-            break;
-        case 6:
-            sprite_index = Knight_bow_0;
-            break;
-        case 7:
-            sprite_index = Knight_bow_45;
-            break;
-        case 8:
-            sprite_index = Knight_opening_door;
-            break;
-        case 9:
-            sprite_index = Knight_moving_objects;
-            break;
-        case 10:
-            sprite_index = Knight_throwing;
-            break;
-        default:
-            //sprite_index = player_idle;
-            break;
+if(rags)
+{
+   if(last_state != sprite_state){
+            switch(sprite_state){
+                case 0:
+                    sprite_index = rags_idle;
+                    break;
+                case 1:
+                    sprite_index = rags_running;
+                    break;
+                case 2:
+                    sprite_index = rags_jump;
+                    break;
+                case 3:
+                    sprite_index = rags_falling;
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    sprite_index = rags_climbing;
+                    break;
+                case 6:
+                    sprite_index = rags_throwing;
+                    break;
+                case 7:
+                    sprite_index = rags_throwing;
+                    break;
+                case 8:
+                    sprite_index = rags_opening_door;
+                    break;
+                case 9:
+                    sprite_index = rags_moving_objects;
+                    break;
+                default:
+                    //sprite_index = player_idle;
+                    break;
+            }
+            image_index = 0;
+            image_speed = 0.05;//image_number / room_speed;
+        }
+}
+else
+{
+    if(weapons)
+    {
+        if(last_state != sprite_state){
+            switch(sprite_state){
+                case 0:
+                    sprite_index = Knight_Idle;
+                    break;
+                case 1:
+                    sprite_index = Knight_Running;
+                    break;
+                case 2:
+                    sprite_index = Knight_Jump;
+                    break;
+                case 3:
+                    sprite_index = Knight_Falling;
+                    break;
+                case 4:
+                    sprite_index = Knight_Attack;
+                    break;
+                case 5:
+                    sprite_index = Knight_climbing;
+                    break;
+                case 6:
+                    sprite_index = Knight_bow_0;
+                    break;
+                case 7:
+                    sprite_index = Knight_bow_45;
+                    break;
+                case 8:
+                    sprite_index = Knight_opening_door;
+                    break;
+                case 9:
+                    sprite_index = Knight_moving_objects;
+                    break;
+                default:
+                    //sprite_index = player_idle;
+                    break;
+            }
+            image_index = 0;
+            image_speed = 0.05;//image_number / room_speed;
+        }   
     }
-    image_index = 0;
-    image_speed = 0.05;//image_number / room_speed;
+    else
+    {
+        if(last_state != sprite_state){
+            switch(sprite_state){
+                case 0:
+                    sprite_index = noWeapon_idle;
+                    break;
+                case 1:
+                    sprite_index = noWeapon_running;
+                    break;
+                case 2:
+                    sprite_index = noWeapon_jump;
+                    break;
+                case 3:
+                    sprite_index = noWeapon_falling;
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    sprite_index = noWeapon_climbing;
+                    break;
+                case 6:
+                    sprite_index = noWeapon_throwing;
+                    break;
+                case 7:
+                    sprite_index = noWeapon_throwing;
+                    break;
+                case 8:
+                    sprite_index = noWeapon_opening_door;
+                    break;
+                case 9:
+                    sprite_index = noWeapon_moving_objects;
+                    break;
+                default:
+                    //sprite_index = player_idle;
+                    break;
+            }
+            image_index = 0;
+            image_speed = 0.05;//image_number / room_speed;
+        }
+    }
 }
 last_state = sprite_state;
-
 if(sprite_state == 1 &amp;&amp; (image_index==1 || image_index==3))
 {
     gmwPostEvent(global.Play_Footstep, id);

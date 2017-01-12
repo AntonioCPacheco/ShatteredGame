@@ -117,13 +117,53 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\arrow_horizontal</sprite>
+    <sprite>sprites\arrow_menu</sprite>
     <sprite>sprites\arrow_vertical</sprite>
     <sprite>sprites\chest_closed</sprite>
     <sprite>sprites\chest_open</sprite>
     <sprite>sprites\collectible</sprite>
     <sprite>sprites\gate_handle</sprite>
+    <sprite>sprites\heart</sprite>
+    <sprite>sprites\horizontal_bar</sprite>
+    <sprite>sprites\horizontal_slider</sprite>
+    <sprite>sprites\Key</sprite>
+    <sprites name="Knight_level1">
+      <sprite>sprites\rags_climbing</sprite>
+      <sprite>sprites\rags_falling</sprite>
+      <sprite>sprites\rags_idle</sprite>
+      <sprite>sprites\rags_jump</sprite>
+      <sprite>sprites\rags_moving_objects</sprite>
+      <sprite>sprites\rags_opening_door</sprite>
+      <sprite>sprites\rags_running</sprite>
+      <sprite>sprites\rags_throwing</sprite>
+    </sprites>
+    <sprites name="Knight_level2">
+      <sprite>sprites\Knight_Attack</sprite>
+      <sprite>sprites\Knight_bow_0</sprite>
+      <sprite>sprites\Knight_bow_45</sprite>
+      <sprite>sprites\Knight_climbing</sprite>
+      <sprite>sprites\Knight_Falling</sprite>
+      <sprite>sprites\Knight_Idle</sprite>
+      <sprite>sprites\Knight_Jump</sprite>
+      <sprite>sprites\Knight_moving_objects</sprite>
+      <sprite>sprites\Knight_opening_door</sprite>
+      <sprite>sprites\Knight_Running</sprite>
+      <sprite>sprites\Knight_throwing</sprite>
+    </sprites>
+    <sprites name="Knight_level2_noWeapons">
+      <sprite>sprites\noWeapon_climbing</sprite>
+      <sprite>sprites\noWeapon_falling</sprite>
+      <sprite>sprites\noWeapon_idle</sprite>
+      <sprite>sprites\noWeapon_jump</sprite>
+      <sprite>sprites\noWeapon_moving_objects</sprite>
+      <sprite>sprites\noWeapon_opening_door</sprite>
+      <sprite>sprites\noWeapon_running</sprite>
+      <sprite>sprites\noWeapon_throwing</sprite>
+    </sprites>
     <sprite>sprites\ladder_hitbox</sprite>
+    <sprite>sprites\lock</sprite>
     <sprite>sprites\movable</sprite>
+    <sprite>sprites\moving_grass</sprite>
     <sprite>sprites\npc</sprite>
     <sprite>sprites\player</sprite>
     <sprite>sprites\player_attack_hit</sprite>
@@ -134,27 +174,6 @@
     <sprite>sprites\terrain</sprite>
     <sprite>sprites\trigger</sprite>
     <sprite>sprites\window</sprite>
-    <sprite>sprites\Key</sprite>
-    <sprite>sprites\arrow_menu</sprite>
-    <sprite>sprites\horizontal_slider</sprite>
-    <sprite>sprites\horizontal_bar</sprite>
-    <sprite>sprites\lock</sprite>
-    <sprite>sprites\heart</sprite>
-    <sprites name="Knight_level2">
-      <sprite>sprites\Knight_Attack</sprite>
-      <sprite>sprites\Knight_bow_45</sprite>
-      <sprite>sprites\Knight_bow_0</sprite>
-      <sprite>sprites\Knight_climbing</sprite>
-      <sprite>sprites\Knight_Falling</sprite>
-      <sprite>sprites\Knight_Idle</sprite>
-      <sprite>sprites\Knight_Jump</sprite>
-      <sprite>sprites\Knight_moving_objects</sprite>
-      <sprite>sprites\Knight_opening_door</sprite>
-      <sprite>sprites\Knight_Running</sprite>
-      <sprite>sprites\Knight_throwing</sprite>
-	</sprites>
-    <sprite>sprites\moving_grass</sprite>
-
   </sprites>
   <backgrounds name="background">
     <background>background\Crate</background>
@@ -275,15 +294,15 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_Menu</room>
+    <room>rooms\Options_Menu</room>
+    <room>rooms\First_Level</room>
     <room>rooms\Knights_Village</room>
     <room>rooms\House_1</room>
     <room>rooms\House_2</room>
     <room>rooms\House_3</room>
     <room>rooms\House_4</room>
     <room>rooms\Knights_House</room>
-    <room>rooms\Options_Menu</room>
     <room>rooms\Test</room>
-    <room>rooms\First_Level</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
