@@ -301,15 +301,7 @@ else if (!talking || mid_cutscene)
     y += vsp;
     
     //Switching between sprites
-    if(grab)
-    {
-        sprite_state = 9;
-    }
-    else if(climbing_ladder &amp;&amp; vsp != 0)
-    {
-        sprite_state = 5;
-    }
-    else if(hsp == 0 &amp;&amp; vsp == 0){
+    if(hsp == 0 &amp;&amp; vsp == 0){
         sprite_state = 0;
     } else if (vsp &gt; 4) {
         sprite_state = 3;
@@ -412,24 +404,6 @@ if(last_state != sprite_state){
             break;
         case 4:
             sprite_index = Knight_Attack;
-            break;
-        case 5:
-            sprite_index = Knight_climbing;
-            break;
-        case 6:
-            sprite_index = Knight_bow_0;
-            break;
-        case 7:
-            sprite_index = Knight_bow_45;
-            break;
-        case 8:
-            sprite_index = Knight_opening_door;
-            break;
-        case 9:
-            sprite_index = Knight_moving_objects;
-            break;
-        case 10:
-            sprite_index = Knight_throwing;
             break;
         default:
             //sprite_index = player_idle;
