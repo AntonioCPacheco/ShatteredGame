@@ -185,6 +185,8 @@
       <sprite>sprites\Guard_chief_idle</sprite>
       <sprite>sprites\sprite57</sprite>
     </sprites>
+    <sprite>sprites\forest_deployer</sprite>
+    <sprite>sprites\ground_spikes</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Crate</background>
@@ -213,6 +215,7 @@
     <background>background\Sewers</background>
     <background>background\Clouds</background>
     <background>background\Life_frame</background>
+    <background>background\forest_bg</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_gate_guard_2</path>
@@ -254,6 +257,7 @@
       <object>objects\obj_terrain</object>
       <object>objects\obj_terrain_invisible</object>
       <object>objects\obj_moving_grass</object>
+      <object>objects\obj_ground_spikes</object>
     </objects>
     <objects name="Ladder Objects">
       <object>objects\obj_ladder_top</object>
@@ -262,6 +266,7 @@
     <objects name="Movable Objects">
       <object>objects\obj_movable</object>
       <object>objects\obj_movable_deploy</object>
+      <object>objects\obj_movable_deploy_forest</object>
     </objects>
     <objects name="NPC Objects">
       <object>objects\obj_gate_guard_2</object>

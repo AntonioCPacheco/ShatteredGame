@@ -67,6 +67,10 @@ mid_cutscene = false;
 sprite_state = 0; //0 - idle | 1 - running | 2 - jumping | 3 - falling
 last_state = sprite_state;
 
+iframes = room_speed;
+took_damage = 0;
+invulnerable = false;
+
 climbing_ladder = false;
 attacking = false;
 talking = false;
@@ -396,6 +400,12 @@ else if (!talking || mid_cutscene)
 }
 hsp = 0;
 
+if(took_damage &lt;= iframes){
+    took_damage++;
+    invulnerable = true;
+} else {
+    invulnerable = false;
+}
 
 if(key_restart)
 {
@@ -567,6 +577,14 @@ switch(sprite_state){
         image_speed = 0.05;
         break;
 }
+
+ratio = took_damage/room_speed;
+if(invulnerable &amp;&amp; ((ratio &gt; 0 &amp;&amp; ratio &lt; .2)||(ratio &gt; .4 &amp;&amp; ratio &lt; .6)||(ratio &gt; .8 &amp;&amp; ratio &lt; 1))){
+    image_alpha = 0.4;
+} else {
+    image_alpha = 1;
+}
+
 last_state = sprite_state;
 if(sprite_state == 1 &amp;&amp; (image_index==1 || image_index==3))
 {
@@ -732,6 +750,40 @@ if((key_interact || triggered_to_interact) &amp;&amp; grounded){
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_ground_spikes">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(hp &lt;= 0){
+    with(obj_sound_controller)
+    {
+        instance_destroy();
+    }
+    game_restart();
+}
+else if(!invulnerable){
+    hp -= 25;
+    hearts--;
+    took_damage = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_attack_enemy_hit">
       <action>
         <libid>1</libid>
@@ -756,9 +808,10 @@ if((key_interact || triggered_to_interact) &amp;&amp; grounded){
     }
     game_restart();
 }
-else{
+else if(!invulnerable){
     hp -= 25;
     hearts--;
+    took_damage = 0;
 }
 </string>
           </argument>

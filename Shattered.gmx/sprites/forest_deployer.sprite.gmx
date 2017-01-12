@@ -7,9 +7,9 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>19</bbox_left>
-  <bbox_right>115</bbox_right>
-  <bbox_top>5</bbox_top>
+  <bbox_left>0</bbox_left>
+  <bbox_right>127</bbox_right>
+  <bbox_top>0</bbox_top>
   <bbox_bottom>127</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -20,7 +20,6 @@
   <width>128</width>
   <height>128</height>
   <frames>
-    <frame index="0">images\rags_moving_objects_0.png</frame>
-    <frame index="1">images\rags_moving_objects_1.png</frame>
+    <frame index="0">images\forest_deployer_0.png</frame>
   </frames>
 </sprite>
