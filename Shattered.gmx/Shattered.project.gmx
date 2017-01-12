@@ -152,6 +152,7 @@
       <sprite>sprites\Knight_opening_door</sprite>
       <sprite>sprites\Knight_Running</sprite>
       <sprite>sprites\Knight_throwing</sprite>
+	</sprites>
     <sprite>sprites\moving_grass</sprite>
 
   </sprites>
