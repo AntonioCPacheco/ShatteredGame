@@ -122,6 +122,11 @@
     <sprite>sprites\chest_open</sprite>
     <sprite>sprites\collectible</sprite>
     <sprite>sprites\gate_handle</sprite>
+    <sprite>sprites\Knight_Attack</sprite>
+    <sprite>sprites\Knight_Falling</sprite>
+    <sprite>sprites\Knight_Idle</sprite>
+    <sprite>sprites\Knight_Jump</sprite>
+    <sprite>sprites\Knight_Running</sprite>
     <sprite>sprites\ladder_hitbox</sprite>
     <sprite>sprites\movable</sprite>
     <sprite>sprites\npc</sprite>
@@ -140,20 +145,7 @@
     <sprite>sprites\horizontal_bar</sprite>
     <sprite>sprites\lock</sprite>
     <sprite>sprites\heart</sprite>
-    <sprites name="Knight_level2">
-      <sprite>sprites\Knight_Attack</sprite>
-      <sprite>sprites\Knight_bow_45</sprite>
-      <sprite>sprites\Knight_bow_0</sprite>
-      <sprite>sprites\Knight_climbing</sprite>
-      <sprite>sprites\Knight_Falling</sprite>
-      <sprite>sprites\Knight_Idle</sprite>
-      <sprite>sprites\Knight_Jump</sprite>
-      <sprite>sprites\Knight_moving_objects</sprite>
-      <sprite>sprites\Knight_opening_door</sprite>
-      <sprite>sprites\Knight_Running</sprite>
-      <sprite>sprites\Knight_throwing</sprite>
     <sprite>sprites\moving_grass</sprite>
-
   </sprites>
   <backgrounds name="background">
     <background>background\Crate</background>
