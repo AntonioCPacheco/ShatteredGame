@@ -180,6 +180,11 @@
       <sprite>sprites\Guard_attack</sprite>
       <sprite>sprites\Guard_idle</sprite>
     </sprites>
+    <sprites name="Guard_Chief">
+      <sprite>sprites\sprite58</sprite>
+      <sprite>sprites\Guard_chief_idle</sprite>
+      <sprite>sprites\sprite57</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Crate</background>
@@ -264,6 +269,7 @@
       <object>objects\obj_guard</object>
       <object>objects\obj_npc_base</object>
       <object>objects\obj_attack_enemy_hit</object>
+      <object>objects\obj_guard_chief</object>
     </objects>
     <object>objects\obj_chest</object>
     <object>objects\obj_Death_by_touch</object>
@@ -300,6 +306,7 @@
       <object>objects\obj_hbar</object>
       <object>objects\obj_on_click_do</object>
     </objects>
+    <object>objects\obj_trigger_2_guards</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_Menu</room>
