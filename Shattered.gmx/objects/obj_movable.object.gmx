@@ -54,14 +54,35 @@ grounded = false;
             <string>if(vsp &lt; max_vsp) vsp += grav;
 
 if(place_meeting(x, y+5, obj_moving_platform_base)){
+    var player_on_top = instance_place(x, y-1, obj_player);
     var platform = instance_place(x, y+5, obj_moving_platform_base);
     if(platform.behavior == 1){
-        if(platform.goingRight) {x+=platform.velocity;}
-        else {x-=platform.velocity;}
+        if(platform.goingRight) {
+            x+=platform.velocity;
+            if(player_on_top != noone){
+                player_on_top.x+=platform.velocity;
+            }
+        }
+        else {
+            x-=platform.velocity;
+            if(player_on_top != noone){
+                player_on_top.x-=platform.velocity;
+            }
+        }
     }
     else if(platform.behavior == 2){
-        if(platform.goingRight) {y+=platform.velocity;}
-        else {y-=platform.velocity;}
+        if(platform.goingRight) {
+            y+=platform.velocity;
+            if(player_on_top != noone){
+                player_on_top.y+=platform.velocity;
+            }
+        }
+        else {
+            y-=platform.velocity;
+            if(player_on_top != noone){
+                player_on_top.y-=platform.velocity;
+            }
+        }
     }
     else{
         x += cos(platform.angle) * platform.length;

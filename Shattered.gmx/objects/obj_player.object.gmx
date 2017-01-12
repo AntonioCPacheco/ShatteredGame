@@ -197,9 +197,9 @@ else if (!talking || mid_cutscene)
         hsp = move * movesp;
     
     //Sprite direction
-    if(sign(hsp) &lt; 0){
+    if(sign(hsp) &lt; 0 &amp;&amp; grab==0){
         image_xscale = first_xscale * -1;
-    } else if (sign(hsp) &gt; 0){
+    } else if (sign(hsp) &gt; 0 &amp;&amp; grab==0){
         image_xscale = first_xscale;
     }
     
@@ -221,22 +221,23 @@ else if (!talking || mid_cutscene)
     else if(key_grab &amp;&amp; grab == 1 &amp;&amp; (place_meeting(x+1, y, obj_movable) || place_meeting(x-1, y, obj_movable))) {grab=0;}
     
     if(grounded &amp;&amp; grab == 1){
-            var block = instance_place(x+5,y,obj_movable);
-            if(block == noone) block = instance_place(x-5, y, obj_movable);
-            with(block){
-                if((!place_meeting(x+sprite_width/2 + 10,y,obj_terrain) &amp;&amp; obj_player.x &gt; x) || (!place_meeting(x-sprite_width/2 - 10,y,obj_terrain) &amp;&amp; obj_player.x &lt; x)){
-                        if(place_meeting(x+obj_player.hsp,y,obj_terrain)){
-                            while (!place_meeting(x+sign(obj_player.hsp), y, obj_terrain)){
-                                x+=sign(obj_player.hsp);
-                                obj_player.x += sign(obj_player.hsp);
-                            }
-                            obj_player.hsp = 0;
-                        }
-                        x+=obj_player.hsp/2;
+        var block = instance_place(x+1,y,obj_movable);
+        if(block == noone) block = instance_place(x-1, y, obj_movable);
+        with(block){
+            if( obj_player.x &gt; x &amp;&amp; (!place_meeting(x + sprite_width/2 + obj_player.sprite_width + 10,y,obj_terrain)) 
+                || 
+                obj_player.x &lt; x &amp;&amp; (!place_meeting(x - sprite_width/2 - obj_player.sprite_width - 10,y,obj_terrain))){
+                if(place_meeting(x+obj_player.hsp,y,obj_terrain)){
+                    while (!place_meeting(x+sign(obj_player.hsp), y, obj_terrain)){
+                        x+=sign(obj_player.hsp);
+                        obj_player.x += sign(obj_player.hsp);
+                    }
+                    obj_player.hsp = 0;
                 }
+                x+=obj_player.hsp/2;
             }
-            obj_player.hsp/=2; 
-          
+        }
+        obj_player.hsp/=2; 
     }
 
     //Ladders

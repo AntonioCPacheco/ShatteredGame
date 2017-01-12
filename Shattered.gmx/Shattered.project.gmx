@@ -152,9 +152,9 @@
       <sprite>sprites\Knight_opening_door</sprite>
       <sprite>sprites\Knight_Running</sprite>
       <sprite>sprites\Knight_throwing</sprite>
-	</sprites>
+    </sprites>
     <sprite>sprites\moving_grass</sprite>
-
+    <sprite>sprites\weapons_dropped</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Crate</background>
@@ -250,6 +250,7 @@
       <object>objects\obj_arrow</object>
       <object>objects\obj_attack_hit</object>
       <object>objects\obj_player</object>
+      <object>objects\obj_weapons_dropped</object>
     </objects>
     <objects name="Sound Objects">
       <object>objects\obj_sound_controller</object>
