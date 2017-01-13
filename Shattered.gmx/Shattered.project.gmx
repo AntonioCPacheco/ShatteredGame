@@ -305,6 +305,7 @@
       <object>objects\obj_gate_guard_2_trigger_1</object>
       <object>objects\obj_gate_guard_2_trigger_2</object>
       <object>objects\obj_gate_guard_2_trigger_3</object>
+      <object>objects\obj_trigger_2_guards</object>
     </objects>
     <objects name="Menu Objects">
       <object>objects\obj_start_menu</object>
@@ -316,7 +317,6 @@
       <object>objects\obj_hbar</object>
       <object>objects\obj_on_click_do</object>
     </objects>
-    <object>objects\obj_trigger_2_guards</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_Menu</room>
