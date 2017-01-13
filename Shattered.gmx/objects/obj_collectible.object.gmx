@@ -60,6 +60,9 @@ option = 0;
 } else 
 {
     instance_destroy();
+    with(obj_player){
+        instance_destroy();
+    }
     room_goto(End_Room);
 }
 </string>
