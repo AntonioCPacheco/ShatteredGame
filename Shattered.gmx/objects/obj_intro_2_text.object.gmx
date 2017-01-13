@@ -28,7 +28,7 @@
             <string>menu[0] = "Some time has passed since starting your journey.";
 menu[1] = "Hopefully you made friends, you definitely made enemies.";
 menu[2] = "Noticing the weight of your actions, #you now have the oportunity to take more than one path #in order to reach your goal.";
-menu[3] = "You have recovered your sword(F key) and found a bow(Left mouse button).";
+menu[3] = "You have found, what you believe to be your sword ('F' key)#, a bow and a quiver full of arrows(Left mouse button).";
 menu[4] = "But most importantly you have regained some of your memories, #a part of your soul. #You WERE a valiant knight, you DID protect that village. #But at what cost?";
 menu[5] = "With the need to find out what trully happened, #you make your way back to the village #to uncover which ever secrets may be hidden.";
 menu[6] = "Press Space.."

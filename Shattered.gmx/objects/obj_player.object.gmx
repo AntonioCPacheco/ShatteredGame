@@ -29,14 +29,12 @@
 
 if(room == First_Level)
 {
-    gmwSetSwitch(global.Player_Armor, global.Armor_Leather, id);
     rags = true;
     weapons = false;
     bow = false;
 }
 else if(room == Knights_Village)
 {
-    gmwSetSwitch(global.Player_Armor, global.Armor_Chainmail, id);
     rags = false;
     weapons = true;
     bow = true;
@@ -172,6 +170,9 @@ if(mid_cutscene){
           <argument>
             <kind>1</kind>
             <string>///Movement &amp; Attacks
+    //sound
+    gmwSet2DPosition(id, x, y, 0, 0);
+    
 if(place_meeting(x, y+5, obj_moving_platform_base)){
     var platform = instance_place(x, y+5, obj_moving_platform_base);
     if(platform.behavior == 1){
@@ -426,13 +427,15 @@ else if (!talking || mid_cutscene)
         gmwPostEvent(global.Play_Weapon_Swing, id);
     }
     
-    //sound
-    gmwSet2DPosition(id, x, y, 0, 0);
     if(grounded){
-        if(place_meeting(x, y+1, obj_ground_stone))
+        if(place_meeting(x, y+1, obj_ground_stone)){
+            gmwSetSwitch(global.Player_Armor, global.Armor_Chainmail, id);
             gmwSetSwitch(global.Floor, global.Floor_Stone, id);
-        else if(place_meeting(x, y+1, obj_ground_grass))
+        }
+        else if(place_meeting(x, y+1, obj_ground_grass)){
+            gmwSetSwitch(global.Player_Armor, global.Armor_Chainmail, id);
             gmwSetSwitch(global.Floor, global.Floor_Grass, id);
+        }
         else if(place_meeting(x, y+1, obj_ground_wood))
             gmwSetSwitch(global.Floor, global.Floor_Wood, id);
         else
@@ -885,20 +888,26 @@ else if(!invulnerable){
           <argument>
             <kind>1</kind>
             <string>if(!deleted){
-    draw_text(17, 25, room_persistent);
-    draw_set_font(fnt_default);
-    var toPrint = string(number_of_arrows) + "xArrow";
-    if(number_of_arrows != 1){
-        toPrint += "s";
+    //draw_text(17, 40, room_persistent);
+    draw_set_colour(c_white);
+    draw_set_font(font2);
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+    if(number_of_arrows &gt; 0){
+        var toPrint = string(number_of_arrows) + "xArrow";
+        if(number_of_arrows != 1){
+            toPrint += "s";
+        }
+        draw_text(17, 50, toPrint);
     }
-    draw_text(17, 40, toPrint);
     
-    var toPrint = string(keys) + "xKey";
-    if(keys != 1){
-        toPrint += "s";
+    if(keys &gt; 0){
+        var toPrint = string(keys) + "xKey";
+        if(keys != 1){
+            toPrint += "s";
+        }
+        draw_text(17, 70, toPrint);
     }
-    draw_text(17, 55, toPrint);
-    
     
     for( i = 0; i &lt; hearts; i++)
     {
