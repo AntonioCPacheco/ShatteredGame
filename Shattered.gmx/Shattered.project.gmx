@@ -181,9 +181,9 @@
       <sprite>sprites\Guard_idle</sprite>
     </sprites>
     <sprites name="Guard_Chief">
-      <sprite>sprites\sprite58</sprite>
+      <sprite>sprites\Guard_chief_attack</sprite>
       <sprite>sprites\Guard_chief_idle</sprite>
-      <sprite>sprites\sprite57</sprite>
+      <sprite>sprites\Guard_chief_running</sprite>
     </sprites>
     <sprite>sprites\forest_deployer</sprite>
     <sprite>sprites\ground_spikes</sprite>

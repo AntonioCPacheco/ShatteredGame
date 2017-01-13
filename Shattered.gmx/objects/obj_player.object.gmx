@@ -438,6 +438,7 @@ if(key_restart)
             <string>///Changing sprites
 //depth = -1;
 // sprite_state: 0 - idle | 1 - running | 2 - jumping | 3 - falling | 4 - attacking 
+
 if(rags)
 {
    if(last_state != sprite_state){
@@ -586,10 +587,11 @@ if(invulnerable &amp;&amp; ((ratio &gt; 0 &amp;&amp; ratio &lt; .2)||(ratio &gt;
 }
 
 last_state = sprite_state;
-if(sprite_state == 1 &amp;&amp; (image_index==1 || image_index==3))
+if((sprite_state == 1  &amp;&amp; (round(image_index) == 1 || round(image_index) == 3)) || (sprite_state == 9 &amp;&amp; round(image_index)==1))
 {
     gmwPostEvent(global.Play_Footstep, id);
 }
+
 
 </string>
           </argument>
@@ -776,7 +778,7 @@ if((key_interact || triggered_to_interact) &amp;&amp; grounded){
 }
 else if(!invulnerable){
     hp -= 25;
-    hearts--;
+    --hearts;
     took_damage = 0;
 }
 </string>
@@ -810,7 +812,7 @@ else if(!invulnerable){
 }
 else if(!invulnerable){
     hp -= 25;
-    hearts--;
+    --hearts;
     took_damage = 0;
 }
 </string>
