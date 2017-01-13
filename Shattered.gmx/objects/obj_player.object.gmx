@@ -32,12 +32,14 @@ if(room == First_Level)
     gmwSetSwitch(global.Player_Armor, global.Armor_Leather, id);
     rags = true;
     weapons = false;
+    bow = false;
 }
 else if(room == Knights_Village)
 {
     gmwSetSwitch(global.Player_Armor, global.Armor_Chainmail, id);
     rags = false;
     weapons = true;
+    bow = true;
 }
 
 hp = 100;
@@ -61,7 +63,6 @@ last_choice = -1;
 deleteNext = false;
 
 //Variable to check if there is crossbow or not, this variable will be used to know when to shoot arrows or rocks
-crossbow = false;
 ableArrow = true;
 ableArrowCount = 35;
 mid_cutscene = false;
@@ -75,6 +76,7 @@ invulnerable = false;
 
 climbing_ladder = false;
 attacking = false;
+bow_attacking = false;
 played_attack_sound = false;
 played_footstep_sound = false;
 talking = false;
@@ -201,6 +203,14 @@ if(attacking)
         }
     }
 } 
+else if(bow_attacking)
+{
+   if(round(image_index) == 1)
+   {
+        bow_attacking = false;
+        sprite_state = 0;
+   } 
+}
 else if (!talking || mid_cutscene)
 {
     //Ground Check &amp; top-ladder check
@@ -360,27 +370,54 @@ else if (!talking || mid_cutscene)
     //Arrow
     if(ableArrowCount &lt; 35) { ableArrowCount++; ableArrow = false;}
     else { ableArrow = true; } 
-    if(mouse_left &amp;&amp; number_of_arrows &gt; 0 &amp;&amp; ableArrow)
+    if(mouse_left &amp;&amp; number_of_arrows &gt; 0 &amp;&amp; ableArrow &amp;&amp; !grab)
     {
-        with  instance_create(x, y, obj_arrow)
+        if(bow)
         {
-            objective_x = mouse_x - obj_player.x;
-            objective_y = mouse_y - obj_player.y;
-            
-            norm = sqrt(objective_x*objective_x + objective_y*objective_y);
-            objective_x = objective_x / norm;
-            objective_y = objective_y / norm;
-            //image_xscale = sign(objective_x);
-            //image_yscale = sign(objective_y);
-            image_angle = arccos(objective_x)*(180/pi);
-            
-            if(objective_y &gt; 0){
-                image_angle = 360 - image_angle;
-            }
-            /*
-            x = obj_player.x + objective_x;
-            y = obj_player.y + objective_y;
-        */}
+            with  instance_create(x, y, obj_arrow)
+            {
+                objective_x = mouse_x - obj_player.x;
+                objective_y = mouse_y - obj_player.y;
+                
+                norm = sqrt(objective_x*objective_x + objective_y*objective_y);
+                objective_x = objective_x / norm;
+                objective_y = objective_y / norm;
+                //image_xscale = sign(objective_x);
+                //image_yscale = sign(objective_y);
+                image_angle = arccos(objective_x)*(180/pi);
+                
+                if(objective_y &gt; 0){
+                    image_angle = 360 - image_angle;
+                }
+                /*
+                x = obj_player.x + objective_x;
+                y = obj_player.y + objective_y;
+            */}
+        }
+        else
+        {
+            with  instance_create(x, y, obj_rock)
+            {
+                objective_x = mouse_x - obj_player.x;
+                objective_y = mouse_y - obj_player.y;
+                
+                norm = sqrt(objective_x*objective_x + objective_y*objective_y);
+                objective_x = objective_x / norm;
+                objective_y = objective_y / norm;
+                //image_xscale = sign(objective_x);
+                //image_yscale = sign(objective_y);
+                image_angle = arccos(objective_x)*(180/pi);
+                
+                if(objective_y &gt; 0){
+                    image_angle = 360 - image_angle;
+                }
+                /*
+                x = obj_player.x + objective_x;
+                y = obj_player.y + objective_y;
+            */}
+        }
+        bow_attacking = true;
+        sprite_state = 6;
         number_of_arrows--;
         ableArrowCount = 0;
         
@@ -574,6 +611,8 @@ switch(sprite_state){
     case 2:
     case 3:
     case 5:
+    case 6:
+    case 7:
     case 8:
     case 9:
         image_speed = image_number * 1.3 / room_speed;

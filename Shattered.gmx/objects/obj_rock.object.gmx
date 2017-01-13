@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_arrow</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -64,8 +64,10 @@ start_time = current_time;
           <argument>
             <kind>1</kind>
             <string>/// Movement and collision
+event_inherited();
 
-hsp = velocity * objective_x;
+
+/*hsp = velocity * objective_x;
 vsp = velocity * objective_y;
 
 //Gravity
@@ -94,7 +96,7 @@ if(current_time - start_time &lt; 15000)
 else
 {
     instance_destroy();
-}
+}*/
 </string>
           </argument>
         </arguments>
