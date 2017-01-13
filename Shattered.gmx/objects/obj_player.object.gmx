@@ -752,7 +752,7 @@ if((key_interact || triggered_to_interact) &amp;&amp; grounded){
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_ground_spikes">
+    <event eventtype="4" ename="obj_attack_enemy_hit">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -786,7 +786,7 @@ else if(!invulnerable){
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_attack_enemy_hit">
+    <event eventtype="4" ename="obj_ground_spikes">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -812,7 +812,7 @@ else if(!invulnerable){
 }
 else if(!invulnerable){
     hp -= 25;
-    hearts--;
+    --hearts;
     took_damage = 0;
 }
 </string>
