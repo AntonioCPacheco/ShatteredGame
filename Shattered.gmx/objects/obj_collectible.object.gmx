@@ -55,12 +55,16 @@ option = 0;
     {
         instance_destroy();
     }
-    
-    room_goto(End_Room);
+    with(obj_player){
+        deleted = true;
+        instance_destroy();
+    }
+    room_goto(Start_Menu);
 } else 
 {
     instance_destroy();
     with(obj_player){
+        deleted = true;
         instance_destroy();
     }
     room_goto(End_Room);
