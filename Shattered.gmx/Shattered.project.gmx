@@ -187,6 +187,7 @@
     </sprites>
     <sprite>sprites\forest_deployer</sprite>
     <sprite>sprites\ground_spikes</sprite>
+    <sprite>sprites\rock</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Crate</background>
@@ -285,6 +286,7 @@
     <object>objects\obj_window</object>
     <objects name="Player Objects">
       <object>objects\obj_arrow</object>
+      <object>objects\obj_rock</object>
       <object>objects\obj_attack_hit</object>
       <object>objects\obj_player</object>
       <object>objects\obj_weapons_dropped</object>
