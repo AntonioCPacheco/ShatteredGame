@@ -103,7 +103,7 @@ else if(place_meeting(x, y+vsp, obj_player))
     obj_player.hp -= 25;
     --obj_player.hearts;
     obj_player.took_damage = 0;
-    obj_player.x -= 64;
+    obj_player.x += 64;
 }
 else
 {

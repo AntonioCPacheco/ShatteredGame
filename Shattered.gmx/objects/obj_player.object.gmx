@@ -889,12 +889,19 @@ else if(!invulnerable){
             <kind>1</kind>
             <string>if(!deleted){
     //draw_text(17, 40, room_persistent);
-    draw_set_colour(c_white);
+    arrow_text = "Arrow";
+    if(room == First_Level){
+        arrow_text = "Pebble";
+        draw_set_colour(c_white);
+    } else {
+        draw_set_colour(c_black);
+    }
     draw_set_font(font2);
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
+    
     if(number_of_arrows &gt; 0){
-        var toPrint = string(number_of_arrows) + "xArrow";
+        var toPrint = string(number_of_arrows) + "x" + arrow_text;
         if(number_of_arrows != 1){
             toPrint += "s";
         }
