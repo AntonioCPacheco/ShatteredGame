@@ -13,9 +13,7 @@ switch(mpos)
     }
     case 1:
     {
-        room_goto(Knights_Village);
-        draw_set_font(-1);
-        draw_set_color(c_black);
+        room_goto(Intro_Room2);
         break;
     }
     case 2:
