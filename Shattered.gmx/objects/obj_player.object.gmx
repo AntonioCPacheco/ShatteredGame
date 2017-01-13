@@ -39,7 +39,7 @@ else if(room == Knights_Village)
     rags = false;
     weapons = true;
 }
-
+deleted = false;
 hp = 100;
 hearts = 4
 
@@ -845,26 +845,27 @@ else if(!invulnerable){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(17, 25, room_persistent);
-draw_set_font(fnt_default);
-var toPrint = string(number_of_arrows) + "xArrow";
-if(number_of_arrows != 1){
-    toPrint += "s";
+            <string>if(!deleted){
+    draw_text(17, 25, room_persistent);
+    draw_set_font(fnt_default);
+    var toPrint = string(number_of_arrows) + "xArrow";
+    if(number_of_arrows != 1){
+        toPrint += "s";
+    }
+    draw_text(17, 40, toPrint);
+    
+    var toPrint = string(keys) + "xKey";
+    if(keys != 1){
+        toPrint += "s";
+    }
+    draw_text(17, 55, toPrint);
+    
+    
+    for( i = 0; i &lt; hearts; i++)
+    {
+        draw_sprite(heart, 0, (55*i)+25, 25);
+    }
 }
-draw_text(17, 40, toPrint);
-
-var toPrint = string(keys) + "xKey";
-if(keys != 1){
-    toPrint += "s";
-}
-draw_text(17, 55, toPrint);
-
-
-for( i = 0; i &lt; hearts; i++)
-{
-    draw_sprite(heart, 0, (55*i)+25, 25);
-}
-
 </string>
           </argument>
         </arguments>
