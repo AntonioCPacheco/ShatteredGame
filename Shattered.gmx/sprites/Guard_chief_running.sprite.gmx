@@ -20,9 +20,9 @@
   <width>192</width>
   <height>192</height>
   <frames>
-    <frame index="0">images\sprite57_0.png</frame>
-    <frame index="1">images\sprite57_1.png</frame>
-    <frame index="2">images\sprite57_2.png</frame>
-    <frame index="3">images\sprite57_3.png</frame>
+    <frame index="0">images\Guard_chief_running_0.png</frame>
+    <frame index="1">images\Guard_chief_running_1.png</frame>
+    <frame index="2">images\Guard_chief_running_2.png</frame>
+    <frame index="3">images\Guard_chief_running_3.png</frame>
   </frames>
 </sprite>
