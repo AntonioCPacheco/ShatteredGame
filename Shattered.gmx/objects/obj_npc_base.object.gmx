@@ -68,12 +68,17 @@ if(original_x == 0){ original_x = x; }
 //check if npc is performing an attack on player
 if(attacking &amp;&amp; !friendly)
 {   
-        with instance_create(x, y, obj_attack_enemy_hit){
-            image_xscale = obj_player.image_xscale;
-        }
-        attacking = false;
+    var inst = instance_create(x, y, obj_attack_enemy_hit);
+    inst.image_xscale = image_xscale;
     
+    last_attacked=0;
+    attacking = false;
 }
+
+if(last_attacked &gt;= 0 &amp;&amp; last_attacked &lt;= time_between_attacks*room_speed){
+    last_attacked++;
+}
+
 /*else if(attacking)
 {
     with instance_create(x, y, obj_attack_enemy_hit){
@@ -105,24 +110,26 @@ else if(state_of_action == 1){
         moving_right = true;
     }
     hsp = 0;    
-    if((place_meeting(x+150, y, obj_player) || place_meeting(x-150, y, obj_player)) &amp;&amp; !friendly){
+    if((place_meeting(x+200, y, obj_player) || place_meeting(x-200, y, obj_player)) &amp;&amp; !friendly){
         state_of_action = 2;
     }
 }
 //npc is going after player trying to kill him
 else if(state_of_action == 2 &amp;&amp; !friendly){
-    if(place_meeting(x+20, y, obj_player)){
+    if(place_meeting(x+20, y, obj_player) &amp;&amp; last_attacked &gt;= time_between_attacks*room_speed){
         attacking = true;
+        last_attacked = 0;
     }
-    else if(place_meeting(x-20, y, obj_player)){
+    else if(place_meeting(x-20, y, obj_player) &amp;&amp; last_attacked &gt;= time_between_attacks*room_speed){
         attacking = true;
+        last_attacked = 0;
     }
         
     else if(obj_player.x &lt; x){
-        hsp = -5;
+        hsp = -4;
     }    
     else if(obj_player.x &gt; x){
-        hsp = 5;
+        hsp = 4;
     }
 
 }

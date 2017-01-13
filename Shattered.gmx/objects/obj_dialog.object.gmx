@@ -114,6 +114,7 @@ if(last_frame_text != text_visible){
 var xx = (x - view_xview[0] - sprite_xoffset)*display_scale_h;
 var yy = (y - view_yview[0] - sprite_yoffset)*display_scale_v;
 draw_set_valign(fa_top);
+draw_set_halign(fa_left);
 draw_set_font(fnt_default);
 draw_text_ext(xx+margin, yy+margin, text_visible, -1, width-(2*margin));
 </string>

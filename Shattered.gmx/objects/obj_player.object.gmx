@@ -29,11 +29,13 @@
 
 if(room == First_Level)
 {
+    gmwSetSwitch(global.Player_Armor, global.Armor_Leather, id);
     rags = true;
     weapons = false;
 }
 else if(room == Knights_Village)
 {
+    gmwSetSwitch(global.Player_Armor, global.Armor_Chainmail, id);
     rags = false;
     weapons = true;
 }
@@ -73,6 +75,8 @@ invulnerable = false;
 
 climbing_ladder = false;
 attacking = false;
+played_attack_sound = false;
+played_footstep_sound = false;
 talking = false;
 
 first_xscale = image_xscale;
@@ -187,8 +191,10 @@ if(attacking)
     if(round(image_index) == 2){
         attacking = false;
         sprite_state = 0;
-    } else if(round(image_index) == 1){
-        gmwSetSwitch(global.Player_Weapon, global.Weapon_Fist, id);
+        played_attack_sound = false;
+    } else if(floor(image_index) == 1 &amp;&amp; !played_attack_sound){
+        played_attack_sound = true;
+        gmwSetSwitch(global.Player_Weapon, global.Weapon_Sword, id);
         gmwPostEvent(global.Play_Weapon_Swing, id);
         with instance_create(x, y, obj_attack_hit){
             image_xscale = obj_player.image_xscale;
@@ -388,10 +394,8 @@ else if (!talking || mid_cutscene)
     if(grounded){
         if(place_meeting(x, y+1, obj_ground_stone))
             gmwSetSwitch(global.Floor, global.Floor_Stone, id);
-        else if(place_meeting(x, y+1, obj_ground_grass)){
+        else if(place_meeting(x, y+1, obj_ground_grass))
             gmwSetSwitch(global.Floor, global.Floor_Grass, id);
-            gmwSetSwitch(global.Player_Armor, global.Armor_Chainmail, id);
-        }
         else if(place_meeting(x, y+1, obj_ground_wood))
             gmwSetSwitch(global.Floor, global.Floor_Wood, id);
         else
@@ -587,8 +591,12 @@ if(invulnerable &amp;&amp; ((ratio &gt; 0 &amp;&amp; ratio &lt; .2)||(ratio &gt;
 }
 
 last_state = sprite_state;
-if((sprite_state == 1  &amp;&amp; (round(image_index) == 1 || round(image_index) == 3)) || (sprite_state == 9 &amp;&amp; round(image_index)==1))
+if(played_footstep_sound &amp;&amp; sprite_state == 1 &amp;&amp; (floor(image_index) == 0 || floor(image_index) == 2)){
+    played_footstep_sound = false;
+}
+if(!played_footstep_sound &amp;&amp; ((sprite_state == 1  &amp;&amp; (floor(image_index) == 1.0 || floor(image_index) == 3.0)) || (sprite_state == 9 &amp;&amp; floor(image_index)==1.0)))
 {
+    played_footstep_sound = true;
     gmwPostEvent(global.Play_Footstep, id);
 }
 
@@ -838,6 +846,7 @@ else if(!invulnerable){
           <argument>
             <kind>1</kind>
             <string>draw_text(17, 25, room_persistent);
+draw_set_font(fnt_default);
 var toPrint = string(number_of_arrows) + "xArrow";
 if(number_of_arrows != 1){
     toPrint += "s";

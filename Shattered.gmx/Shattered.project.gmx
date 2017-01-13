@@ -168,6 +168,7 @@
     <sprite>sprites\npc</sprite>
     <sprite>sprites\player</sprite>
     <sprite>sprites\player_attack_hit</sprite>
+    <sprite>sprites\guard_attack_hit</sprite>
     <sprite>sprites\sealed_pipe</sprite>
     <sprite>sprites\speech_bubble</sprite>
     <sprite>sprites\spikes_new</sprite>
